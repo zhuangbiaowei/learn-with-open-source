@@ -166,3 +166,114 @@ PPT/Slide/PDF：这种属于某次技术会议上的演讲稿，如果能够配�
 
 [对比语言元素: PHP, Perl, Python, Ruby](http://hyperpolyglot.org/scripting)
 
+## 2.4. 必须初步掌握的基本功
+
+以下所讨论的基本功，其实是一个相当宽泛的概念。很难确切的定义一个门槛：不到某种程度，你就无法学习开源了。而是说，在掌握了一些必要的能力之后，再开始学习，会学得不那么幸苦。
+
+### 计算机基础知识
+
+计算机相关的基础知识，其实相当琐碎，很多人都是在日常的使用与开发过程中，逐步掌握的。在了解各种各样的零零碎碎的知识同时，对于各种知识及其相互关联，有一个整体上的把握，我称之为“地图思维”，是非常重要的。
+
+简单来说，计算机相关的基础知识主要包括：基本操作与使用；计算机体系结构；网络基础知识；算法导论等等。
+
+* 计算机操作与使用：会初步使用至少一种操作系统吧；会自己装一个虚拟机（VirtualBox什么的都可以）；知道常见的文件格式如何打开；知道去哪里下载并安装相关的应用软件；诸如此类的知识。推荐一个网站：[我爱电脑网](http://www.woaidiannao.com/)真心觉得不错，那些乱七八糟的广告可以略过。
+* 计算机体系结构：这个方面，推荐一本教材：《[深入理解计算机系统](http://book.douban.com/subject/5333562/)》并附赠一篇书评《[NB学校的NB课程的NB教材--CSAPP](http://book.douban.com/review/3150951/)》相信会对各种程度的同学，都非常有帮助。
+* 网络基础知识：同样推荐一本教程：《[计算机网络](http://book.douban.com/subject/1179807/)》，并同样附赠一篇书评《[我看过的最好的网络入门书](http://book.douban.com/review/2304950/)》
+* 算法导论：说实话，我自己都没有正经的看过什么算法的书。不过因为看到一篇写得不错的译者推荐，因此对于《[Algorithms](http://book.douban.com/subject/4854123/)》一书有着相当浓厚的兴趣，也因此推荐给大家。《[大家好，我是译者](http://book.douban.com/review/5337314/)》
+
+### 至少掌握一门编程语言
+
+听上去似乎是废话，如果连语言都没有掌握，怎么可能开始学习开源软件，看人家的源代码呢？不过，怎么才算掌握了一门语言呢？能够写出Hello World，自然是不算的。掌握这门语言的基本语法，肯定也是不够的。也许找一本某某语言的经典教材，然后把后面的习题都给做出来，的确算是一个简单的办 法。不过，编程语言实在太多，相关的经典教材，就更是多不胜数。这里就不再一一推荐了。
+
+不过特别想推荐一个《笨办法学语言》系列，目前有：Python、Ruby、C、Regex、SQL、CLI六种。引用我觉得最有道理的一段话： “不要复制粘贴。你必须手动将每个练习打出来。复制粘贴会让这些练习变得毫无意义。这些习题的目的是训练你的双手和大脑思维，让你有能力读代码、写代码、 观察代码。如果你复制粘贴的话，那你就是在欺骗*自*己，而且这些练习的效果也将大打折扣。” 相关链接如下：
+
+* [Learn code the hard way](http://learncodethehardway.org/)
+* [《笨办法学 Python 》在线中文版](http://readthedocs.org/docs/learn-python-the-hard-way-zh_cn-translation/en/latest/)
+
+### 熟练掌握搜索引擎的使用
+
+* 第一戒律：尽可能在Google，而不是Baidu搜索。对于软件开发而言，Google才是最佳武器。
+* 不断的积累关键字：一个内容你搜索不到，只是因为你没有听说过那个关键字。比如，我想要找一个图像处理的开源项目，如果你知道 “Computer Vision”是指计算机视觉，那么直接搜“Open Source Computer Vision”,OpenCV一定就会是第一个结果。如果你知道OpenCV，那么想要找一个2D图像转换成3D图像的技术，有没有开源实现，就可以试着 搜“2D to 3D OpenCV”，也许就会更快的找到想要的内容。当你对某个领域完全没有了解时，可以先试着搜索一些周边词汇，看看相关的文档，然后了解行内人是用哪些关 键词的，然后再去搜索，就会迅速的缩小范围。
+* 搜索出错信息：当然，当你遇到错误时，直接把错误输出放到Google里去搜索，也说不定就会遇到和你有相同遭遇的同学，看看别人是怎么解决的。
+* 尝试各种专业的、垂直的搜索引擎：比如StackOverFlow或者Quora这样的专业问答社区，koders 则是一个源代码搜索的引擎。google search里的Blog、Discussions里也有不少好东西。
+* 到百度试试手气：毕竟人家也抓了不少网页了，说不定会有Google没抓到的呢？
+
+### 英语不能太差
+
+当然，这个更加是没底的事情，只是我自身英文也非常差，所以没资格教育别人，推荐余晟老师的一篇博客，供大家学习：《关于程序员学英语的经验 》
+
+## 2.5. 关于开发工具
+
+* 关于这个话题，我在知乎上发起了一个话题，欢迎参考。[关于开发/编程工具，你有哪些心得或给初学者的建议？](http://www.zhihu.com/question/20302904)
+* 过尤不及：所有的工具，都是为了提高我们的开发效率而存在的，但是，如果为了那些工具，投入了太多的精力，则可能舍本逐末，忘记了自己的根本目标。也许有人会说，磨刀不误砍材功，但是，千万不要只顾磨刀，忘记砍材啊。
+* 对于初学者而言，GUI是更加自然的方式。虽然，计算机的发展过程，是先有命令行，后有图形界面。但是，键盘、鼠标的综合运用，会更加容易被 人掌握。当然，随着熟练程度的增加，纯用键盘操作，加上花样繁多的快捷键，会大大的提高操作的效率。再进一步，有一些优秀的GUI工具，极其丰富的支持各 种快捷方式，同时又兼顾图形界面的美观与方便，是最值得推荐的。但是，还是回到那句话：过尤不及。
+* 好的教程，会帮助我们的熟悉开发工具，我一直认为TextMate的迅速普及，是由于RailsCast的功劳。因此，花时间找一些靠谱的教程，尤其是视频教程，会很有效。
+* 开发人员，往往会有两个误区，或者频繁的挑选、比较多种开发工具，或者长时间埋头于自己最常用的那个工具，对于外面世界的发展毫无兴趣。我的个人建议是，定期抬起头来，看看新工具的进展与介绍。1～2年为一个周期就好，不用太频繁。
+* 知其然，更要知其所以然。千万不要变成被工具惯坏了的程序员。
+* 不要总试图要汉化它（by 李焕林）
+* 工具是给懒人用的，不是给傻子用的。（by 程劭非）
+* 还会不定期的补充一些心得进来...
+
+### 2.5.1. 关于开发工具的分类（by 李路）
+
+我认为开发工具分三类，需区别对待：
+
+1. 可以使用一辈子的工具，学习路径几乎没有尽头，值得在职业初期就好好考虑，仔细斟酌进行选择，并在整个生涯中不断努力力求学到更多，你的工作效率会因为这种努力不断提高。如：
+	* 编辑器： emacs
+	* 基本操作系统环境：如shell
+	* 基本编程语言: c / lisp
+
+2. 任何时候都需要掌握的工具，这类工具总是每隔一个周期就有新的产品出现，取代掉旧有的产品，但相对来说是值得学习的，能保持一个较长的时代的有效期，如：
+    * 版本控制系统：git
+    * 社交网络: stack overflow/github
+    * 写作工具: markdown / latex / html
+    * 通用编程语言： python / ruby / javascript
+3. 特定领域需要的工具，此类工具往往时效性较短，不断被新产品取代，一旦掌握，能在特定领域获得非常高的效率，但缺点是很快会过期，通常是几年之内
+    * 各类编程框架： xcode / rails / backbone
+    * 各类测试框架：xunit / rspec
+    * 用户行为分析工具： ga
+    * 各类设计工具： balsamiq
+    * 各类项目管理，代码集成工具: github / trac / basecamp
+
+### 2.5.2. 各种参考资料
+
+以下链接尽可能都给英文维基百科的link，分类页尽可能给维基百科里的Category页
+
+* [Programming tool](http://en.wikipedia.org/wiki/Programming_tool)
+* [Text editors](http://en.wikipedia.org/wiki/Category:Free_text_editors)
+    * [Emacs](http://en.wikipedia.org/wiki/Emacs)
+    * [Vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29)
+    * [JEdit](http://en.wikipedia.org/wiki/JEdit)
+    * [Notepad++](http://en.wikipedia.org/wiki/Notepad%2B%2B)
+    * [Sublime Text](http://en.wikipedia.org/wiki/Sublime_Text)
+* [Integrated development environments](http://en.wikipedia.org/wiki/Integrated_Development_Environment) / [IDE List](http://en.wikipedia.org/wiki/Category:Free_integrated_development_environments)
+    * [Emacs](http://en.wikipedia.org/wiki/Emacs)
+    * [Dev-C++](http://en.wikipedia.org/wiki/Dev-C%2B%2B)
+    * [Eclipse](http://en.wikipedia.org/wiki/Eclipse_%28software%29)
+    * [NetBeans](http://en.wikipedia.org/wiki/NetBeans)
+    * [Cloud9 IDE](http://en.wikipedia.org/wiki/Cloud9_IDE)
+    * [Code::Blocks](http://en.wikipedia.org/wiki/Code::Blocks)
+    * [KDevelop](http://en.wikipedia.org/wiki/KDevelop)
+* [Revision control software](http://en.wikipedia.org/wiki/Category:Free_revision_control_software)
+    * [SVN](http://en.wikipedia.org/wiki/Apache_Subversion)
+    * [Git](http://en.wikipedia.org/wiki/Git_%28software%29)
+    * [Mercurial](http://en.wikipedia.org/wiki/Mercurial)
+* [Test-driven development](http://en.wikipedia.org/wiki/Test-driven_development) / [Behavior Driven Development](http://en.wikipedia.org/wiki/Behavior_Driven_Development)
+    * [xUnit](http://en.wikipedia.org/wiki/XUnit)
+    * [RSpec](http://en.wikipedia.org/wiki/RSpec)
+* [Rapid prototyping tools](http://garmahis.com/reviews/wireframe-tools/)
+    * [Balsamiq Mockups](http://en.wikipedia.org/wiki/Balsamiq)
+    * [Axure RP Pro](http://en.wikipedia.org/wiki/Axure_RP)
+* [Project management software](http://en.wikipedia.org/wiki/Category:Free_project_management_software)
+    * [Bugzilla](http://en.wikipedia.org/wiki/Bugzilla)
+    * [XMind](http://en.wikipedia.org/wiki/XMIND)
+    * [Redmine](http://en.wikipedia.org/wiki/Redmine)
+    * [Trac](http://en.wikipedia.org/wiki/Trac)
+    * [MediaWiki](http://www.mediawiki.org/wiki/MediaWiki)
+
+
+### 关于英文资料
+
+回应Shi YiMin的评论："大学一、二年级的新生看这个英文的资料是不是会有点困难？"。
+
+我觉得，还是要努力的去看吧，如果发现理解有困难，再去寻求各种帮助。毕竟相比对应的中文版，英文版的内容质量要好得多。再者，维基百科里的这些内容，主要还是简介性质的，不算太难。
