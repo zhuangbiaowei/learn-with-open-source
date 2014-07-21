@@ -124,9 +124,9 @@ Google的BigTable论文，Amazon的Dynamo论文开启了目前火热的云计算
 
 |项目名称|语言（平台）|所属领域|推荐理由|
 |-------|-----------|-------|------|
-|Petshop4.0|NET|企业开发|1.微软官方用来展示.Net企业开发实力的项目,架构优雅;2.涉及中小型企业开发常用技术;3.网络资源较多|
-|Haozesfx|NET|Winform,SIP协议|1.基于飞信实现的开源项目，实用性强,方便二次开发;2.结构清晰，设计成熟;3.实现了SIP协议|
-|ThinkPHP|PHP|Web框架|1.应用较为广泛的Web开发框架，成熟稳定;2.集成多项先进的设计思想;3.活跃的社区 支持和完善的中文文档(帮助手册,Demo,代码注释)|
+|[Petshop4.0](http://msdn.microsoft.com/en-us/library/Aa479070)|NET|企业开发|1.微软官方用来展示.Net企业开发实力的项目,架构优雅;2.涉及中小型企业开发常用技术;3.网络资源较多|
+|[Haozesfx](http://haozesfx.codeplex.com/)|NET|Winform,SIP协议|1.基于飞信实现的开源项目，实用性强,方便二次开发;2.结构清晰，设计成熟;3.实现了SIP协议|
+|[ThinkPHP](http://www.thinkphp.cn/)|PHP|Web框架|1.应用较为广泛的Web开发框架，成熟稳定;2.集成多项先进的设计思想;3.活跃的社区 支持和完善的中文文档(帮助手册,Demo,代码注释)|
 
 其他：[memcached](http://memcached.org/) c语言 Free & open source, high-performance, distributed memory object caching system。by Jun Guo
 
