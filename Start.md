@@ -160,9 +160,10 @@ PPT/Slide/PDF：这种属于某次技术会议上的演讲稿，如果能够配�
 ### 推荐语言
 **这个列表，可以不断扩充，也欢迎大家补充自己的推荐语言与推荐理由**
 
-    语言名称 	主要开源项目		推荐理由
-    ruby		Ruby On Rails 	动态语言，简洁清新
-    java 		Tomcat 			经典的面向对象静态语言，长盛不衰，优秀项目多如牛毛
+|语言名称|主要开源项目	|推荐理由|
+|-------|-----------|-------|
+|ruby|Ruby On Rails|动态语言，简洁清新|
+|java|Tomcat|经典的面向对象静态语言，长盛不衰，优秀项目多如牛毛|
 
 [对比语言元素: PHP, Perl, Python, Ruby](http://hyperpolyglot.org/scripting)
 
