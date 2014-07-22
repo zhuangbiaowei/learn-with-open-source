@@ -149,218 +149,242 @@
 
 ### 4.2.2. PHP版
 
-在WIndows环境下 推荐安装WAMP（Windws+Apache+MySQL+PHP）套件，XAMPP
-在Linux环境下 以下将简单介绍在Ubuntu下安装LAMP的过程，其他的linux平台以及Mac平台，请自行搜索。
+**在WIndows环境下** 推荐安装WAMP（Windws+Apache+MySQL+PHP）套件，[XAMPP](http://www.apachefriends.org/en/xampp-windows.html)
 
-$ sudo apt-get install mysql-client mysql-server
-根据提示，输入两次MySQL的root密码。
-$ sudo apt-get install apache2
-在浏览器中访问 http://localhost，应该可以看到It Works等文字。表明Apache2安装成功。
-$ sudo apt-get install php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql
-$ sudo /etc/init.d/apache2 restart #重启Apache服务器，完成配置PHP的工作
-$ sudo vim /var/www/info.php
-将以下内容写入文件
-<?php
-phpinfo();
-?>
-在浏览器中访问 http://localhost/info.php 应该能够看到PHP的版本及模块说明等内容。这样就表明，Linux+Apache+MySQL+PHP已经配置完成了。
+**在Linux环境下** 以下将简单介绍在Ubuntu下安装LAMP的过程，其他的linux平台以及Mac平台，请自行搜索。
 
-安装一个开源项目 以在Ubuntu上安装一个wordpress为例
+	$ sudo apt-get install mysql-client mysql-server
+	根据提示，输入两次MySQL的root密码。
+	$ sudo apt-get install apache2
+	在浏览器中访问 http://localhost，应该可以看到It Works等文字。表明Apache2安装成功。
+	$ sudo apt-get install php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql
+	$ sudo /etc/init.d/apache2 restart #重启Apache服务器，完成配置PHP的工作
+	$ sudo vim /var/www/info.php
+	将以下内容写入文件
+	<?php
+	phpinfo();
+	?>
+	在浏览器中访问 http://localhost/info.php 应该能够看到PHP的版本及模块说明等内容。这样就表明，Linux+Apache+MySQL+PHP已经配置完成了。
 
-$ wget http://cn.wordpress.org/wordpress-3.3.1-zh_CN.tar.gz #需要寻找最新的版本
-$ tar -zxvf wordpress-3.3.1-zh_CN.tar.gz
-$ mysql -uroot -p
-mysql> CREATE DATABASE IF NOT EXISTS wordpress default charset utf8 COLLATE utf8_general_ci;
-mysql> GRANT ALL PRIVILEGES 
-               ON wordpress.* 
-               TO 'wp_user'@'localhost'
-               IDENTIFIED BY 'wp_password' 
-               WITH GRANT OPTION;
-mysql> exit
-$ cp wp-config-sample.php wp-config.php
-$ vim wp-config.php
-（最主要是修改以下四个值的定义）
-define('DB_NAME', 'wordpress');
-define('DB_USER', 'wp_user');
-define('DB_PASSWORD', 'wp_password');
-define('DB_HOST', 'localhost');
+**安装一个开源项目** 以在Ubuntu上安装一个wordpress为例
 
-在浏览器中访问 http://localhost/wordpress/wp-admin/install.php 按提示完成各个步骤，就搞定了，整个时间不超过5分钟。
+	$ wget http://cn.wordpress.org/wordpress-3.3.1-zh_CN.tar.gz #需要寻找最新的版本
+	$ tar -zxvf wordpress-3.3.1-zh_CN.tar.gz
+	$ mysql -uroot -p
+	mysql> CREATE DATABASE IF NOT EXISTS wordpress default charset utf8 COLLATE utf8_general_ci;
+	mysql> GRANT ALL PRIVILEGES 
+	               ON wordpress.* 
+	               TO 'wp_user'@'localhost'
+	               IDENTIFIED BY 'wp_password' 
+	               WITH GRANT OPTION;
+	mysql> exit
+	$ cp wp-config-sample.php wp-config.php
+	$ vim wp-config.php
+	（最主要是修改以下四个值的定义）
+	define('DB_NAME', 'wordpress');
+	define('DB_USER', 'wp_user');
+	define('DB_PASSWORD', 'wp_password');
+	define('DB_HOST', 'localhost');
+
+在浏览器中访问 [http://localhost/wordpress/wp-admin/install.php](http://localhost/wordpress/wp-admin/install.php) 按提示完成各个步骤，就搞定了，整个时间不超过5分钟。
+
 最后一句的提示，很有趣味：“WordPress 安装完成。您是否还沉浸在愉悦的安装过程中？很遗憾，一切皆已完成！ :)”
 
-参考文档 1
-参考文档 2
-4.2.3. Java版
+[参考文档 1](http://codex.wordpress.org/zh-cn:%E5%AE%89%E8%A3%85WordPress)  [参考文档 2](http://supriyadisw.net/2006/12/wordpress-installation-on-ubuntu-with-lamp)
 
-在Ubuntu下以源代码方式安装Tomcat
+### 4.2.3. Java版
 
-$ wget http://apache.etoak.com/tomcat/tomcat-7/v7.0.27/src/apache-tomcat-7.0.27-src.tar.gz #寻找最新版本
-$ tar -zxvf apache-tomcat-7.0.27-src.tar.gz
-$ cd apache-tomcat-7.0.27-src
-$ vim BUILDING.txt # 阅读编译指南，按照指示操作
-$ 下载 jdk-6u31-linux-x64.bin #tomcat7.0.x的源代码编译，要求jdk6的版本，jdk7在编译时，会报错
-$ cd
-$ ./jdk-6u31-linux-x64.bin
-$ export JAVA_HOME=~/jdk1.6.0_31/
-$ wget http://apache.etoak.com//ant/binaries/apache-ant-1.8.3-bin.tar.gz
-$ tar -zxvf apache-ant-1.8.3-bin.tar.gz
-$ export PATH=%PATH:~/apache-ant-1.8.3/bin:~/jdk1.6.0_31/bin
-$ export ANT_HOME=~/apache-ant-1.8.3/
-$ cd apache-tomcat-7.0.27-src
-$ ant
-$ cd output/build/bin/
-$ ./catalina.sh run
+**在Ubuntu下以源代码方式安装Tomcat**
 
-至此，在浏览器中，访问http://localhost:8080/ 可以看到Tomcat的欢迎页。
-4.2.4. Python版
+	$ wget http://apache.etoak.com/tomcat/tomcat-7/v7.0.27/src/apache-tomcat-7.0.27-src.tar.gz #寻找最新版本
+	$ tar -zxvf apache-tomcat-7.0.27-src.tar.gz
+	$ cd apache-tomcat-7.0.27-src
+	$ vim BUILDING.txt # 阅读编译指南，按照指示操作
+	$ 下载 jdk-6u31-linux-x64.bin #tomcat7.0.x的源代码编译，要求jdk6的版本，jdk7在编译时，会报错
+	$ cd
+	$ ./jdk-6u31-linux-x64.bin
+	$ export JAVA_HOME=~/jdk1.6.0_31/
+	$ wget http://apache.etoak.com//ant/binaries/apache-ant-1.8.3-bin.tar.gz
+	$ tar -zxvf apache-ant-1.8.3-bin.tar.gz
+	$ export PATH=%PATH:~/apache-ant-1.8.3/bin:~/jdk1.6.0_31/bin
+	$ export ANT_HOME=~/apache-ant-1.8.3/
+	$ cd apache-tomcat-7.0.27-src
+	$ ant
+	$ cd output/build/bin/
+	$ ./catalina.sh run
 
-在Ubuntu上安装Python Django
+至此，在浏览器中，访问[http://localhost:8080/](http://localhost:8080/) 可以看到Tomcat的欢迎页。
 
-$ wget https://www.djangoproject.com/m/releases/1.4/Django-1.4.tar.gz
-$ tar -zxvf Django-1.4.tar.gz
-$ cd Django-1.4
-$ sudo python setup.py install
-$ python
->>> import django
->>> django.VERSION
-(1, 4, 0, 'final', 0)
+### 4.2.4. Python版
+
+**在Ubuntu上安装Python Django**
+
+	$ wget https://www.djangoproject.com/m/releases/1.4/Django-1.4.tar.gz
+	$ tar -zxvf Django-1.4.tar.gz
+	$ cd Django-1.4
+	$ sudo python setup.py install
+	$ python
+	>>> import django
+	>>> django.VERSION
+	(1, 4, 0, 'final', 0)
 
 到这一步，Django就算是安装完成了。太简单了，我们还得再用这个Django干点什么。
 
-$ django-admin.py startproject newtest
-$ cd  newtest/newtest
-$ vim helloworld.py
-#File Begin
-from django.http import HttpResponse  
+	$ django-admin.py startproject newtest
+	$ cd  newtest/newtest
+	$ vim helloworld.py
+	#File Begin
+	from django.http import HttpResponse  
+	
+	def index(request):  
+	    return HttpResponse("Hello, Django.")  
+	#File End
+	
+	$ vim urls.py
+	#File Begin
+	from django.conf.urls.defaults import *
+	
+	urlpatterns = patterns('',  
+	    (r'^$', 'newtest.helloworld.index'),  
+	)
+	#File End
+	$ cd ..
+	$ ./manage.py runserver
+	Validating models...
+	
+	0 errors found
+	Django version 1.4, using settings 'newtest.settings'
+	Development server is running at http://127.0.0.1:8000/
+	Quit the server with CONTROL-C.
 
-def index(request):  
-    return HttpResponse("Hello, Django.")  
-#File End
+这是，用浏览器访问 [http://localhost:8000/](http://localhost:8000/) 你将看到 Hello, Django.
 
-$ vim urls.py
-#File Begin
-from django.conf.urls.defaults import *
-
-urlpatterns = patterns('',  
-    (r'^$', 'newtest.helloworld.index'),  
-)
-#File End
-$ cd ..
-$ ./manage.py runserver
-Validating models...
-
-0 errors found
-Django version 1.4, using settings 'newtest.settings'
-Development server is running at http://127.0.0.1:8000/
-Quit the server with CONTROL-C.
-
-这是，用浏览器访问 http://localhost:8000/ 你将看到
-Hello, Django.
-4.2.5. JavaScript版
+### 4.2.5. JavaScript版
 
 现在的JavaScript发展的确飞快，已经不仅在浏览器里可以使用了，这里先简单介绍一下服务器端的node.js的安装与使用。
 
-在Ubuntu下安装node.js、npm与express.js
+**在Ubuntu下安装node.js、npm与express.js**
 
-首先确认GCC编译环境的正确安装，否则请：“apt-get install build-essential”
-$ wget http://nodejs.org/dist/v0.6.15/node-v0.6.15.tar.gz
-$ tar -zxvf node-v0.6.15.tar.gz
-$ cd node-v0.6.15
-$ sudo apt-get install libssl-dev
-$ ./configure
-$ make
-$ sudo make install
-$ node -v
-v0.6.15
-$ curl http://npmjs.org/install.sh | sudo sh
-$ npm -v
-1.1.18
-$ npm install express
-$ vim test.js
-#File Begin
-var app = require('express').createServer();
+	首先确认GCC编译环境的正确安装，否则请：“apt-get install build-essential”
+	$ wget http://nodejs.org/dist/v0.6.15/node-v0.6.15.tar.gz
+	$ tar -zxvf node-v0.6.15.tar.gz
+	$ cd node-v0.6.15
+	$ sudo apt-get install libssl-dev
+	$ ./configure
+	$ make
+	$ sudo make install
+	$ node -v
+	v0.6.15
+	$ curl http://npmjs.org/install.sh | sudo sh
+	$ npm -v
+	1.1.18
+	$ npm install express
+	$ vim test.js
+	#File Begin
+	var app = require('express').createServer();
+	
+	app.get('/', function(req, res){
+	  res.send('Hello World!');
+	});
+	
+	app.listen(3000);
+	#File End
+	$ node test.js
 
-app.get('/', function(req, res){
-  res.send('Hello World!');
-});
+打开浏览器，访问[http://localhost:3000/](http://localhost:3000/) 将看到 Hello World!
 
-app.listen(3000);
-#File End
-$ node test.js
+### 4.2.6. C/C++版
 
-打开浏览器，访问http://localhost:3000/ 将看到
-Hello World!
-4.2.6. C/C++版
-
-因为王越的系列文章《Mac OS X背后的故事》，其中第八章《三好学生Chris Lattner的LLVM编译工具链 》对LLVM的介绍，使我决定尝试把LLVM，作为c语言的hello world项目。
+因为王越的系列文章《Mac OS X背后的故事》，其中第八章《[三好学生Chris Lattner的LLVM编译工具链](http://www.programmer.com.cn/9436/)》对LLVM的介绍，使我决定尝试把LLVM，作为c语言的hello world项目。
 
 说实话，在开源项目中，C语言的各种开源项目的编译安装，都是非常类似的。绝大多数命令都是一下三行：
 
-$ ./configure
-$ make
-$ make install
+	$ ./configure
+	$ make
+	$ make install
 
 当然，在windows下，会麻烦得多。LLVM的安装也非常简单，命令如下：
 
-$ cd where-you-want-llvm-to-live
-$ svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
-$ cd llvm/tools
-$ svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
-$ cd ../projects
-$ svn co http://llvm.org/svn/llvm-project/compiler-rt/trunk compiler-rt
-$ svn co http://llvm.org/svn/llvm-project/test-suite/trunk test-suite
-$ cd ..
-$ mkdir build
-$ cd build
-$ ../configure
-$ make
-$ make check-all
-$ make update
-$ make install
+	$ cd where-you-want-llvm-to-live
+	$ svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
+	$ cd llvm/tools
+	$ svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
+	$ cd ../projects
+	$ svn co http://llvm.org/svn/llvm-project/compiler-rt/trunk compiler-rt
+	$ svn co http://llvm.org/svn/llvm-project/test-suite/trunk test-suite
+	$ cd ..
+	$ mkdir build
+	$ cd build
+	$ ../configure
+	$ make
+	$ make check-all
+	$ make update
+	$ make install
 
 然后，我们可以尝试用LLVM的编译工具链，来编译c语言的代码。
 创建一个文件hello.c
 
-#include <stdio.h>
-
-int main() {
-  printf("hello world\n");
-  return 0;
-}
+	#include <stdio.h>
+	
+	int main() {
+	  printf("hello world\n");
+	  return 0;
+	}
 
 编译hello.c，得到hello
 
-$ clang hello.c -o hello
+	$ clang hello.c -o hello
 
 编译c代码，得到LLVM的bitcode文件。
 
-$ clang -O3 -emit-llvm hello.c -c -o hello.bc
+	$ clang -O3 -emit-llvm hello.c -c -o hello.bc
 
 第一行以普通方式，执行编译好的可执行文件，第二行调用LLVM JIT，命令为lli，来执行LLVM的bitcode。
 
-$ ./hello
-$ lli hello.bc
+	$ ./hello
+	$ lli hello.bc
 
-更多内容可以参考：Getting Started with the LLVM System
+更多内容可以参考：
 
-参考文档 漫谈C语言及如何学习C语言
-4.3. 如何克服可能遇到的困难
+* [Getting Started with the LLVM System](http://llvm.org/docs/GettingStarted.html)
+* [参考文档 漫谈C语言及如何学习C语言](http://sunxiunan.com/?p=1661)
 
-1. 仔细看文档
+## 4.3. 如何克服可能遇到的困难
+
+**1. 仔细看文档**
+ 
 LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation. 2. Read the documentation. 3. Remember that you were warned twice about reading the documentation.
+
 是的，认真的，非常认真的阅读相关文档，是最重要的方法。其他的一切方法，都是排在这个后面的。
-当 然，文档的正确性和完整性，也是可以怀疑的。有很多开源项目，往往存在文档bug、文档版本与代码版本不同步等问题。比如LLVM的安装文档，也并非完全 正确，我到现在都还不明白，在1.2.3.条那么正经的提示之后，他的第8条，只有configure、make、make check-all、make update，居然没有make install！
+
+当然，文档的正确性和完整性，也是可以怀疑的。有很多开源项目，往往存在文档bug、文档版本与代码版本不同步等问题。比如LLVM的安装文档，也并非完全 正确，我到现在都还不明白，在1.2.3.条那么正经的提示之后，他的第8条，只有configure、make、make check-all、make update，居然没有make install！
+
 但是，先看文档，尤其是项目本身的文档，而非二手、三手文档，是必须的第一步。
-2. 注意依赖，注意版本号
+
+**2. 注意依赖，注意版本号**
+
 优秀的安装手册，会提示你各种版本依赖问题。在开始正式安装之前，核对各种相关系统、工具、类库的版本，是非常重要 的。之前我在安装apache tomcat的时候，就发现用java sdk的最新版JDK7，是不能正确编译的。必须将JDK，退回到JDK6.x，才能正确。
+
 说实话，在开源软件安装的时候，估计有60%的问题，都是出在版本错误上。而剩下的40%，多半是看文档不认真的原因。
-3. 仔细看出错提示信息，并且在网上搜索答案
+
+**3. 仔细看出错提示信息，并且在网上搜索答案**
+
 在编译LLVM的时候，我遇到了一个古怪的bug，“collect2: ld terminated with signal 9 [Killed]”完全不理解是怎么会事。只能在Google上找答案，幸好，类似的悲剧也在别人身上发生过。我找到了一个简明扼要的回答：“You probably ran out of memory.”。于是，我重新调整了Ubuntu虚拟机的内存大小，就编译通过了。
+
 事实上，将出错信息的关键一行原文，加上开源项目的名称作为关键词，在google上搜索。通常能够找到相关的答案。
-4. 不要太早钻研细节
+
+**4. 不要太早钻研细节**
+
 因为是完全从源代码开始安装，所以其实可以有比二进制方式安装多得多的选择。比如configure能够配置的各种参数，一开始最好全部选择缺省，过早陷入安装的细节，会分散我们学习的注意力。
-5. 在网上找一找攻略
-有很多前人，愿意将自己的安装步骤仔仔细细的记录下来，从而节约我们大量的时间。找到优质的攻略，是事半功倍之道。但是， 要特别注意攻略提及的软件版本，相关环境。在网上搜索攻略时，也类似。比如：不要简单的搜索“ubuntu apache source install”，而是搜索“ubuntu 10.04 64 apache source install”。这样能够避免照着不同版本的攻略，一个劲的死拼。另外，再一次提醒，不要在百度搜索。在国内的技术圈，有无数的“开发者”，喜欢反复的 转载别人的blog和文章。不但不注明原文来源，甚至连格式、排版都丢失了，内容也难免错漏。简直就是一堆垃圾。而在百度搜索，这种垃圾又特别多，躲都躲 不开。
+
+**5. 在网上找一找攻略**
+
+有很多前人，愿意将自己的安装步骤仔仔细细的记录下来，从而节约我们大量的时间。找到优质的攻略，是事半功倍之道。但是， 要特别注意攻略提及的软件版本，相关环境。在网上搜索攻略时，也类似。比如：不要简单的搜索“ubuntu apache source install”，而是搜索“ubuntu 10.04 64 apache source install”。这样能够避免照着不同版本的攻略，一个劲的死拼。另外，再一次提醒，**不要在百度搜索**。在国内的技术圈，有无数的“开发者”，喜欢反复的转载别人的blog和文章。不但不注明原文来源，甚至连格式、排版都丢失了，内容也难免错漏。简直就是一堆垃圾。而在百度搜索，这种垃圾又特别多，躲都躲不开。
+
 所以，最好是在Google搜索！
-6. 如果很难搞定，不要一条道走到黑，换个方向
+
+**6. 如果很难搞定，不要一条道走到黑，换个方向**
+
 RP问题，是存在的。喘口气，歇一歇，换个方向。试试别的开源项目吧。
+
+[上一章](Select-an-open-source-project.md) | [下一章](Understanding-the-open-source-project.md)
