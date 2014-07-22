@@ -70,9 +70,10 @@
 填入SVN来源URL，直接CheckOut出最新的版本(HEAD revision)，或者选择某个具体的版本(Revision)，选择CheckOut的目录即可。
 
 如果你在linux/mac平台下，那么命令行会非常方便：
-> svn checkout http://SiteDomain/path/ProjectName 获取最新的版本
-> svn checkout http://SiteDomain/path/ProjectName --revision {....} 获取某个版本
-> svn checkout http://SiteDomain/path/ProjectName/tags/Release_x.xx 获取上某某tag的具体发行版本
+
+    svn checkout http://SiteDomain/path/ProjectName 获取最新的版本
+    svn checkout http://SiteDomain/path/ProjectName --revision {....} 获取某个版本
+    svn checkout http://SiteDomain/path/ProjectName/tags/Release_x.xx 获取上某某tag的具体发行版本
 
 **Git如何获取代码**
 
@@ -82,13 +83,13 @@
 
 然后，获取代码也极其简单：
 
-> git clone GitRepoURL
+	git clone GitRepoURL
 
 **Mercurial如何获取代码**
 
 正如GitHub是主打Git的开源托管平台，[BitBucket](https://bitbucket.org/)则是一个主打Mercurial的开源托管平台。因此，我们可以在这里找到关于Mercurial的操作指南。而因为Git的飞速发展，现在BitBucket也开始同时支持Git，所以在[bitbucket 101](http://confluence.atlassian.com/display/BITBUCKET/Set+up+Git+and+Mercurial)，可以同时看到两种工具的安装指南。
 
-> hg clone HgRepoURL
+	hg clone HgRepoURL
 
 即可获得Mercurial仓库的完整副本。（Mercurial又简称为hg）
 
@@ -122,25 +123,25 @@
 
 在Linux/Mac环境下 推荐安装[RVM](http://beginrescueend.com/)或者[rbenv](http://rbenv.org/)
 
-> $ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
-> ubuntu下，将下两行中的.bash_profile改为.profile
-> $ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # > Load RVM function' >> ~/.bash_profile
-> $ source ~/.bash_profile
-> $ rvm requirements
-> 根据提示，安装其他必要的软件包
-> $ rvm install 1.9.3
-> $ rvm use 1.9.3
+	$ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+	ubuntu下，将下两行中的.bash_profile改为.profile
+	$ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # > Load RVM function' >> ~/.bash_profile
+	$ source ~/.bash_profile
+	$ rvm requirements
+	根据提示，安装其他必要的软件包
+	$ rvm install 1.9.3
+	$ rvm use 1.9.3
 
 安装一个开源项目
 
-> $ gem install sinatra
+	$ gem install sinatra
 
 搞定收工。。。
 
 如果没有安装过rubygems这个包，则会困难一些。首先在[RubyGems](> )这个页面挑一个文件格式下载，并解压缩。然后：
 
-> $ cd directory
-> $ ruby setup.rb
+	$ cd directory
+	$ ruby setup.rb
 
 搞定收工。。。
 
