@@ -106,7 +106,7 @@ UML是一种软件建模语言，全称为：统一建模语言（UML，Unified 
 
 我非常期待，他能够就这个问题，谈到更多的心得。在我看来，在阅读源代码的时候，不断记录，在脑海里形成整个项目的全景图像，是非常有帮助的。
 
-关于UML的定义，可以参考维基百科： [UML](http://zh.wikipedia.org/wiki/UML)以下引用一段：
+关于UML的定义，可以参考维基百科： [UML](http://zh.wikipedia.org/wiki/UML)，以下引用一段：
 
 > 统一建模语言（UML，Unified Modeling Language）是非专利的第三代建模和规约语言。UML是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的 制品的开放方法。UML展现了一系列最佳工程实践，这些最佳实践在对大规模，复杂系统进行建模方面，特别是在软件架构层次已经被验证有效。
 > 
@@ -194,20 +194,23 @@ Netbeans IDE 7.0 调试PHP的程序片段
 在一个宽屏的显示器里，同时显示源代码树、对象结构、当前执行到的代码行、当前的各种变量值、调用序列、各个线程、输出内容等等等等，还是很爽的。
 当然，要使得IDE能够调试一个开源项目，还是有很多琐碎的事情需要处理。例如：
 
-    如何在IDE中打开一个项目
-    如何在IDE中配置一个项目的依赖项
-    如何在IDE中编译并运行一个项目
-    如何在IDE中设置断点
+* 如何在IDE中打开一个项目
+* 如何在IDE中配置一个项目的依赖项
+* 如何在IDE中编译并运行一个项目
+* 如何在IDE中设置断点
 
 这些如何，因语言、平台、IDE、版本、具体项目的不同，而有所区别。这里没法给出一个周到全面的解决方案，但是可以给一些搜索方面的建议：
 
-    假设要在Netbeans 7中打开一个开源的Java项目，可以搜索“how to open java project in netbeans 7”，然后我们可以找到一些文档：
-        http://netbeans.org/kb/docs/java/project-setup.html
-        http://stackoverflow.com/questions/4382619/how-can-i-open-non-netbeans-java-project-using-netbeans
+* 假设要在Netbeans 7中打开一个开源的Java项目，可以搜索“how to open java project in netbeans 7”，然后我们可以找到一些文档：
+    * http://netbeans.org/kb/docs/java/project-setup.html
+    * http://stackoverflow.com/questions/4382619/how-can-i-open-non-netbeans-java-project-using-netbeans
 
 当然，一定会有各种让人挠头的问题，各位多多尝试吧。另外推荐一本书，是张银奎写的《软件调试》，大部头。但是的确是一本好书！
+
 http://book.douban.com/subject/3088353/
-5.2.3. 抛出异常
+
+### 5.2.3. 抛出异常
+
 有很多种语言，都支持异常处理，以及手动抛出异常。在特定的位置，将整个调用序列打印出来，可以方便我们快速的找到整个项目，是从何处开始，又是如何一层一层的调用，最终到达我们设置抛出异常的位置的。
 
 在Java语言中，我们可以这么写：(new Exception()).printStackTrace();
