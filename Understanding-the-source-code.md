@@ -41,14 +41,14 @@
 举例之一：rails是一个著名的ruby开源项目。我们访问它的[github主页]（https://github.com/rails/rails），就可以看到这个项目的源代码结构。
 
 * 首先需要选择查看某一个稳定版本，比如3.2版
-    * [https://github.com/rails/rails/tree/3-2-stable](https://github.com/rails/rails/tree/3-2-stable)
+    * https://github.com/rails/rails/tree/3-2-stable
 * 然后阅读install.rb文件
-    * [https://github.com/rails/rails/blob/3-2-stable/install.rb](https://github.com/rails/rails/blob/3-2-stable/install.rb)
+    * https://github.com/rails/rails/blob/3-2-stable/install.rb
 * 我们可以看到的内容，主要包含两大部分：
     * 编译rails的依赖包：activesupport、activemodel、activerecord、activeresource、actionpack、actionmailer、railties。这些都是rails项目自己开发的包
     * 然后再编译rails本身
 * rails本身的包描述文件是：rails.gemspec
-    * [https://github.com/rails/rails/blob/3-2-stable/rails.gemspec](https://github.com/rails/rails/blob/3-2-stable/rails.gemspec)
+    * https://github.com/rails/rails/blob/3-2-stable/rails.gemspec
 * 通过阅读rails.gemspec，我们可以了解到，rails这个项目，依赖的包还包括：bundler、sprockets-rails。
     * 事实上，通过阅读activesupport等一系列包的.gemspec文件，我们还会发现更多的外部依赖包。
 
@@ -240,93 +240,104 @@ http://book.douban.com/subject/3088353/
             at org.jruby.Main.main(Main.java:84) 
 
 以上信息，清楚的现实了某某源文件的某某行，发生了一个调用，进而在下一个源文件中的某个函数，被调用了。于是，我们就可以从抛出异常的代码，开始逐级回溯，阅读相应的代码片段。
-5.2.4. 修改代码，破坏性尝试
+
+### 5.2.4. 修改代码，破坏性尝试
 
 在初步理解了项目代码之后，可以尝试做一些简单的修改，看看会发生什么。
 
-    编译错误
+* 编译错误
 
 静态类型的语言，在这方面有更多优势，通过编译时给出的错误提示，你可以知道自己改坏了什么，以及为什么它被改坏了。比较令人头痛的，是用了各种复杂的模板语法的C++语言，这时候编译器可能会给出一些令人莫名其妙的报错信息，那你就抓瞎了。不过，开源初学者，一上手就去啃复杂的C++代码，也很难说是明智的选择。
 
-    运行时报错
+* 运行时报错
 
 与编译期报错类似，你也可以通过阅读一堆一堆的报错信息，了解代码是如何运作的，以及为什么原来不报错，现在就开始报错了。
 不过，触发运行时报错，可能会有些困难，这涉及到你修改的代码，是处于主线还是支线位置，以及有多少相关功能，依赖于你所修改的代码。
 
-    功能失效
+* 功能失效
 
 可以尝试注释掉一些代码，看看会发生什么事情，比如某个功能按钮失灵甚至消失。当然，对于JavaScript代码，我们常常会喜欢在某些位置加上alert，看看什么时候会弹出一个消息提示框，缺什么事都没有完成。
 
-    走走捷径
+* 走走捷径
 
 我们常常会看到的一类代码，是长期发展完善后的产物。从接收消息，要处理某某事件开始，到真正去完成某某功能，其间还做了很多的额外工作，比如数据校验，纪录日志，触发其他消息等等，将这些代码全部注释掉，大多数功能都还是正常的，但是，会出各种意外，可以进一步做出各种尝试。（详见5.3. 主线与支线）
 
-5.2.5. 工具
+### 5.2.5. 工具
+
 有很多辅助代码阅读工具，简单的介绍一些
 
-    IDE类
+* IDE类
 
 既然是IDE，自然大多数都已经集成了相当不错的代码阅读功能，索引，反查，标注，自由跳转，通常都应有尽有。比较好的IDE，有Eclipse、Netbeans、IntelliJ IDEA、Visual Studio(Express)等等，各种面向专门语言的IDE还有很多，可以自行在Google搜索“Best XXX IDE”。
 
-进阶阅读：18 个最佳代码编辑器/IDE推荐
+进阶阅读：[18 个最佳代码编辑器/IDE推荐](http://www.iteye.com/news/24235)
 
-    传统神器＋超牛插件
+* 传统神器＋超牛插件
 
 所谓传统神器，自然是指Emacs与VIM，这两款神器不能简单的以是否IDE来划分。他们都带有众多的插件，可以扩展出惊人的灵活性。
 
 推荐阅读两篇文章：
-Emacs和它的朋友们——阅读源代码篇
-自己动手定制一个高效阅读源代码的vim
+[Emacs和它的朋友们——阅读源代码篇](http://baohaojun.github.com/reading-source-code-cn)
+[自己动手定制一个高效阅读源代码的vim](http://zqwt.012.blog.163.com/blog/static/1204468420114194264789/)
 
-    专业工具
+* 专业工具
 
 专业工具，通常也是由商业公司开发的收费软件，人家要挣钱，自然也要有拿得出手的好东西。这里推荐两款软件，更多介绍，请自行搜索相关介绍与教程：
-Understand
-source insight
 
-    软件工程相关工具
+* [Understand](http://www.scitools.com/index.php)
+* [source insight](http://www.sourceinsight.com/)
+
+* 软件工程相关工具
 
 所谓软件工程的相关工具，主要是一些与面向对象概念相关的UML工具，比如IBM的Rational Rose、Sybase的Power Desinger、还有Borland的Together，都是大公司出品的一些大家伙。可以将面向对象语言（主要是Java）的项目，转换输出成为UML的各种图，有一定的参考价值，玩玩也不错。
-5.3. 主线与支线
+
+## 5.3. 主线与支线
+
 一个开源项目，我们总可以从中找到主要的功能与次要的、辅助的功能。一个系统从启动开始，到完成最核心的功能、任务，最后成功结束，就是一条主线。而各种可能达到的次要功能，就是支线。
 
 一个项目在最初创建的时候，总有一组想要实现的核心功能，其他都是次要的目标。比如：我做一个BBS，要让用户能够登录，发言（或者回复评论他人的发言），退出登录。这就是主线。而：设置用户头像，版主的各种权限与管理功能，顶、 踩功能，帖子内投票，站内短信等等等等，都可以算是次要功能。
 
 在一个项目中，首先清理出主线以及其相关的代码，是一个非常必要的工作，主要的入手处，是项目的Readme文档。另外，对于某一领域的基础知识，也非常必要。
-5.3.1. 寻找入口
+
+### 5.3.1. 寻找入口
+
 看一堆代码，总要找一个入手处。而不同的项目，入手处是不一样的。举几个例子：
 
-    一个满足MVC模式的Web项目，通常会有多个Controller，这些Controller就是代码的入口处。如何才能找到某个访问路径对应的Controller呢？这就需要去看Route的定义了。
-    一个较为普通的C/C++/Java项目，通常会有一个或者好几个含有main()函数的文件，那个就是代码的入口处。
-    Make、NMake、Rake、Ant、Maven等等，都是各种不同语言与项目，可能会用到的批处理任务管理工具，有很多的项目，是以这些配置文件中描述的文件，作为入口的，这自然需要理解相应的配置文件的语法规则。
-    5.2.3节中，描述的抛出异常的方法，也是找到入口的办法。
+* 一个满足MVC模式的Web项目，通常会有多个Controller，这些Controller就是代码的入口处。如何才能找到某个访问路径对应的Controller呢？这就需要去看Route的定义了。
+* 一个较为普通的C/C++/Java项目，通常会有一个或者好几个含有main()函数的文件，那个就是代码的入口处。
+* Make、NMake、Rake、Ant、Maven等等，都是各种不同语言与项目，可能会用到的批处理任务管理工具，有很多的项目，是以这些配置文件中描述的文件，作为入口的，这自然需要理解相应的配置文件的语法规则。
+* 5.2.3节中，描述的抛出异常的方法，也是找到入口的办法。
 
-5.3.2. 跟踪关键流程
+### 5.3.2. 跟踪关键流程
+
 所谓跟踪关键流程，核心要义，就是学会使用调试器。包括集成开发环境（IDE）与命令行方式的调试器（例如GDB）。
 
  无论何种调试工具，其基本的用法都是一致的：
 
-    设置断点
-    运行时中断
-    单步跟踪
-    查看或修改内存中的各种变量
+* 设置断点
+* 运行时中断
+* 单步跟踪
+* 查看或修改内存中的各种变量
 
 在下图所示的Java代码debug截图中：
 
-    我们将断点设置在CookieExample.java的第43行（红色行）。
-    以debug方式运行后，代码将会停留在第43行。
-    我们连续按六次F8，表示代码向下执行六行，目前停留在第51行（绿色行）。
-    在窗口的下方，我们可以看到当前内存中的各种变量，例如title这个变量，就是String类型，值等于："Cookies Example"
-    在屏幕的左下角，我们可以看到这个java源文件包含两个方法与一个实例变量。
-    在屏幕的左上角，我们可以看到这个项目执行的调用序列，撇开那些外部框架的代码，我们可以认为是ExampleFilter.java的doFilter方法在第101行时调用了CookieExample.java中的doGet方法。
+* 我们将断点设置在CookieExample.java的第43行（红色行）。
+* 以debug方式运行后，代码将会停留在第43行。
+* 我们连续按六次F8，表示代码向下执行六行，目前停留在第51行（绿色行）。
+* 在窗口的下方，我们可以看到当前内存中的各种变量，例如title这个变量，就是String类型，值等于："Cookies Example"
+* 在屏幕的左下角，我们可以看到这个java源文件包含两个方法与一个实例变量。
+* 在屏幕的左上角，我们可以看到这个项目执行的调用序列，撇开那些外部框架的代码，我们可以认为是ExampleFilter.java的doFilter方法在第101行时调用了CookieExample.java中的doGet方法。
 
+![](images/debug.png)
 
 最笨的办法，就是一行一行的跟着代码的执行，反复的观察并理解，这些代码究竟做了哪些事情。随着对代码理解的加深，我们可以每次多执行几行，跳过一些已经没有疑问的代码，在更多的地方设置断点，甚至可以在运行时，试着修改某些变量的值，看看会发生什么变化。
 
 跟踪关键流程，最容易犯的错误，就是单步跟踪时，迷失在代码的丛林里，晕头转向。及时识别出不太重要的代码（比如，试着注释掉一些代码段，看看会不会造成太大的影响），并且跳过这些段落，是保证有效追踪的关键。
 
-说实话，要将代码调试这个事情讲解清楚，值得写整整一本书，有兴趣深入学习的同学，可以找一些专门的书籍来看，例如：《软件调试的艺术》、《Debug Hacks中文版》
-5.3.3. 理解插件体系
+说实话，要将代码调试这个事情讲解清楚，值得写整整一本书，有兴趣深入学习的同学，可以找一些专门的书籍来看，例如：《[软件调试的艺术](http://book.douban.com/subject/4111413/)》、《[Debug Hacks中文版](http://book.douban.com/subject/6799412/)》
+
+### 5.3.3. 理解插件体系
+
 在较为现代的开源项目之中，常常会出现某种插件体系结构，整个系统可以分为三个主要的部分：核心功能+插件管理框架+扩展插件。
 
 通过这样的体系结构，开源项目的主创人员，可以集中精力实现自己设想中的功能，而将其他扩展功能的开放任务，交给有兴趣的外部开发者，一方面可以吸引更多的人来参与，另一方面，也可以有效的隔离外部开发者对于核心架构的干扰。
@@ -335,9 +346,10 @@ source insight
 
 不同的语言，不同的开源项目，可能具有不同的插件体系，较为著名的，有Eclipse的插件体系OSGi、FireFox的插件体系、jQuery的插件体系、Redmine的插件体系以及Joomla！的插件体系等等。
 
-在维基百科上有一个关于插件的概要介绍：http://en.wikipedia.org/wiki/Plug-in_(computing)
+在维基百科上有一个关于插件的概要介绍：
+[http://en.wikipedia.org/wiki/Plug-in_(computing)](http://en.wikipedia.org/wiki/Plug-in_(computing))
 
-要理解某个项目的插件体系，通常需要找到专门的介绍文档，仔细阅读。例如Java的OSGi，已经非常的复杂，值得专门写N本书来深入介绍：豆瓣搜索OSGi的结果
+要理解某个项目的插件体系，通常需要找到专门的介绍文档，仔细阅读。例如Java的OSGi，已经非常的复杂，值得专门写N本书来深入介绍：[豆瓣搜索OSGi的结果](http://www.douban.com/search?cat=1001&q=OSGi)
 
 这里做一些简单的介绍的，是在不看文档的情况下，试着从代码寻找答案的初步方法。以Joomla!CMS为例：
 
@@ -345,31 +357,35 @@ source insight
 
 首先查看components目录，里面有一堆的以com_开头的文件夹，看起来就是每一个文件夹，是一个组件。进入其中的一个文件夹：com_banners。打开banners.php，发现有三行关键代码：
 
-$controller = JControllerLegacy::getInstance('Banners');
-$controller->execute(JFactory::getApplication()->input->get('task'));
-$controller->redirect();
+    $controller = JControllerLegacy::getInstance('Banners');
+    $controller->execute(JFactory::getApplication()->input->get('task'));
+    $controller->redirect();
 
 其中Legacy这个单词，引起了我的注意：看来component是一种遗留类型的插件，每个插件，也以MVC的风格写成。在源文件里搜索“class JControllerLegacy”，于是发现了一组文件：
-/libraries/legacy/controller/admin.php
-/libraries/legacy/controller/form.php
-/libraries/legacy/controller/legacy.php
+
+    /libraries/legacy/controller/admin.php
+    /libraries/legacy/controller/form.php
+    /libraries/legacy/controller/legacy.php
+
 看来都是用来处理遗留的扩展系统的controller的。
 
 继续阅读com_banners里的代码，在models目录下，有一个banner.php文件，在其中我们又看到了一行值得注意的代码：
 class BannersModelBanner extends JModelLegacy
 看来是与处理遗留扩展系统中的controller类似，用来处理model的。在源文件里搜索“class JModelLegacy”，于是发现了另一组文件：
-/libraries/legacy/model/admin.php
-/libraries/legacy/model/form.php
-/libraries/legacy/model/item.php
-/libraries/legacy/model/legacy.php
-/libraries/legacy/model/list.php
+
+    /libraries/legacy/model/admin.php
+    /libraries/legacy/model/form.php
+    /libraries/legacy/model/item.php
+    /libraries/legacy/model/legacy.php
+    /libraries/legacy/model/list.php
 
 从这8个文件入手，我想就可以看明白component的扩展机制了。
 
 在看modules目录下的文件，也是一堆以mod_开头的文件夹，打开其中一个mod_banners/mod_banners.php
 
 也能发现一行值得注意的代码：
-require JModuleHelper::getLayoutPath('mod_banners', $params->get('layout', 'default'));
+
+    require JModuleHelper::getLayoutPath('mod_banners', $params->get('layout', 'default'));
 
 在源文件中搜索“class JModuleHelper”，就会另外发现一个文件：
 /libraries/legacy/module/helper.php
@@ -379,23 +395,28 @@ require JModuleHelper::getLayoutPath('mod_banners', $params->get('layout', 'defa
 最后看看plugins下的代码，与component和module不同，plugins是可以分层的，在authentication目录下，还有gmail、joomla、ldap三个目录，每个目录下，又有两个关键的文件，而且都与目录名（插件名）相同，gmail.php、gmail.xml。看来一个是gmail认证的实现文件，一个是这个插件的配置文件。
 
 在源文件中搜索“class JPlugin”，可以发现两个文件：
-/libraries/joomla/plugin/helper.php
-/libraries/joomla/plugin/plugin.php
+
+    /libraries/joomla/plugin/helper.php
+    /libraries/joomla/plugin/plugin.php
 
 配合这两个文件，加上插件目录下的.php与.xml文件，应该就可以较为清楚的理解plugins的实现机制了。
-5.4. 外围代码
-5.4.1. 必须存在的外围功能
+
+## 5.4. 外围代码
+
+### 5.4.1. 必须存在的外围功能
+
 当我们阅读一个开源项目的代码时，当时首先是找到主线代码，然后努力去理解其核心的内容。但是，一个完整的开源项目，必须存在很多外围的功能与代码，除了文档之外，还有其他一些必不可少的内容。
 
-    例如，一个C/C++的开源项目，通常会有的Makefile文件，已经较为正规一点的项目都会提供的configure脚本文件。没有这样的文件，想要自己编译整个项目，几乎是不可能的。
-    再比如：一个项目如果与数据库相关，必备的数据库建表、初始化数据灯工作，就得有一些工具来辅助。最糟糕的，是写一个txt文档，让你照着做，好一点的是提供一个或一组SQL，供人执行，这方面Rails做得非常的到位，我们通常可以在一个Rails的开源项目下，找到一个/db/migrate的目录，这里面提供的脚本，是专门用于数据迁移的。
-    一些好的开源项目，会允许多种不同的运行模式，例如在运行时加上debug参数，就能够输出更多的调试信息，供使用者查找可能存在的问题。在阅读理解代码的时候，这些调试代码也是辅助理解开源项目的好方法。
-    依赖管理也是一个麻烦的事情，这方面有两个较为好的榜样，Ruby的开源项目往往会在根目录下附带一个Gemfile文件，下载源码之后，只要再执行一个bundle install即可。Node.JS也有类似的好习惯，根目录下的package.json文件，就是类似的定义包依赖的文件，只要执行npm install，就万事大吉。
-    负责任的开源项目，在提供源代码之前，就已经做了充分的测试，而且通常是按照单元测试的规范来做的。对于C/C++项目，我们在make之后，一般可以make test，或者对于Java项目，我们可以ant test。对于ruby项目，我们可以rake test或者rspec xxx.rb
-    当然，负责任的开源框架，通常还会提供demo与example，连带单元测试的介绍，我们都会再下面的两节，详细展开。
+* 例如，一个C/C++的开源项目，通常会有的Makefile文件，已经较为正规一点的项目都会提供的configure脚本文件。没有这样的文件，想要自己编译整个项目，几乎是不可能的。
+* 再比如：一个项目如果与数据库相关，必备的数据库建表、初始化数据灯工作，就得有一些工具来辅助。最糟糕的，是写一个txt文档，让你照着做，好一点的是提供一个或一组SQL，供人执行，这方面Rails做得非常的到位，我们通常可以在一个Rails的开源项目下，找到一个/db/migrate的目录，这里面提供的脚本，是专门用于数据迁移的。
+* 一些好的开源项目，会允许多种不同的运行模式，例如在运行时加上debug参数，就能够输出更多的调试信息，供使用者查找可能存在的问题。在阅读理解代码的时候，这些调试代码也是辅助理解开源项目的好方法。
+* 依赖管理也是一个麻烦的事情，这方面有两个较为好的榜样，Ruby的开源项目往往会在根目录下附带一个Gemfile文件，下载源码之后，只要再执行一个bundle install即可。Node.JS也有类似的好习惯，根目录下的package.json文件，就是类似的定义包依赖的文件，只要执行npm install，就万事大吉。
+* 负责任的开源项目，在提供源代码之前，就已经做了充分的测试，而且通常是按照单元测试的规范来做的。对于C/C++项目，我们在make之后，一般可以make test，或者对于Java项目，我们可以ant test。对于ruby项目，我们可以rake test或者rspec xxx.rb
+* 当然，负责任的开源框架，通常还会提供demo与example，连带单元测试的介绍，我们都会再下面的两节，详细展开。
 
 
-5.4.2. 单元测试
+### 5.4.2. 单元测试
+
 在软件开发的各种最佳实践中，我认为最具有其他性的，是“测试驱动开发（TDD）”，而最容易误导开发者的，则是“设计模式（DP）”，在阅读开源项目的代码时，如果我看到编写完整而全面的单元测试代码，我自然会对整个项目的质量高看一眼。而如果我在源代码里看到了充斥着陈腐味道的各种设计模式的名字时，我会猜测这是一个“玩具项目”——也就是那种经验不足的开发，学习练手的项目。
 
 单元测试，也有高下之分，好的单元测试，会测试关键逻辑与核心算法；而敷衍了事的单元测试，则会去测试get/set这样的代码，看起来一堆assert，却毫无价值。
@@ -404,7 +425,8 @@ require JModuleHelper::getLayoutPath('mod_banners', $params->get('layout', 'defa
 
 再者，好的单元测试的代码，会特别注重使用场景的构建：某个功能点，在什么情况下，被预期会做出什么样的反应。而构建使用场景的代码，主要集中在startUp这样的函数里，以及各种Mock对象的构造之中，因此，关注startUp与Mock创建，而不是仅仅去看一个一个的testXXX()方法，会更容易理解开发者的意图。
 
-5.4.3. demo/example
+### 5.4.3. demo/example
+
 我们可以简单的将开源项目划分成两类，一类是给最终用户使用的项目；一类是基于这个项目，可以继续做开发的。
 对于第二类项目，有可以分为几类：开发框架（各种Web MVC框架）、基础服务（MySQL、Message Queue）、可以被插件扩展的软件（FIrefox、Chrome）、编程语言（Ruby、Python、NodeJS）、模板引擎（SaSS、Less、HAML）等等。
 
@@ -416,7 +438,7 @@ require JModuleHelper::getLayoutPath('mod_banners', $params->get('layout', 'defa
 
 至于如何阅读理解这些demo，其实就是将之看成一个小型的开源项目，然后应用本章的各种方法而已，在此不再赘述。
 
-5.5. 知其所以然
+## 5.5. 知其所以然
 
 有一句俗语叫做：“知其然，更要知其所以然”。用在任何学习科目上，几乎都是恰当的。本章叫做《理解开源项目》，而之前的4个小节，可以说都是属于“知其然”的功夫。如何才能知其所以然呢？
 所以然包括哪些内容？
@@ -430,23 +452,26 @@ require JModuleHelper::getLayoutPath('mod_banners', $params->get('layout', 'defa
 所以然还包括的一些内容：
 
 个人偏好 开源作者也是普通人，他们有很多观点和取舍，未必能够说服他人，只能算是他们自己的偏好。而他们将自己的偏好表达在代码里，有些时候，我们能够很容易理解 （因为我们也是这样想的）。有些时候，我们就会感觉很不解，而且，常常会发生的一类故事就是：某某大牛写了一个开源项目，另一个大牛有感觉不爽的地方。提 了意见建议，人家又不肯改。结果，这另外一个大牛，就一怒之下，另起炉灶，写了一个新的开源项目。
-历史原因 有一篇很有意思的文章，解释了《为什么Vim使用HJKL键作为方向键 》，其实原因很简单。当Bill Joy创建Vi文本编辑器时，他使用的机器机器是ADM-3A终端机，这机器就是把HJKL键作为方向键的。
+历史原因 有一篇很有意思的文章，解释了《[为什么Vim使用HJKL键作为方向键](http://linux.cn/article-542-1.html)》，其实原因很简单。当Bill Joy创建Vi文本编辑器时，他使用的机器机器是ADM-3A终端机，这机器就是把HJKL键作为方向键的。
 
-如何搞清楚这些所以然呢？
+![](images/keyboard.jpg)
+
+**如何搞清楚这些所以然呢？**
 
 思考 当然，这种思考应该伴随我们“通过开源项目，学习软件开发”的始终。但是，从方法论来说，可以尝试从以下一些角度出发来思考：
 
-    如果我来做一个，会如何去做？
-    如果能够对这个项目做减法，我可以去掉那些模块和代码？真的能够去掉吗？
-    通过阅读单元测试，理解开发者的设计思路。
-    尝试做一些破坏或者修改，来理解项目中的那些做法。这个在下一章会更详细的讨论。
+* 如果我来做一个，会如何去做？
+* 如果能够对这个项目做减法，我可以去掉那些模块和代码？真的能够去掉吗？
+* 通过阅读单元测试，理解开发者的设计思路。
+* 尝试做一些破坏或者修改，来理解项目中的那些做法。这个在下一章会更详细的讨论。
 
-讨论 到开源社区去，发起一些讨论。当然，前提是你必须经过足够深入的思考。不要尽是问一些傻问题
-向作者提问 与上面的讨论类似，前提是要先思考。当然，还有一个讨巧的办法，你可以提出：翻译这个开源项目的英文文档，然后，对方当然会很高兴——国际化了嘛。然后，你可以在翻译的过程中，提出各种各样的问题。。。
-阅读指南 有些著名的开源项目，本身也非常复杂，所以会有一些文档与书籍：linux内核代码分析、MySQL源码解读、PHP源码分析等等。如果有心学习这样的大 型开源项目，这种入门指南，也是很有价值的。但是，这毕竟是别人嚼过的饭，肯定不如自己去啃来的香。所以，还是回到那句老话，源代码才是最有营养的。
-参考文档
+**讨论** 到开源社区去，发起一些讨论。当然，前提是你必须经过足够深入的思考。不要尽是问一些傻问题
+**向作者提问** 与上面的讨论类似，前提是要先思考。当然，还有一个讨巧的办法，你可以提出：翻译这个开源项目的英文文档，然后，对方当然会很高兴——国际化了嘛。然后，你可以在翻译的过程中，提出各种各样的问题。。。
+**阅读指南** 有些著名的开源项目，本身也非常复杂，所以会有一些文档与书籍：linux内核代码分析、MySQL源码解读、PHP源码分析等等。如果有心学习这样的大 型开源项目，这种入门指南，也是很有价值的。但是，这毕竟是别人嚼过的饭，肯定不如自己去啃来的香。所以，还是回到那句老话，源代码才是最有营养的。
 
-    看源代码那些事
-    Tomcat7调试运行环境搭建与源代码分析入门
-    Redis代码阅读
-    通过修改JRuby，给我的ruby代码加密 
+**参考文档**
+
+* [看源代码那些事](http://zhh2009.iteye.com/blog/1011122)
+* [Tomcat7调试运行环境搭建与源代码分析入门](http://zhh2009.iteye.com/blog/1557891)
+* [Redis代码阅读](http://www.iteye.com/blogs/subjects/olylakers)
+* [通过修改JRuby，给我的ruby代码加密](http://working-on-opensource.group.iteye.com/group/wiki/1332-by-modifying-the-jruby-given-to-me-by-ruby-code-encryption)
