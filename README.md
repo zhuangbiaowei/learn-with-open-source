@@ -44,7 +44,7 @@
     1. JavaScript版
     1. C/C++版
   1. 如何克服可能遇到的困难
-1. [理解开源项目](Understanding-the-open-source-project.md)
+1. [理解源代码](Understanding-the-source-code.md)
   1. 静态理解
     1. 目录结构
     1. 包名与文件名
