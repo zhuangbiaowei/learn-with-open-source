@@ -190,6 +190,7 @@ PPT/Slide/PDF：这种属于某次技术会议上的演讲稿，如果能够配�
 
 * [Learn code the hard way](http://learncodethehardway.org/)
 * [《笨办法学 Python 》在线中文版](http://readthedocs.org/docs/learn-python-the-hard-way-zh_cn-translation/en/latest/)
+* [Python初学者（零基础学习Python、Python入门）书籍、视频、资料、社区推荐](https://github.com/Yixiaohan/codeparkshare)
 
 ### 熟练掌握搜索引擎的使用
 

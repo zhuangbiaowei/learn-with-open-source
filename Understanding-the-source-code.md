@@ -477,3 +477,5 @@ class BannersModelBanner extends JModelLegacy
 * [Tomcat7调试运行环境搭建与源代码分析入门](http://zhh2009.iteye.com/blog/1557891)
 * [Redis代码阅读](http://www.iteye.com/blogs/subjects/olylakers)
 * [通过修改JRuby，给我的ruby代码加密](http://working-on-opensource.group.iteye.com/group/wiki/1332-by-modifying-the-jruby-given-to-me-by-ruby-code-encryption)
+
+[上一章](Hello-world.md) | [下一章](Modify-the-open-source-project.md)
