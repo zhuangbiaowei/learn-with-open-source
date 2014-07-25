@@ -43,14 +43,10 @@ Google的BigTable论文，Amazon的Dynamo论文开启了目前火热的云计算
 ### 谷歌编程之夏(Google Summer of Code)
 
 我个人觉得GSoC是一个寻找开源项目的好地方。原因有以下几点：
-1.GSoC有一个历年来的参与者列表0，这个列表中的有各种各样的开源组织可以让想参与的人挑选（今年的列表上有180个组织）。
+1.GSoC有一个[历年来的参与者列表](http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012)([http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012](http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012))，这个列表中的有各种各样的开源组织可以让想参与的人挑选（今年的列表上有180个组织）。
 2.参与者列表上的组织是经过一定的审核才选出来的，选拨出来的组织一般质量比较好，社区活跃度也很高。
-3.列表上的组织为了吸引参加人员，一般在项目的主页上会有专门的wiki为参加人员导航(比如这个DragonFlyBSD项目1)，很适合新手快速了解这个项目。
+3.列表上的组织为了吸引参加人员，一般在项目的主页上会有专门的wiki为参加人员导航(比如这个[DragonFlyBSD项目](http://www.dragonflybsd.org/docs/developer/gsoc2012student/)([http://www.dragonflybsd.org/docs/developer/gsoc2012student/](http://www.dragonflybsd.org/docs/developer/gsoc2012student/)))，很适合新手快速了解这个项目。
 我想即使无法参加GSoC本身，通过GSoC的预热也是一个很不错的机会，可以让想要参与开源项目的人有一个很好的入口。
-
-链接:
-* [http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012](http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012)
-* [http://www.dragonflybsd.org/docs/developer/gsoc2012student/](http://www.dragonflybsd.org/docs/developer/gsoc2012student/)
 
 注：本小节来自于Ashi的邮件，在此表示感谢！
 
