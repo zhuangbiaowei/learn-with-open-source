@@ -22,3 +22,38 @@
 
 这是唯一的修改，我们可以在浏览器里打开index.html，看看效果。
 ![](images/2048-1.png)
+每次出来的方块，的确是朝代名称了，但是加在一起之后，却全都变成了2。
+
+还是在game_manager.js，我们发现了如下一段代码：
+
+    var merged = new Tile(positions.next, tile.value * 2);
+    merged.mergedFrom = [tile, next];
+    
+    self.grid.insertTile(merged);
+    self.grid.removeTile(tile);
+    
+    // Converge the two tiles' positions
+    tile.updatePosition(positions.next);
+    
+    // Update the score
+    self.score += merged.value;
+    
+    // The mighty 2048 tile
+    if (merged.value === 2048) self.won = true;
+    
+看来这就是我们要修改的关键所在了。`tile.value`的值现在是一个字符串，所以不能简单的乘以2，我们可以先找到它在NameArray里的位置，然后取他的下一个值。
+
+    var pos =NameArray.indexOf(tile.value);
+    var merged = new Tile(positions.next, NameArray[pos+1]);
+
+另外，`merged.value`也不能直接加到`self.score`里去了，要改成:
+
+    now_value=Math.pow(2,pos+2);
+    self.score += now_value;
+    if (now_value === 2048) self.won = true;
+    
+再运行一下看看，发现了一些丑陋的bug。
+![](images/2048-2.png)
+
+1. 颜色不对，不同的朝代应该有不同的颜色
+2. 字体大小不对，两个字的朝代，有一个字就到下面去了
