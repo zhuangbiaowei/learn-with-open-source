@@ -218,6 +218,7 @@
 ### 4.2.4. Python版
 
 **在Ubuntu上安装Python Webpy**
+
 	$ sudo easy_install web.py
 	$ python
 	  Python 2.7.5 (default, Mar  9 2014, 22:15:05)
@@ -226,6 +227,7 @@
    	  >>> import web
 
 到这一步，Webpy就算是安装完成了。太简单了，我们还得再用这个框架干点什么。
+
 	$ cat hello.py
 	#!/bin/env python
 	#-*- coding:utf-8 -*-
