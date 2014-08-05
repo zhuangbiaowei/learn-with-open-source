@@ -217,47 +217,34 @@
 
 ### 4.2.4. Python版
 
-**在Ubuntu上安装Python Django**
-
-	$ wget https://www.djangoproject.com/m/releases/1.4/Django-1.4.tar.gz
-	$ tar -zxvf Django-1.4.tar.gz
-	$ cd Django-1.4
-	$ sudo python setup.py install
+**在Ubuntu上安装Python Webpy**
+	$ sudo easy_install web.py
 	$ python
-	>>> import django
-	>>> django.VERSION
-	(1, 4, 0, 'final', 0)
+	  Python 2.7.5 (default, Mar  9 2014, 22:15:05)
+	  [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
+	  Type "help", "copyright", "credits" or "license" for more information.
+   	  >>> import web
 
-到这一步，Django就算是安装完成了。太简单了，我们还得再用这个Django干点什么。
+到这一步，Webpy就算是安装完成了。太简单了，我们还得再用这个框架干点什么。
+	$ cat hello.py
+	#!/bin/env python
+	#-*- coding:utf-8 -*-
+	import web
+	urls = (
+        	'/', 'index'
+        	)
 
-	$ django-admin.py startproject newtest
-	$ cd  newtest/newtest
-	$ vim helloworld.py
-	#File Begin
-	from django.http import HttpResponse  
-	
-	def index(request):  
-	    return HttpResponse("Hello, Django.")  
-	#File End
-	
-	$ vim urls.py
-	#File Begin
-	from django.conf.urls.defaults import *
-	
-	urlpatterns = patterns('',  
-	    (r'^$', 'newtest.helloworld.index'),  
-	)
-	#File End
-	$ cd ..
-	$ ./manage.py runserver
-	Validating models...
-	
-	0 errors found
-	Django version 1.4, using settings 'newtest.settings'
-	Development server is running at http://127.0.0.1:8000/
-	Quit the server with CONTROL-C.
+	class index:
+    		def GET(self):
+        		return "Hello, world!"
 
-这是，用浏览器访问 [http://localhost:8000/](http://localhost:8000/) 你将看到 Hello, Django.
+	if __name__ == "__main__":
+    		app = web.application(urls, globals())
+    		app.run()
+	$ python hello.py
+	  http://0.0.0.0:8080/
+
+这是，用浏览器访问 [http://localhost:8080/](http://localhost:8080/) 你将看到 Hello, world.
 
 ### 4.2.5. JavaScript版
 
