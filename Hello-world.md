@@ -226,6 +226,16 @@
 	  Type "help", "copyright", "credits" or "license" for more information.
    	  >>> import web
 
+**在Ubuntu上安装Python Webpy -- 另一种方法**
+
+	$ sudo pip install web.py
+	$ python
+	  Python 2.7.5 (default, Mar  9 2014, 22:15:05)
+	  [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
+	  Type "help", "copyright", "credits" or "license" for more information.
+   	  >>> import web
+
+
 到这一步，Webpy就算是安装完成了。太简单了，我们还得再用这个框架干点什么。
 
 	$ cat hello.py

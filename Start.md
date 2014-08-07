@@ -166,6 +166,7 @@
 |-------|-----------|-------|
 |ruby|Ruby On Rails|动态语言，简洁清新|
 |java|Tomcat|经典的面向对象静态语言，长盛不衰，优秀项目多如牛毛|
+|python|scipy, nltk, django, ansi|最接近人类语言的通用语言，在开源的科学计算领域一骑绝尘，在数据挖掘、web开发、系统管理等领域也为表现突出|
 
 [对比语言元素: PHP, Perl, Python, Ruby](http://hyperpolyglot.org/scripting)
 
@@ -223,21 +224,21 @@
 我认为开发工具分三类，需区别对待：
 
 1. 可以使用一辈子的工具，学习路径几乎没有尽头，值得在职业初期就好好考虑，仔细斟酌进行选择，并在整个生涯中不断努力力求学到更多，你的工作效率会因为这种努力不断提高。如：
-	* 编辑器： emacs
-	* 基本操作系统环境：如shell
-	* 基本编程语言: c / lisp
+	* 编辑器： emacs, vim
+	* 基本操作系统环境：如bash
+	* 基本编程语言: c / lisp 
 
 2. 任何时候都需要掌握的工具，这类工具总是每隔一个周期就有新的产品出现，取代掉旧有的产品，但相对来说是值得学习的，能保持一个较长的时代的有效期，如：
     * 版本控制系统：git
     * 社交网络: stack overflow/github
-    * 写作工具: markdown / latex / html
+    * 写作工具: markdown / reStructureText / latex / html
     * 通用编程语言： python / ruby / javascript
 3. 特定领域需要的工具，此类工具往往时效性较短，不断被新产品取代，一旦掌握，能在特定领域获得非常高的效率，但缺点是很快会过期，通常是几年之内
     * 各类编程框架： xcode / rails / backbone
     * 各类测试框架：xunit / rspec
     * 用户行为分析工具： ga
     * 各类设计工具： balsamiq
-    * 各类项目管理，代码集成工具: github / trac / basecamp
+    * 各类项目管理，代码集成工具: github / trac / basecamp / redmine
 
 ### 2.5.2. 各种参考资料
 
