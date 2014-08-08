@@ -26,6 +26,7 @@
 |[Github](http://github.com/)|不支持|支持|不支持|GitHub属于托管界的新贵，伴随着Git的蓬勃发展而发展。越来越多的开源软件使用Github托管。最近因Rails漏洞被Hacker黑了也让其处于媒体的风口浪尖。这个事件从一个侧面反映了其在业界的影响力。|
 |[CodePlex](http://www.codeplex.com/)|Yes|Yes|Yes|微软的开源项目基地|
 |[BitBucket](https://bitbucket.org/)|No|Yes|Yes|Python的项目在上面比较多|
+|[launchpad](https://launchpad.net/)|No|No|No|使用[bzr](http://bazaar.canonical.com/)管理代码，项目很多，如Ubuntu等，中国大陆访问速度巨慢无比|
 
 维基百科有一个词条，列出了非常非常多的开源托管服务的比较：
 
@@ -123,6 +124,10 @@ Google的BigTable论文，Amazon的Dynamo论文开启了目前火热的云计算
 |[Petshop4.0](http://msdn.microsoft.com/en-us/library/Aa479070)|NET|企业开发|1.微软官方用来展示.Net企业开发实力的项目,架构优雅;2.涉及中小型企业开发常用技术;3.网络资源较多|
 |[Haozesfx](http://haozesfx.codeplex.com/)|NET|Winform,SIP协议|1.基于飞信实现的开源项目，实用性强,方便二次开发;2.结构清晰，设计成熟;3.实现了SIP协议|
 |[ThinkPHP](http://www.thinkphp.cn/)|PHP|Web框架|1.应用较为广泛的Web开发框架，成熟稳定;2.集成多项先进的设计思想;3.活跃的社区 支持和完善的中文文档(帮助手册,Demo,代码注释)|
+|[Nginx](http://nginx.org)|C/Linux/Unix/windows/MAC|基础设施|代码优秀简洁，插件系统牛逼，HTTP协议可谓当今码农的必备知识|
+|[bottle](http://bottlepy.org)|Python/Linux/Unix/windows/MAC|web开发|代码优秀简洁，3000多行代码（包括注释）搞定web server|
+
+
 
 其他：[memcached](http://memcached.org/) c语言 Free & open source, high-performance, distributed memory object caching system。by Jun Guo
 
