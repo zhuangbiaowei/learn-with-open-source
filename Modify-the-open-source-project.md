@@ -57,3 +57,32 @@
 
 1. 颜色不对，不同的朝代应该有不同的颜色
 2. 字体大小不对，两个字的朝代，有一个字就到下面去了
+
+打开Firefox里的Firebug，我们可以查看到问题所在：
+![](images/2048-3.png)
+
+原版的2048，相当粗暴的直接将方块里的内容，当成css的class的内容。因为现在的方块里都变成了汉字，所以我们得将汉字换算成实际的数字。
+
+在html_actuator.js中，我们找到了这样一句： `var classes = ["tile", "tile-" + tile.value, positionClass];`
+
+我们可以在这一行的前面，补上两句：
+
+    var pos =NameArray.indexOf(tile.value);
+    var tile_value=Math.pow(2,pos+1);
+    //再修改一下刚才的那句：
+    var classes = ["tile", "tile-" + tile_value, positionClass];
+    
+于是，正常的颜色就会出现了。至于字体大小的问题，我们得回到main.css中去找答案。
+
+    .tile .tile-inner {
+      border-radius: 3px;
+      background: #eee4da;
+      text-align: center;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px; }
+
+我们可以简单粗暴将`font-size: 55px;`，改成`font-size: 35px;`。我们看一下现在的效果：
+![](images/2048-4.png)
+
+OK，打完收工!
