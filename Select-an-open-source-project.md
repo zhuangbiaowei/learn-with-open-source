@@ -23,7 +23,7 @@
 |---------|---|---|---------|----|
 |[Google Code](http://code.google.com/)|支持|支持|支持|Google Code属于“富二代”，其在速度上，使用体验上都优于其他几个托管网站，尤其是其丰富的帮助文档，其中有很多还有对应的中文版。因此，对于初学者来说， 比较容易上手，也可以获得一个很好的学习机会。当然，因为都是google.com的域名，所以时不时的会访问不了管理界面，原因大家懂的。另外，因为使 用简单方便，相应的其在功能上就相对较弱一点。但是应付一般的项目还是绰绰有余。|
 |[Sourceforge](http://http//sourceforge.net/)|支持|支持|支持|SourceForge可以算是开源界的托管始祖，很多古老的，知名的开源项目都托管在它上面，其对开源界的贡献估计可以和Apache对 Java界的贡献相提并论了。因此，其在功能上经过了长时间的考验，大家想要的功能都能找到。不过，因为强大，其上手难度也相对较高，而且全英文界面，对 于英文较弱的同学来说也是一件很痛苦的事。|
-|[Github](http://github.com/)|不支持|支持|不支持|GitHub属于托管界的新贵，伴随着Git的蓬勃发展而发展。越来越多的开源软件使用Github托管。最近因Rails漏洞被Hacker黑了也让其处于媒体的风口浪尖。这个事件从一个侧面反映了其在业界的影响力。|
+|[Github](http://github.com/)|支持|支持|不支持|GitHub属于托管界的新贵，伴随着Git的蓬勃发展而发展。越来越多的开源软件使用Github托管。最近因Rails漏洞被Hacker黑了也让其处于媒体的风口浪尖。这个事件从一个侧面反映了其在业界的影响力。|
 |[CodePlex](http://www.codeplex.com/)|Yes|Yes|Yes|微软的开源项目基地|
 |[BitBucket](https://bitbucket.org/)|No|Yes|Yes|Python的项目在上面比较多|
 |[launchpad](https://launchpad.net/)|No|No|No|使用[bzr](http://bazaar.canonical.com/)管理代码，项目很多，如Ubuntu等，中国大陆访问速度巨慢无比|
