@@ -119,9 +119,9 @@
 
 ### 4.2.1. Ruby版
 
-在Windows环境下推荐安装[RubyInstaller](http://rubyinstaller.org/)，进入下载页面，选择一个ruby版本，比如[Ruby 1.9.3-p125](http://rubyforge.org/frs/download.php/75848/rubyinstaller-1.9.3-p125.exe)，下载、运行安装即可。
+**在Windows环境下** 推荐安装[RubyInstaller](http://rubyinstaller.org/)，进入下载页面，选择一个ruby版本，比如[Ruby 1.9.3-p125](http://rubyforge.org/frs/download.php/75848/rubyinstaller-1.9.3-p125.exe)，下载、运行安装即可。
 
-在Linux/Mac环境下推荐安装[RVM](http://beginrescueend.com/)或者[rbenv](http://rbenv.org/)
+**在Linux/Mac环境下** 推荐安装[RVM](http://beginrescueend.com/)或者[rbenv](http://rbenv.org/)
 
 	$ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 	ubuntu下，将下两行中的.bash_profile改为.profile
@@ -149,7 +149,7 @@
 
 ### 4.2.2. PHP版
 
-**在WIndows环境下** 推荐安装WAMP（Windws+Apache+MySQL+PHP）套件，[XAMPP](http://www.apachefriends.org/en/xampp-windows.html)
+**在Windows环境下** 推荐安装WAMP（Windws+Apache+MySQL+PHP）套件，[XAMPP](http://www.apachefriends.org/en/xampp-windows.html)
 
 **在Linux环境下** 以下将简单介绍在Ubuntu下安装LAMP的过程，其他的linux平台以及Mac平台，请自行搜索。
 
