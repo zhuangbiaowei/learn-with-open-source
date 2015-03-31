@@ -38,7 +38,7 @@
 
 越是现代的开源项目，越是懂得不必一切从零开始搭建，所以，我们常常会发现，一个开源项目，他们自己会开发一组Package，同时也依赖一批别人开发的Package。在静态理解项目时，了解一个项目项目有哪些包，以及依赖哪些包，就非常重要。
 
-举例之一：rails是一个著名的ruby开源项目。我们访问它的[github主页]（https://github.com/rails/rails），就可以看到这个项目的源代码结构。
+举例之一：rails是一个著名的ruby开源项目。我们访问它的[github主页](https://github.com/rails/rails)，就可以看到这个项目的源代码结构。
 
 * 首先需要选择查看某一个稳定版本，比如3.2版
     * https://github.com/rails/rails/tree/3-2-stable
