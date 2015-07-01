@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/zhuangbiaowei/learn-with-open-source",
   "dependencies": {
-    "get-contributors": "^0.1.4",
+    "get-contributors": "^0.2.0",
     "git-hooks": "^1.0.0-rc.1",
     "markdown-toc": "^0.11.5"
   }
