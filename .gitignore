@@ -1,3 +1,4 @@
 *.log
 *.bak
 node_modules/
+_book/
