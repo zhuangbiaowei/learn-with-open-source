@@ -71,5 +71,6 @@
   1. 基本礼仪
 1. [自己发起一个开源项目](Create-an-open-source-project.md)
 1. [延伸阅读](Read-more.md)
+  1. [指导开发者快速学习编程的网站推荐](Useful-Websites-to-Learn-How-to-Code-Quickly.md)
 1. [贡献者](Contributor.md)
 1. [开源问答](FAQ.md)

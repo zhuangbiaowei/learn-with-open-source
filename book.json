@@ -1,7 +1,14 @@
 {
     "gitbook": ">1.x.x",
     "plugins": [
+      "toc",
       "mathjax"
-    ]
+    ],
+    "pluginsConfig": {
+      "toc": {
+        "addClass": false,
+        "className": "toc"
+      }
+    }
 }
 
