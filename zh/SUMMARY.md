@@ -67,9 +67,9 @@
 1. [成为组织的一员](Join-the-group.md)
   1. 交流圈
   1. 组织结构
-  1. 开源项目的组织方式*
+  1. 开源项目的组织方式
   1. 基本礼仪
 1. [自己发起一个开源项目](Create-an-open-source-project.md)
 1. [延伸阅读](Read-more.md)
-1. [贡献者](Contributor.md)
+1. [贡献者](../Contributor.md)
 1. [开源问答](FAQ.md)
