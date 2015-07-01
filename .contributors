@@ -1,0 +1,37 @@
+dirname: "."
+tryGithub: false
+write: false
+ask: false
+format: "template"
+fields: "name,github"
+template: [
+	'''
+		| Contributor Name | Github |
+		| ---------------  | ------ |
+		
+	'''
+	'''
+		| ${contributor.name} | ${contributor.github ? "[" + contributor.github + "](https://github.com/" + contributor.github + ")" : "-"} |
+		
+	'''
+]
+users:
+	zhuangbiaowei:
+		name: "BiaoWei Zhuang"
+		email: [
+			"zhuangbiaowei@gmail.com"
+			"zhuangbiaowei@huawei.com"
+		]
+		github: "zhuangbiaowei"
+	riceball:
+		name: "Riceball LEE"
+		email: "snowyu.lee@gmail.com"
+		github: "snowyu"
+	"mzlogin@github":
+		name: "Zhuang Ma"
+		email: "ChumpMa@gmail.com"
+		github: "mzlogin"
+	"wcp1231@github":
+		name: "Chunpeng Wen"
+		email: "wcp1231@gmail.com"
+		github: "wcp1231"
