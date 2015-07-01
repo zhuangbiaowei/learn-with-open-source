@@ -1,5 +1,6 @@
 {
     "gitbook": ">1.x.x",
     "plugins": [
+      "mathjax"
     ]
 }
