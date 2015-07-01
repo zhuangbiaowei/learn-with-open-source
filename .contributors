@@ -1,5 +1,5 @@
 dirname: "."
-tryGithub: false
+tryGithub: true
 write: false
 ask: false
 format: "template"
