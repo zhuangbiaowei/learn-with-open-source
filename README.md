@@ -6,6 +6,8 @@ All contents is licensed under the [ Creative Commons Attribution Non Commercial
 
 Welcome to join us to finish this book.
 
+You can visit the online ebook: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
+
 ##  for developer
 
 ### Build the book
@@ -88,6 +90,8 @@ the workflow automation is:
 # 《借助开源项目，学习软件开发》
 
 本书使用 [GitBook](https://www.gitbook.com) 来 build 电子书。
+
+联机电子书版本在这里: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
 
 开放文档：《借助开源项目，学习软件开发》
 
