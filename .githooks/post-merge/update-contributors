@@ -1,3 +1,6 @@
-#!/bin/sh
-echo 'refresh contributors'
-./node_modules/.bin/get-contributors > ./Contributor.md
+#!/bin/bash
+if [ -f "${PWD}/.contributors" ]
+then
+    echo 'refreshing contributors'
+    ./node_modules/.bin/get-contributors > ./Contributor.md
+fi
