@@ -3,4 +3,5 @@ if [ -f "${PWD}/.contributors" ]
 then
     echo 'refreshing contributors'
     ./node_modules/.bin/get-contributors > ./Contributor.md
+    cp ./Contributor.md zh/Contributor.md
 fi
