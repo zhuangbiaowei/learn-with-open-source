@@ -1,8 +1,10 @@
-# 4. Hello World
+# Hello World
 
-## 4.1. 下载源代码的N种办法
+<!-- toc -->
 
-### 4.1.1. 关于源代码管理与版本控制
+## 下载源代码的N种办法
+
+### 关于源代码管理与版本控制
 
 首先需要介绍一些基础的概念，这里只是简要的介绍，比较详细的介绍，可以参见[Understanding Version-Control Systems](http://www.catb.org/%7Eesr/writings/version-control/version-control.html)，期待有人能够将其翻译为中文。（或者已经有中译本了，欢迎告知我。）
 
@@ -29,7 +31,7 @@
 * [版本控制工具历史的10个里程碑](http://blog.jobbole.com/14489/) 本文中的一些link，也非常值得点击过去细细阅读。
 * [为什么软件项目从集中式迁移到分布式版本控制系统的热情持续不减?](http://codinn.com/projects/why-projects-moving-to-dvcs/view/) 最新趋势，值得了解。
 
-### 4.1.2. 寻找早期开源项目的源代码
+### 寻找早期开源项目的源代码
 
 取得源代码的方式千千万万，现在有越来越多的开源项目，已经开始逐步采用规范的，统一的方式，提供自己的源代码以供下载，但是在开源项目发展的早期，还有很多是以并非规范的方式提供的。而在寻找一些开源项目的源代码时，google与wikipedia，将会是我们的好帮手。当然，还有更早期的一些开源项目，就是在邮件列表里发一个带附件的邮件，要找到那种项目的源代码，就得有考古的功力了。
 
@@ -49,7 +51,7 @@
 
 更加糟糕的情况也许会需要我们在google里搜索：“XXX source code download”这样的关键字，才能找到，这里不再赘述。
 
-### 4.1.3. SVN、Git、Mercurial快速介绍
+### SVN、Git、Mercurial快速介绍
 
 三本值得一看的书
 
@@ -93,7 +95,7 @@
 
 即可获得Mercurial仓库的完整副本。（Mercurial又简称为hg）
 
-### 4.1.4. 基于包管理的方式获取源代码
+### 基于包管理的方式获取源代码
 
 这是新增的一个小节，因为在很多动态脚本语言中，都有类似的包管理工具，在wikipedia中有一个词条[List of software package management systems](http://en.wikipedia.org/wiki/List_of_software_package_management_systems)，其中的Application-level package managers小节，就介绍了十多种不同语言的包管理工具。
 
@@ -113,11 +115,11 @@
 |NET|[NuGet](http://nuget.codeplex.com/)|[[1]](http://nuget.codeplex.com/documentation)|
 |NodeJS|[npm](http://npmjs.org/)|[[1]](http://npmjs.org/doc/)|
 
-## 4.2. 让代码运行起来
+## 让代码运行起来
 
 经过思考，决定将这一小节以实例的方式写出。也欢迎大家补充各种不同语言的how to install。
 
-### 4.2.1. Ruby版
+### Ruby版
 
 **在Windows环境下** 推荐安装[RubyInstaller](http://rubyinstaller.org/)，进入下载页面，选择一个ruby版本，比如[Ruby 1.9.3-p125](http://rubyforge.org/frs/download.php/75848/rubyinstaller-1.9.3-p125.exe)，下载、运行安装即可。
 
@@ -147,7 +149,7 @@
 
 参考：[使用RVM在ubuntu下安装ruby&rails](http://www.cnblogs.com/klobohyz/archive/2011/11/21/2256518.html)
 
-### 4.2.2. PHP版
+### PHP版
 
 **在Windows环境下** 推荐安装WAMP（Windws+Apache+MySQL+PHP）套件，[XAMPP](http://www.apachefriends.org/en/xampp-windows.html)
 
@@ -192,7 +194,7 @@
 
 [参考文档 1](http://codex.wordpress.org/zh-cn:%E5%AE%89%E8%A3%85WordPress)  [参考文档 2](http://supriyadisw.net/2006/12/wordpress-installation-on-ubuntu-with-lamp)
 
-### 4.2.3. Java版
+### Java版
 
 **在Ubuntu下以源代码方式安装Tomcat**
 
@@ -215,7 +217,7 @@
 
 至此，在浏览器中，访问[http://localhost:8080/](http://localhost:8080/) 可以看到Tomcat的欢迎页。
 
-### 4.2.4. Python版
+### Python版
 
 **在Ubuntu上安装Python Webpy**
 
@@ -258,7 +260,7 @@
 
 这是，用浏览器访问 [http://localhost:8080/](http://localhost:8080/) 你将看到 Hello, world.
 
-### 4.2.5. JavaScript版
+### JavaScript(nodejs)版
 
 现在的JavaScript发展的确飞快，已经不仅在浏览器里可以使用了，这里先简单介绍一下服务器端的node.js的安装与使用。
 
@@ -292,7 +294,7 @@
 
 打开浏览器，访问[http://localhost:3000/](http://localhost:3000/) 将看到 Hello World!
 
-### 4.2.6. C/C++版
+### C/C++版
 
 因为王越的系列文章《Mac OS X背后的故事》，其中第八章《[三好学生Chris Lattner的LLVM编译工具链](http://www.programmer.com.cn/9436/)》对LLVM的介绍，使我决定尝试把LLVM，作为c语言的hello world项目。
 
@@ -348,7 +350,7 @@
 * [Getting Started with the LLVM System](http://llvm.org/docs/GettingStarted.html)
 * [参考文档 漫谈C语言及如何学习C语言](http://sunxiunan.com/?p=1661)
 
-## 4.3. 如何克服可能遇到的困难
+## 如何克服可能遇到的困难
 
 **1. 仔细看文档**
  
