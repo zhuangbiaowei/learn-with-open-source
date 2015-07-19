@@ -1,5 +1,7 @@
 # Learn Coding With Open Souce
 
+[![Join the chat at https://gitter.im/zhuangbiaowei/learn-with-open-source](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zhuangbiaowei/learn-with-open-source?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This book uses [GitBook](https://www.gitbook.com) to build.
 
 All contents is licensed under the [ Creative Commons Attribution Non Commercial Share Alike 4.0 license](http://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -7,6 +9,7 @@ All contents is licensed under the [ Creative Commons Attribution Non Commercial
 Welcome to join us to finish this book.
 
 You can visit the online ebook: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
+
 
 ##  for developer
 
