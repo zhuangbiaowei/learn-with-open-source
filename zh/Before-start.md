@@ -54,6 +54,7 @@ Google在大多数时候，对于软件开发来说，都是更好的搜索引�
 
 参考资料：
 * [霍炬：google百度和谷歌的那些事](http://blog.devep.net/virushuo/2010/01/14/blog56google_blogtinyfool_1_go.html)
+* [陈皓：作环保的程序员，从不用百度开始](http://coolshell.cn/articles/9308.html)
 
 ## 你需要明确的一些事情
 
