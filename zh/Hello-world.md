@@ -27,6 +27,7 @@
   * 闭源：TeamWare (1990s?) Code Co-op (1997) BitKeeper (1998) Plastic SCM (2006)
 
 **更多参考资料：**
+
 * 上述概念所附带的四个link，都是来自于英文版的wikipedia，有些也有附带的中文版本，顺着这四个主条目的介绍，可以点击阅读更多的词条，加深了解。
 * [版本控制工具历史的10个里程碑](http://blog.jobbole.com/14489/) 本文中的一些link，也非常值得点击过去细细阅读。
 * [为什么软件项目从集中式迁移到分布式版本控制系统的热情持续不减?](http://codinn.com/projects/why-projects-moving-to-dvcs/view/) 最新趋势，值得了解。
@@ -38,6 +39,7 @@
 这里举一个例子，来描述一下我寻找某一个开源项目源代码的过程。
 
 有一个项目叫做GForge，在早期还是一个较为著名的开源托管平台的项目，这个托管平台的代码本身也是以GNU许可开源的。假设，我首先是在wikipedia上发现了这个项目： http://en.wikipedia.org/wiki/GForge
+
 看到这个项目的介绍，大概我觉得不错，于是我就看到下面的External links，列出了四个外部链接：
 
 * GForge official website
@@ -73,9 +75,11 @@
 
 如果你在linux/mac平台下，那么命令行会非常方便：
 
-    svn checkout http://SiteDomain/path/ProjectName 获取最新的版本
-    svn checkout http://SiteDomain/path/ProjectName --revision {....} 获取某个版本
-    svn checkout http://SiteDomain/path/ProjectName/tags/Release_x.xx 获取上某某tag的具体发行版本
+``` 
+svn checkout http://SiteDomain/path/ProjectName 获取最新的版本
+svn checkout http://SiteDomain/path/ProjectName --revision {....} 获取某个版本
+svn checkout http://SiteDomain/path/ProjectName/tags/Release_x.xx 获取上某某tag的具体发行版本
+```
 
 **Git如何获取代码**
 
@@ -85,13 +89,17 @@
 
 然后，获取代码也极其简单：
 
-	git clone GitRepoURL
+``` 
+git clone GitRepoURL
+```
 
 **Mercurial如何获取代码**
 
 正如GitHub是主打Git的开源托管平台，[BitBucket](https://bitbucket.org/)则是一个主打Mercurial的开源托管平台。因此，我们可以在这里找到关于Mercurial的操作指南。而因为Git的飞速发展，现在BitBucket也开始同时支持Git，所以在[bitbucket 101](http://confluence.atlassian.com/display/BITBUCKET/Set+up+Git+and+Mercurial)，可以同时看到两种工具的安装指南。
 
-	hg clone HgRepoURL
+``` 
+hg clone HgRepoURL
+```
 
 即可获得Mercurial仓库的完整副本。（Mercurial又简称为hg）
 
@@ -105,15 +113,15 @@
 
 **Application-level package managers**
 
-|语言|包管理工具|相关文档与资源|
-|----|--------|-------------|
-|Perl|[CPAN](http://www.cpan.org/)|[[1]](http://en.wikipedia.org/wiki/CPAN) [[2]](http://www.cpan.org/misc/cpan-faq.html)|
-|PHP|[PEAR](http://pear.php.net/) [PECL](http://pecl.php.net/)|[[1]](http://en.wikipedia.org/wiki/PHP_Extension_and_Application_Repository) [[2]](http://pear.php.net/manual/en/)|
-|Ruby|[RubyGems](http://www.rubygems.org/) [Bundler](http://bundler.io/)|[[1]](http://docs.rubygems.org/) [[2]](http://rubydoc.info/github/carlhuda/bundler/master/Bundler)|
-|Java|[Maven](http://maven.apache.org/)|[[1]](http://en.wikipedia.org/wiki/Apache_Maven) [[2]](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)|
-|Python|[EasyInstall](http://en.wikipedia.org/wiki/EasyInstall) [PyPI](https://pypi.python.org/pypi)|[[1]](http://peak.telecommunity.com/DevCenter/PythonEggs) [[2]](http://en.wikipedia.org/wiki/Python_Package_Index)|
-|NET|[NuGet](http://nuget.codeplex.com/)|[[1]](http://nuget.codeplex.com/documentation)|
-|NodeJS|[npm](http://npmjs.org/)|[[1]](http://npmjs.org/doc/)|
+| 语言     | 包管理工具                                    | 相关文档与资源                                  |
+| ------ | ---------------------------------------- | ---------------------------------------- |
+| Perl   | [CPAN](http://www.cpan.org/)             | [[1]](http://en.wikipedia.org/wiki/CPAN) [[2]](http://www.cpan.org/misc/cpan-faq.html) |
+| PHP    | [PEAR](http://pear.php.net/) [PECL](http://pecl.php.net/) | [[1]](http://en.wikipedia.org/wiki/PHP_Extension_and_Application_Repository) [[2]](http://pear.php.net/manual/en/) |
+| Ruby   | [RubyGems](http://www.rubygems.org/) [Bundler](http://bundler.io/) | [[1]](http://docs.rubygems.org/) [[2]](http://rubydoc.info/github/carlhuda/bundler/master/Bundler) |
+| Java   | [Maven](http://maven.apache.org/)        | [[1]](http://en.wikipedia.org/wiki/Apache_Maven) [[2]](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) |
+| Python | [EasyInstall](http://en.wikipedia.org/wiki/EasyInstall) [PyPI](https://pypi.python.org/pypi) | [[1]](http://peak.telecommunity.com/DevCenter/PythonEggs) [[2]](http://en.wikipedia.org/wiki/Python_Package_Index) |
+| NET    | [NuGet](http://nuget.codeplex.com/)      | [[1]](http://nuget.codeplex.com/documentation) |
+| NodeJS | [npm](http://npmjs.org/)                 | [[1]](http://npmjs.org/doc/)             |
 
 ## 让代码运行起来
 
@@ -125,25 +133,31 @@
 
 **在Linux/Mac环境下** 推荐安装[RVM](http://beginrescueend.com/)或者[rbenv](http://rbenv.org/)
 
-	$ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
-	ubuntu下，将下两行中的.bash_profile改为.profile
-	$ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # > Load RVM function' >> ~/.bash_profile
-	$ source ~/.bash_profile
-	$ rvm requirements
-	根据提示，安装其他必要的软件包
-	$ rvm install 1.9.3
-	$ rvm use 1.9.3
+``` 
+$ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+ubuntu下，将下两行中的.bash_profile改为.profile
+$ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # > Load RVM function' >> ~/.bash_profile
+$ source ~/.bash_profile
+$ rvm requirements
+根据提示，安装其他必要的软件包
+$ rvm install 1.9.3
+$ rvm use 1.9.3
+```
 
 安装一个开源项目
 
-	$ gem install sinatra
+``` 
+$ gem install sinatra
+```
 
 搞定收工。。。
 
 如果没有安装过rubygems这个包，则会困难一些。首先在[RubyGems](> )这个页面挑一个文件格式下载，并解压缩。然后：
 
-	$ cd directory
-	$ ruby setup.rb
+``` 
+$ cd directory
+$ ruby setup.rb
+```
 
 搞定收工。。。
 
@@ -155,38 +169,42 @@
 
 **在Linux环境下** 以下将简单介绍在Ubuntu下安装LAMP的过程，其他的linux平台以及Mac平台，请自行搜索。
 
-	$ sudo apt-get install mysql-client mysql-server
-	根据提示，输入两次MySQL的root密码。
-	$ sudo apt-get install apache2
-	在浏览器中访问 http://localhost，应该可以看到It Works等文字。表明Apache2安装成功。
-	$ sudo apt-get install php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql
-	$ sudo /etc/init.d/apache2 restart #重启Apache服务器，完成配置PHP的工作
-	$ sudo vim /var/www/info.php
-	将以下内容写入文件
-	<?php
-	phpinfo();
-	?>
-	在浏览器中访问 http://localhost/info.php 应该能够看到PHP的版本及模块说明等内容。这样就表明，Linux+Apache+MySQL+PHP已经配置完成了。
+``` 
+$ sudo apt-get install mysql-client mysql-server
+根据提示，输入两次MySQL的root密码。
+$ sudo apt-get install apache2
+在浏览器中访问 http://localhost，应该可以看到It Works等文字。表明Apache2安装成功。
+$ sudo apt-get install php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql
+$ sudo /etc/init.d/apache2 restart #重启Apache服务器，完成配置PHP的工作
+$ sudo vim /var/www/info.php
+将以下内容写入文件
+<?php
+phpinfo();
+?>
+在浏览器中访问 http://localhost/info.php 应该能够看到PHP的版本及模块说明等内容。这样就表明，Linux+Apache+MySQL+PHP已经配置完成了。
+```
 
 **安装一个开源项目** 以在Ubuntu上安装一个wordpress为例
 
-	$ wget http://cn.wordpress.org/wordpress-3.3.1-zh_CN.tar.gz #需要寻找最新的版本
-	$ tar -zxvf wordpress-3.3.1-zh_CN.tar.gz
-	$ mysql -uroot -p
-	mysql> CREATE DATABASE IF NOT EXISTS wordpress default charset utf8 COLLATE utf8_general_ci;
-	mysql> GRANT ALL PRIVILEGES 
-	               ON wordpress.* 
-	               TO 'wp_user'@'localhost'
-	               IDENTIFIED BY 'wp_password' 
-	               WITH GRANT OPTION;
-	mysql> exit
-	$ cp wp-config-sample.php wp-config.php
-	$ vim wp-config.php
-	（最主要是修改以下四个值的定义）
-	define('DB_NAME', 'wordpress');
-	define('DB_USER', 'wp_user');
-	define('DB_PASSWORD', 'wp_password');
-	define('DB_HOST', 'localhost');
+``` 
+$ wget http://cn.wordpress.org/wordpress-3.3.1-zh_CN.tar.gz #需要寻找最新的版本
+$ tar -zxvf wordpress-3.3.1-zh_CN.tar.gz
+$ mysql -uroot -p
+mysql> CREATE DATABASE IF NOT EXISTS wordpress default charset utf8 COLLATE utf8_general_ci;
+mysql> GRANT ALL PRIVILEGES 
+               ON wordpress.* 
+               TO 'wp_user'@'localhost'
+               IDENTIFIED BY 'wp_password' 
+               WITH GRANT OPTION;
+mysql> exit
+$ cp wp-config-sample.php wp-config.php
+$ vim wp-config.php
+（最主要是修改以下四个值的定义）
+define('DB_NAME', 'wordpress');
+define('DB_USER', 'wp_user');
+define('DB_PASSWORD', 'wp_password');
+define('DB_HOST', 'localhost');
+```
 
 在浏览器中访问 [http://localhost/wordpress/wp-admin/install.php](http://localhost/wordpress/wp-admin/install.php) 按提示完成各个步骤，就搞定了，整个时间不超过5分钟。
 
@@ -198,22 +216,24 @@
 
 **在Ubuntu下以源代码方式安装Tomcat**
 
-	$ wget http://apache.etoak.com/tomcat/tomcat-7/v7.0.27/src/apache-tomcat-7.0.27-src.tar.gz #寻找最新版本
-	$ tar -zxvf apache-tomcat-7.0.27-src.tar.gz
-	$ cd apache-tomcat-7.0.27-src
-	$ vim BUILDING.txt # 阅读编译指南，按照指示操作
-	$ 下载 jdk-6u31-linux-x64.bin #tomcat7.0.x的源代码编译，要求jdk6的版本，jdk7在编译时，会报错
-	$ cd
-	$ ./jdk-6u31-linux-x64.bin
-	$ export JAVA_HOME=~/jdk1.6.0_31/
-	$ wget http://apache.etoak.com//ant/binaries/apache-ant-1.8.3-bin.tar.gz
-	$ tar -zxvf apache-ant-1.8.3-bin.tar.gz
-	$ export PATH=%PATH:~/apache-ant-1.8.3/bin:~/jdk1.6.0_31/bin
-	$ export ANT_HOME=~/apache-ant-1.8.3/
-	$ cd apache-tomcat-7.0.27-src
-	$ ant
-	$ cd output/build/bin/
-	$ ./catalina.sh run
+``` 
+$ wget http://apache.etoak.com/tomcat/tomcat-7/v7.0.27/src/apache-tomcat-7.0.27-src.tar.gz #寻找最新版本
+$ tar -zxvf apache-tomcat-7.0.27-src.tar.gz
+$ cd apache-tomcat-7.0.27-src
+$ vim BUILDING.txt # 阅读编译指南，按照指示操作
+$ 下载 jdk-6u31-linux-x64.bin #tomcat7.0.x的源代码编译，要求jdk6的版本，jdk7在编译时，会报错
+$ cd
+$ ./jdk-6u31-linux-x64.bin
+$ export JAVA_HOME=~/jdk1.6.0_31/
+$ wget http://apache.etoak.com//ant/binaries/apache-ant-1.8.3-bin.tar.gz
+$ tar -zxvf apache-ant-1.8.3-bin.tar.gz
+$ export PATH=%PATH:~/apache-ant-1.8.3/bin:~/jdk1.6.0_31/bin
+$ export ANT_HOME=~/apache-ant-1.8.3/
+$ cd apache-tomcat-7.0.27-src
+$ ant
+$ cd output/build/bin/
+$ ./catalina.sh run
+```
 
 至此，在浏览器中，访问[http://localhost:8080/](http://localhost:8080/) 可以看到Tomcat的欢迎页。
 
@@ -221,42 +241,57 @@
 
 **在Ubuntu上安装Python Webpy**
 
-	$ sudo easy_install web.py
-	$ python
-	  Python 2.7.5 (default, Mar  9 2014, 22:15:05)
-	  [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
-	  Type "help", "copyright", "credits" or "license" for more information.
+``` 
+$ sudo easy_install web.py
+$ python
+  Python 2.7.5 (default, Mar  9 2014, 22:15:05)
+  [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
+  Type "help", "copyright", "credits" or "license" for more information.
+```
+
    	  >>> import web
 
 **在Ubuntu上安装Python Webpy -- 另一种方法**
 
-	$ sudo pip install web.py
-	$ python
-	  Python 2.7.5 (default, Mar  9 2014, 22:15:05)
-	  [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
-	  Type "help", "copyright", "credits" or "license" for more information.
+``` 
+$ sudo pip install web.py
+$ python
+  Python 2.7.5 (default, Mar  9 2014, 22:15:05)
+  [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
+  Type "help", "copyright", "credits" or "license" for more information.
+```
+
    	  >>> import web
 
+备注：安装easy_install或者pip的方法
+
+``` 
+$ sudo apt-get install python easy_install
+$ sudo apt-get install python pip
+上述方法，二选一
+```
 
 到这一步，Webpy就算是安装完成了。太简单了，我们还得再用这个框架干点什么。
 
-	$ cat hello.py
-	#!/bin/env python
-	#-*- coding:utf-8 -*-
-	import web
-	urls = (
-        	'/', 'index'
-        	)
+``` 
+$ cat hello.py
+#!/bin/env python
+#-*- coding:utf-8 -*-
+import web
+urls = (
+    	'/', 'index'
+    	)
 
-	class index:
-    		def GET(self):
-        		return "Hello, world!"
+class index:
+		def GET(self):
+    		return "Hello, world!"
 
-	if __name__ == "__main__":
-    		app = web.application(urls, globals())
-    		app.run()
-	$ python hello.py
-	  http://0.0.0.0:8080/
+if __name__ == "__main__":
+		app = web.application(urls, globals())
+		app.run()
+$ python hello.py
+  http://0.0.0.0:8080/
+```
 
 这是，用浏览器访问 [http://localhost:8080/](http://localhost:8080/) 你将看到 Hello, world.
 
@@ -266,31 +301,41 @@
 
 **在Ubuntu下安装node.js、npm与express.js**
 
-	首先确认GCC编译环境的正确安装，否则请：“apt-get install build-essential”
-	$ wget http://nodejs.org/dist/v0.6.15/node-v0.6.15.tar.gz
-	$ tar -zxvf node-v0.6.15.tar.gz
-	$ cd node-v0.6.15
-	$ sudo apt-get install libssl-dev
-	$ ./configure
-	$ make
-	$ sudo make install
-	$ node -v
-	v0.6.15
-	$ curl http://npmjs.org/install.sh | sudo sh
-	$ npm -v
-	1.1.18
-	$ npm install express
-	$ vim test.js
-	#File Begin
-	var app = require('express').createServer();
-	
-	app.get('/', function(req, res){
-	  res.send('Hello World!');
-	});
-	
-	app.listen(3000);
-	#File End
-	$ node test.js
+``` 
+首先确认GCC编译环境的正确安装，否则请：“apt-get install build-essential”
+$ wget http://nodejs.org/dist/v0.6.15/node-v0.6.15.tar.gz
+$ tar -zxvf node-v0.6.15.tar.gz
+$ cd node-v0.6.15
+$ sudo apt-get install libssl-dev
+$ ./configure
+$ make
+$ sudo make install
+$ node -v
+v0.6.15
+$ curl http://npmjs.org/install.sh | sudo sh
+$ npm -v
+1.1.18
+$ npm install express
+$ vim test.js
+#File Begin
+var app = require('express').createServer();
+```
+
+​	
+
+``` 
+app.get('/', function(req, res){
+  res.send('Hello World!');
+});
+```
+
+​	
+
+``` 
+app.listen(3000);
+#File End
+$ node test.js
+```
 
 打开浏览器，访问[http://localhost:3000/](http://localhost:3000/) 将看到 Hello World!
 
@@ -300,50 +345,67 @@
 
 说实话，在开源项目中，C语言的各种开源项目的编译安装，都是非常类似的。绝大多数命令都是一下三行：
 
-	$ ./configure
-	$ make
-	$ make install
+``` 
+$ ./configure
+$ make
+$ make install
+```
 
 当然，在windows下，会麻烦得多。LLVM的安装也非常简单，命令如下：
 
-	$ cd where-you-want-llvm-to-live
-	$ svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
-	$ cd llvm/tools
-	$ svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
-	$ cd ../projects
-	$ svn co http://llvm.org/svn/llvm-project/compiler-rt/trunk compiler-rt
-	$ svn co http://llvm.org/svn/llvm-project/test-suite/trunk test-suite
-	$ cd ..
-	$ mkdir build
-	$ cd build
-	$ ../configure
-	$ make
-	$ make check-all
-	$ make update
-	$ make install
+``` 
+$ cd where-you-want-llvm-to-live
+$ svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
+$ cd llvm/tools
+$ svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
+$ cd ../projects
+$ svn co http://llvm.org/svn/llvm-project/compiler-rt/trunk compiler-rt
+$ svn co http://llvm.org/svn/llvm-project/test-suite/trunk test-suite
+$ cd ..
+$ mkdir build
+$ cd build
+$ ../configure
+$ make
+$ make check-all
+$ make update
+$ make install
+```
 
 然后，我们可以尝试用LLVM的编译工具链，来编译c语言的代码。
+
 创建一个文件hello.c
 
-	#include <stdio.h>
-	
-	int main() {
-	  printf("hello world\n");
-	  return 0;
-	}
+``` 
+#include <stdio.h>
+```
+
+​	
+
+``` 
+int main() {
+  printf("hello world\n");
+  return 0;
+}
+```
 
 编译hello.c，得到hello
 
-	$ clang hello.c -o hello
+``` 
+$ clang hello.c -o hello
+```
 
 编译c代码，得到LLVM的bitcode文件。
 
-	$ clang -O3 -emit-llvm hello.c -c -o hello.bc
+``` 
+$ clang -O3 -emit-llvm hello.c -c -o hello.bc
+```
 
 第一行以普通方式，执行编译好的可执行文件，第二行调用LLVM JIT，命令为lli，来执行LLVM的bitcode。
 
-	$ ./hello
-	$ lli hello.bc
+``` 
+$ ./hello
+$ lli hello.bc
+```
 
 更多内容可以参考：
 
@@ -353,7 +415,7 @@
 ## 如何克服可能遇到的困难
 
 **1. 仔细看文档**
- 
+
 LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation. 2. Read the documentation. 3. Remember that you were warned twice about reading the documentation.
 
 是的，认真的，非常认真的阅读相关文档，是最重要的方法。其他的一切方法，都是排在这个后面的。

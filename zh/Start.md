@@ -22,15 +22,7 @@
 
 在很多领域，我们都可以用一个金字塔模型，来描述该领域的能力体系，在软件开发领域，同样如此。
 
-* 高
-  * 创造能力
-* 中
-  * 逻辑能力
-  * 理解能力
-* 低
-  * 基础知识
-  * 编程技能
-  * 领域知识
+![](./images/pyramid.jpg)
 
 简单解释一下：
 
@@ -45,18 +37,30 @@
 ### 有哪些途径，可以锻炼这些能力？
 
 * 阅读与习题：找到一堆的经典教科书，狠狠的读，认真的把书里的习题都给做了，这样对于打下扎实的基础，将会有极大的帮助。
+  
 * 视频教程/ScreenCast：每次讲解一个主题，学习一下总会有收获，只是效率不高。
+  
   * MOOC课程的出现，正在改变这样的现状，不过国内的MOOC课程大多是渣（简单的把视频教程搬上来就称为MOOC）
   * 我后面会推荐一些较好的MOOC课程，基本都是E文。
+  
 * PPT/Slide/PDF：这种属于某次技术会议上的演讲稿，如果能够配合视频看，效果还好些，否则通常会不知所云。
+  
 * Wiki：针对某个词条，某个特定的问题，会有相当清晰的解释，不过要看运气，有些词条的解释就非常粗略，甚至过时。
+  
 * Blog：在分享知识与经验的过程中，blog是很不错的载体，如果你能够找到的话。
+  
 * BBS：曾经是最主要的学习方式，很多人通过泡论坛来提高自己，不过说实话，效率很低，而且容易跑题。
+  
 * 邮件组：的确存在着不错的一些邮件组，不过不好找，欢迎多多推荐。
+  
 * 问答社区（StackOverFlow/Quora/知乎）：
+  
   新兴的交流社区，在面临特定问题时，可以尝试搜索或提问。平时泡泡，努力回答别人的问题，也有助于自己的提高。
+  
 * 工作中的项目：当然，老板给你发工资，肯定希望你尽快完成，在压力之下，通常进步都会很快。只是这种进步也许是你无法选择的。
+  
 * QQ群：真的有人借助QQ群来学习吗？
+  
 * 开源项目/开源社区：当然，这个是最重要的，咱们下节详细说。
 
 ## 为什么要学习
@@ -96,7 +100,9 @@
 在中国，如果你想面朝大海，应该是一路向东。当然向西也是可以的，不过要多费些周折。技术的更新非常快，但如果把握了大势往往可以事半功倍。
 
 举一个实际的例子：十多年前，PHP是一个相对冷门的编程工具。在很多场合，很多人都不好意思说自已是搞PHP开发的。而如今，PHP已经成为主流的开发工具，很多搞.net的人出于生计的考虑，不得不转向Java或者PHP。
+
 > 这个例子不妥，语言只是载体，工具，任何语言都能达成自己的目的。
+> 
 > 以前父母总是以这样的方式去教育孩子，这个专业（语言）很热门，薪水很高...
 
 选择开发工具只是软件工匠们需要认真定夺的一个方面。其它如系统构架、测试方法、团队管理、决策者眼光等等，更是关系每个程序员未来的诸多要素。
@@ -130,11 +136,15 @@
 在企业的内部，根据企业的发展战略，也可以形成企业内部的开源社区，通过开源项目整合企业内部与外部的技术资源。开放的心态使企业以开源文化的发展为契机引领技术的潮流。
 
 
+
 ## 在学习一门语言之前
 
-你至少应该对计算机科学有所了解，如果你是个文人骚客，淫得一首好诗，但是对计算机一窍不通。
-那么你应该首先去认知计算机科学的各种概念。这里推荐一个不错的计算机科学入门MOOC课程:
+你至少应该对计算机科学有所了解，当然你也可以不管不顾，在没有任何基础的情况下，直接开始学习一门编程语言，但是，随着面对的问题越来越困难，你还是会深切感受到，补习基础知识的重要性。
+
+这里推荐一个不错的计算机科学入门MOOC课程:
+
 [斯坦福大学 计算机科学入门课程](https://www.coursera.org/course/cs101)
+
 它面向无任何基础的学生，介绍计算机科学的基本知识:
 
 * 计算机和代码的本质，它们能做哪些事情，不能做哪些事情
@@ -159,31 +169,43 @@
 ### 一些基本的判断依据
 
 * 最好是跨平台/平台无关的语言。比如Java、Ruby、Python、PHP、JS这样的语言。
+  
   .NET平台的众多语言，因为mono的存在，现在也算是跨平台的了。
+  
 * 这门语言所创建的开源项目，要足够多，可供选择。C/C++、Java、Python、PHP都
+  
   可以非常好的满足这个条件，随着github平台的出现，Ruby的开源项目现在也越来越
+  
   多的了。随着nodejs的兴起，JS的开源项目也呈现明显的上升趋势。
+  
 * 语言以及语法本身，要具备较好的可读性。这里我非常推崇Ruby，因为这门语言从创立
+  
   之初，就是极端重视代码可读性的，整个Ruby社区的风格，也非常强调代码的简洁优雅。
+  
 * 相关的文档资料容易查找，这方面大多数流行语言都符合条件。C/C++、Java、PHP、C#、
+  
   Python都已经极为丰富了。
-* 最好身边有能够随时请教的这门语言的高手。有这一条，基本就足够了。
+  
+* 最好身边有能够随时请教的这门语言的高手。如果有了这一条，其他都无所谓了。
+  
 * 最好能够至少分别学习一门静态类型语言与一门动态类型语言。
 
 ### 推荐一些语言学习网站
 
-* 《笨办法学语言》系列，详见下节的介绍。
+* 《笨办法学语言》系列，详见下节的介绍
+* [CodeCombat](http://codecombat.com/) 通过游戏闯关，一步一步学习语言，而且这还是一个开源项目
 * [指导开发者快速学习编程的网站推荐](Useful-Websites-to-Learn-How-to-Code-Quickly.md)
-* 当然，各个语言的官方网站，是必须常去的。
+* 当然，各个语言的官方网站，是必须常去的
 
 ### 一些忠告
 
-* 不要根据流行的编程语言排行榜，选择语言。
-* 不要根据某某语言最容易找工作，薪酬水平最高，来选择语言。
-* 不需要贪图掌握太多的语言，越是深入的学习一门语言A，
-  越是能够快速的学习另一门语言B。A和B可以是任何两种语言。
-  努力深入透彻的掌握目前正在使用的这门语言，深入、再深入。
-  这些努力，在你以后要学习其他语言的时候，一定会有回报的。
+* 不要根据流行的编程语言排行榜，选择语言
+  
+* 不要根据某某语言最容易找工作，薪酬水平最高，来选择语言
+  
+* 不需要贪图掌握太多的语言
+  
+  越是深入的学习一门语言A，越是能够快速的学习另一门语言B。A和B可以是任何两种语言。努力深入透彻的掌握目前正在使用的这门语言，深入、再深入。这些努力，在你以后要学习其他语言的时候，一定会有回报的。
 
 ### 一点建议
 
@@ -195,6 +217,7 @@
 * 这里公认的是指 Lisp —— Paul Graham在The root of LISP 里曾经曰过：
 
 > “吾观之，自古语言模型者，惟 C 与 LISP 简洁而隽永，高山仰止，
+> 
 > 后来者皆取 C 之形，循 LISP 之神也。”
 
 ### 推荐语言
@@ -204,18 +227,20 @@
 首选语言:
 
 如果以常规的应用开发为目的来学习一门语言，那么面向对象类型的语言(java,freePascal,.net)能
+
 够让你养成严谨的基于对象分类思索模式的开发习惯，这会是一个好的开始。
+
 如果是为了快速开发建站，那么php,ruby, nodejs,python不失为一个选择。
+
 不过可能到了后面需要补坑。
 
-|语言名称|主要开源项目	|推荐理由|
-|-------|-----------|-------|
-|ruby|Ruby On Rails|动态语言，简洁清新|
-|java|Tomcat|经典的面向对象静态语言，长盛不衰，优秀项目多如牛毛|
-|python|scipy, nltk, django, ansi|最接近人类语言的通用语言，在开源的科学计算领域一骑绝尘，在数据挖掘、web开发、系统管理等领域也为表现突出|
-|c|lua,mongrel2|面向过程的，存在于所有平台，历史悠久的语言。如果你的未来应用方向是嵌入式开发的话这是首选|
-|nodejs|sails.js,angular,coffee|疯狂的科学家们在用js做一系列的不可思议的事情，有一统的趋势|
-
+| 语言名称   | 主要开源项目                    | 推荐理由                                     |
+| ------ | ------------------------- | ---------------------------------------- |
+| ruby   | Ruby On Rails             | 动态语言，简洁清新                                |
+| java   | Tomcat                    | 经典的面向对象静态语言，长盛不衰，优秀项目多如牛毛                |
+| python | scipy, nltk, django, ansi | 最接近人类语言的通用语言，在开源的科学计算领域一骑绝尘，在数据挖掘、web开发、系统管理等领域也为表现突出 |
+| c      | lua,mongrel2              | 面向过程的，存在于所有平台，历史悠久的语言。如果你的未来应用方向是嵌入式开发的话这是首选 |
+| nodejs | sails.js,angular,coffee   | 疯狂的科学家们在用js做一系列的不可思议的事情，有一统的趋势           |
 
 [对比语言元素: PHP, Perl, Python, Ruby](http://hyperpolyglot.org/scripting)
 
@@ -232,26 +257,38 @@
 简单来说，计算机相关的基础知识主要包括：基本操作与使用；计算机体系结构；网络基础知识；算法导论等等。
 
 * 计算机操作与使用：
+  
   * 会初步使用至少一种操作系统吧；
   * 会自己装一个虚拟机（VirtualBox什么的都可以）；
   * 知道常见的文件格式如何打开；
   * 知道去哪里下载并安装相关的应用软件；
   * 诸如此类的知识。推荐一个网站：[我爱电脑网](http://www.woaidiannao.com/)真心觉得不错，那些乱七八糟的广告可以略过。
+  
 * 计算机体系结构(组成原理)：
+  
   * 《[深入理解计算机系统](http://book.douban.com/subject/5333562/)》
+    
     书评:《[NB学校的NB课程的NB教材--CSAPP](http://book.douban.com/review/3150951/)》
+  
 * 网络基础知识：
+  
   * 《[计算机网络](http://book.douban.com/subject/1179807/)》，
     * 书评:《[我看过的最好的网络入门书](http://book.douban.com/review/2304950/)》
+  
 * 算法与设计：
+  
   * 《[Algorithms](http://book.douban.com/subject/4854123/)》
     * 书评:《[大家好，我是译者](http://book.douban.com/review/5337314/)》
   * 《[设计模式 可复用面向对象软件的基础](http://book.douban.com/subject/2279416/)》
   * 《[代码大全](http://book.douban.com/subject/1951158/)》
   * 《[程序设计实践](http://book.douban.com/subject/1096711/)》
+  
 * 数学基础:
+  
   * 《[具体数学-计算机科学基础](http://book.douban.com/subject/1231910/)》
+  
 * 语言:
+  
   * [java编程思想](http://book.douban.com/subject/2061172/)
   * [Google Java 编程规范](http://google.github.io/styleguide/javaguide.html)
   * [C编程一站式学习](http://akaedu.github.io/book/)
@@ -272,23 +309,28 @@
 * 不断的积累关键字：一个内容你搜索不到，只是因为你没有听说过那个关键字。比如，我想要找一个图像处理的开源项目，如果你知道 “Computer Vision”是指计算机视觉，那么直接搜“Open Source Computer Vision”,OpenCV一定就会是第一个结果。如果你知道OpenCV，那么想要找一个2D图像转换成3D图像的技术，有没有开源实现，就可以试着搜“2D to 3D OpenCV”，也许就会更快的找到想要的内容。当你对某个领域完全没有了解时，可以先试着搜索一些周边词汇，看看相关的文档，然后了解行内人是用哪些关键词的，然后再去搜索，就会迅速的缩小范围。
 * 搜索出错信息：当然，当你遇到错误时，直接把错误输出放到Google里去搜索，也说不定就会遇到和你有相同遭遇的同学，看看别人是怎么解决的。
 * 尝试各种专业的、垂直的搜索引擎：比如StackOverFlow或者Quora这样的专业问答社区，koders 则是一个源代码搜索的引擎。google search里的Blog、Discussions里也有不少好东西。
-* 到百度试试手气：毕竟人家也抓了不少网页了，说不定会有Google没抓到的呢？
+* ~~到百度试试手气：毕竟人家也抓了不少网页了，说不定会有Google没抓到的呢？~~
+  * 不，任何时候，都不要去百度碰运气，你可以选择的搜索引擎有很多：Bing、Yahoo...
 
 ### 英语不能太差
 
 当然，这个更加是没底的事情，只是我自身英文也非常差，所以没资格教育别人，推荐余晟老师的一篇博客，供大家学习：[《关于程序员学英语的经验》](http://www.luanxiang.org/blog/archives/1236.html)
 
 
+
 ## MOOC 课程
 
-注意: ** 绝大部分是英文课程 **
+注意: **绝大部分是英文课程**
 
 ### Python
 
 * [计算机科学及Python编程导论](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-0#.U_HC-_mSxSU)
+  
   * 这个是非常棒的计算机开发入门课程(授课老师Prof. Eric Grimson是MIT的副校长)
+    
     不过是用python语言作为示范讲解的.
-  * [中文字幕](http://open.163.com/special/opencourse/bianchengdaolun.html)(建议和英文字幕对照看) 
+    
+  * [中文字幕](http://open.163.com/special/opencourse/bianchengdaolun.html)(建议和英文字幕对照看)
 
 ### Java
 
@@ -335,21 +377,27 @@
 我认为开发工具分三类，需区别对待：
 
 1. 可以使用一辈子的工具，学习路径几乎没有尽头，值得在职业初期就好好考虑，仔细斟酌进行选择，并在整个生涯中不断努力力求学到更多，你的工作效率会因为这种努力不断提高。如：
-	* 编辑器： emacs, vim
-	* 基本操作系统环境：如bash
-	* 基本编程语言: c / lisp 
-
+   
+   ``` 
+   * 编辑器： emacs, vim
+   * 基本操作系统环境：如bash
+   * 基本编程语言: c / lisp 
+   ```
+   
 2. 任何时候都需要掌握的工具，这类工具总是每隔一个周期就有新的产品出现，取代掉旧有的产品，但相对来说是值得学习的，能保持一个较长的时代的有效期，如：
-    * 版本控制系统：git
-    * 社交网络: stack overflow / github
-    * 写作工具: markdown / reStructureText / latex / html
-    * 通用编程语言： python / ruby / javascript
+   
+   * 版本控制系统：git
+   * 社交网络: stack overflow / github
+   * 写作工具: markdown / reStructureText / latex / html
+   * 通用编程语言： python / ruby / javascript
+   
 3. 特定领域需要的工具，此类工具往往时效性较短，不断被新产品取代，一旦掌握，能在特定领域获得非常高的效率，但缺点是很快会过期，通常是几年之内
-    * 各类编程框架： xcode / rails / backbone
-    * 各类测试框架：xunit / rspec
-    * 用户行为分析工具： ga
-    * 各类设计工具： balsamiq
-    * 各类项目管理，代码集成工具: github / trac / basecamp / redmine
+   
+   * 各类编程框架： xcode / rails / backbone
+   * 各类测试框架：xunit / rspec
+   * 用户行为分析工具： ga
+   * 各类设计工具： balsamiq
+   * 各类项目管理，代码集成工具: github / trac / basecamp / redmine
 
 ### 各种参考资料
 
@@ -357,43 +405,43 @@
 
 * [Programming tool](http://en.wikipedia.org/wiki/Programming_tool)
 * [Text editors](http://en.wikipedia.org/wiki/Category:Free_text_editors)
-    * [Emacs](http://en.wikipedia.org/wiki/Emacs)
-    * [Vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29)
-    * [JEdit](http://en.wikipedia.org/wiki/JEdit)
-    * [Notepad++](http://en.wikipedia.org/wiki/Notepad%2B%2B)
-    * [Sublime Text](http://en.wikipedia.org/wiki/Sublime_Text)
-    * [Atom](https://atom.io/) Github 出品 纯coffeescript(nodejs)开发，我喜欢
+  * [Emacs](http://en.wikipedia.org/wiki/Emacs)
+  * [Vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29)
+  * [JEdit](http://en.wikipedia.org/wiki/JEdit)
+  * [Notepad++](http://en.wikipedia.org/wiki/Notepad%2B%2B)
+  * [Sublime Text](http://en.wikipedia.org/wiki/Sublime_Text)
+  * [Atom](https://atom.io/) Github 出品 纯coffeescript(nodejs)开发，我喜欢
 * [Integrated development environments](http://en.wikipedia.org/wiki/Integrated_Development_Environment) / [IDE List](http://en.wikipedia.org/wiki/Category:Free_integrated_development_environments)
-    * [Emacs](http://en.wikipedia.org/wiki/Emacs)
-    * [Dev-C++](http://en.wikipedia.org/wiki/Dev-C%2B%2B)
-    * [Eclipse](http://en.wikipedia.org/wiki/Eclipse_%28software%29)
-    * [NetBeans](http://en.wikipedia.org/wiki/NetBeans)
-    * [Cloud9 IDE](http://en.wikipedia.org/wiki/Cloud9_IDE)
-    * [Code::Blocks](http://en.wikipedia.org/wiki/Code::Blocks)
-    * [KDevelop](http://en.wikipedia.org/wiki/KDevelop)
+  * [Emacs](http://en.wikipedia.org/wiki/Emacs)
+  * [Dev-C++](http://en.wikipedia.org/wiki/Dev-C%2B%2B)
+  * [Eclipse](http://en.wikipedia.org/wiki/Eclipse_%28software%29)
+  * [NetBeans](http://en.wikipedia.org/wiki/NetBeans)
+  * [Cloud9 IDE](http://en.wikipedia.org/wiki/Cloud9_IDE)
+  * [Code::Blocks](http://en.wikipedia.org/wiki/Code::Blocks)
+  * [KDevelop](http://en.wikipedia.org/wiki/KDevelop)
 * [Revision control software](http://en.wikipedia.org/wiki/Category:Free_revision_control_software)
-    * [SVN](http://en.wikipedia.org/wiki/Apache_Subversion)
-    * [Git](http://en.wikipedia.org/wiki/Git_%28software%29)
-    * [Mercurial](http://en.wikipedia.org/wiki/Mercurial)
+  * [SVN](http://en.wikipedia.org/wiki/Apache_Subversion)
+  * [Git](http://en.wikipedia.org/wiki/Git_%28software%29)
+  * [Mercurial](http://en.wikipedia.org/wiki/Mercurial)
 * [Test-driven development](http://en.wikipedia.org/wiki/Test-driven_development) / [Behavior Driven Development](http://en.wikipedia.org/wiki/Behavior_Driven_Development)
-    * [xUnit](http://en.wikipedia.org/wiki/XUnit)
-    * [RSpec](http://en.wikipedia.org/wiki/RSpec)
+  * [xUnit](http://en.wikipedia.org/wiki/XUnit)
+  * [RSpec](http://en.wikipedia.org/wiki/RSpec)
 * [Rapid prototyping tools](http://garmahis.com/reviews/wireframe-tools/)
-    * [Balsamiq Mockups](http://en.wikipedia.org/wiki/Balsamiq)
-    * [Axure RP Pro](http://en.wikipedia.org/wiki/Axure_RP)
+  * [Balsamiq Mockups](http://en.wikipedia.org/wiki/Balsamiq)
+  * [Axure RP Pro](http://en.wikipedia.org/wiki/Axure_RP)
 * [Project management software](http://en.wikipedia.org/wiki/Category:Free_project_management_software)
-    * [Bugzilla](http://en.wikipedia.org/wiki/Bugzilla)
-    * [XMind](http://en.wikipedia.org/wiki/XMIND)
-    * [Redmine](http://en.wikipedia.org/wiki/Redmine)
-    * [Trac](http://en.wikipedia.org/wiki/Trac)
-    * [MediaWiki](http://www.mediawiki.org/wiki/MediaWiki)
-
+  * [Bugzilla](http://en.wikipedia.org/wiki/Bugzilla)
+  * [XMind](http://en.wikipedia.org/wiki/XMIND)
+  * [Redmine](http://en.wikipedia.org/wiki/Redmine)
+  * [Trac](http://en.wikipedia.org/wiki/Trac)
+  * [MediaWiki](http://www.mediawiki.org/wiki/MediaWiki)
 
 ### 关于英文资料
 
 回应Shi YiMin的评论："大学一、二年级的新生看这个英文的资料是不是会有点困难？"。
 
 我觉得，还是要努力的去看吧，如果发现理解有困难，再去寻求各种帮助。毕竟相比对应的中文版，英文版的内容质量要好得多。再者，维基百科里的这些内容，主要还是简介性质的，不算太难。
+
 
 
 [上一章](Before-start.md) | [下一章](Select-an-open-source-project.md)

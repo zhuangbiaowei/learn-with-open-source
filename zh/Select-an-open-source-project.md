@@ -6,7 +6,7 @@
 
 ### 开源基金会
 
-大部分开源项目都来自于开源社区，而大部分开源社区背后都有基金会在运作，比较知名的有Apache基金会（专注于Java技术的开源软件），Linux基金会（专注于Linux系统的开源软件），Eclipse基金会（专注于基于Eclipse IDE的开源软件），Jboss基金会（专注于JAVA EE方面的开源项目）等。每个基金会都会有目前该基金会正在进行的项目列表，我们可以从其中寻找自己感兴趣的项目。
+大部分开源项目都来自于开源社区，而大部分开源社区背后都有基金会在运作，比较知名的有Apache基金会（以Java技术为主的开源软件），Linux基金会（专注于Linux系统的开源软件），Eclipse基金会（专注于基于Eclipse IDE的开源软件），Jboss基金会（专注于JAVA EE方面的开源项目）等。每个基金会都会有目前该基金会正在进行的项目列表，我们可以从其中寻找自己感兴趣的项目。
 
 * Apache：[http://projects.apache.org/indexes/quick.html](http://projects.apache.org/indexes/quick.html)
 * Linux：[http://www.linuxfoundation.org/programs](http://www.linuxfoundation.org/programs)
@@ -21,14 +21,14 @@
 
 微博上的@OpenERP_Jeff 补充说：[launchpad](https://launchpad.net/)是一个很重要的开源hosting网站，著名的开源项目有ubuntu、mysql和zope。项目计划、蓝图、代码库、bug管理、翻译都很完整。
 
-|服务提供商|SVN|Git|Mercurial|介绍|
-|---------|---|---|---------|----|
-|[Google Code](http://code.google.com/)|支持|支持|支持|Google Code属于“富二代”，其在速度上，使用体验上都优于其他几个托管网站，尤其是其丰富的帮助文档，其中有很多还有对应的中文版。因此，对于初学者来说，比较容易上手，也可以获得一个很好的学习机会。当然，因为都是google.com的域名，所以时不时的会访问不了管理界面，原因大家懂的。另外，因为使用简单方便，相应的其在功能上就相对较弱一点。但是应付一般的项目还是绰绰有余。|
-|[Sourceforge](http://http//sourceforge.net/)|支持|支持|支持|SourceForge可以算是开源界的托管始祖，很多古老的，知名的开源项目都托管在它上面，其对开源界的贡献估计可以和Apache对 Java界的贡献相提并论了。因此，其在功能上经过了长时间的考验，大家想要的功能都能找到。不过，因为强大，其上手难度也相对较高，而且全英文界面，对于英文较弱的同学来说也是一件很痛苦的事。|
-|[Github](http://github.com/)|支持|支持|不支持|GitHub属于托管界的新贵，伴随着Git的蓬勃发展而发展。越来越多的开源软件使用Github托管。最近因Rails漏洞被Hacker黑了也让其处于媒体的风口浪尖。这个事件从一个侧面反映了其在业界的影响力。|
-|[CodePlex](http://www.codeplex.com/)|Yes|Yes|Yes|微软的开源项目基地|
-|[BitBucket](https://bitbucket.org/)|No|Yes|Yes|Python的项目在上面比较多|
-|[launchpad](https://launchpad.net/)|No|No|No|使用[bzr](http://bazaar.canonical.com/)管理代码，项目很多，如Ubuntu等，中国大陆访问速度巨慢无比|
+| 服务提供商                                    | SVN  | Git  | Mercurial | 介绍                                       |
+| ---------------------------------------- | ---- | ---- | --------- | ---------------------------------------- |
+| [Google Code](http://code.google.com/)   | 支持   | 支持   | 支持        | Google Code属于“富二代”，其在速度上，使用体验上都优于其他几个托管网站，尤其是其丰富的帮助文档，其中有很多还有对应的中文版。因此，对于初学者来说，比较容易上手，也可以获得一个很好的学习机会。当然，因为都是google.com的域名，所以时不时的会访问不了管理界面，原因大家懂的。另外，因为使用简单方便，相应的其在功能上就相对较弱一点。但是应付一般的项目还是绰绰有余。注：**已经于XXXX年XX月XX日关闭了** |
+| [Sourceforge](http://http//sourceforge.net/) | 支持   | 支持   | 支持        | SourceForge可以算是开源界的托管始祖，很多古老的，知名的开源项目都托管在它上面，其对开源界的贡献估计可以和Apache对 Java界的贡献相提并论了。因此，其在功能上经过了长时间的考验，大家想要的功能都能找到。不过，因为强大，其上手难度也相对较高，而且全英文界面，对于英文较弱的同学来说也是一件很痛苦的事。 |
+| [Github](http://github.com/)             | 支持   | 支持   | 不支持       | GitHub属于托管界的新贵，伴随着Git的蓬勃发展而发展。越来越多的开源软件使用Github托管。最近因Rails漏洞被Hacker黑了也让其处于媒体的风口浪尖。这个事件从一个侧面反映了其在业界的影响力。 |
+| [CodePlex](http://www.codeplex.com/)     | Yes  | Yes  | Yes       | 微软的开源项目基地                                |
+| [BitBucket](https://bitbucket.org/)      | No   | Yes  | Yes       | Python的项目在上面比较多                          |
+| [launchpad](https://launchpad.net/)      | No   | No   | No        | 使用[bzr](http://bazaar.canonical.com/)管理代码，项目很多，如Ubuntu等，中国大陆访问速度巨慢无比 |
 
 维基百科有一个词条，列出了非常非常多的开源托管服务的比较：
 
@@ -41,27 +41,37 @@
 
 ### 各大科技公司的研究院
 
-Google的BigTable论文，Amazon的Dynamo论文开启了目前火热的云计算时代，各大科技公司对技术领域的引领能力毋庸置疑，同时，很多公司也是开源运动的忠实支持者，像国外的Google，Facebook，Yahoo，国内的淘宝，百度，盛大，豆瓣等，连曾经的坚决反对者 Microsoft也开始通过赞助Apache基金会扭转自己在开源界的形象。关注各大科技公司的研究院最新的开源软件可以了解目前整个业界的技术趋势，而且他们开源的软件的未来发展前景都比较看好，因此，是一个寻找开源软件的有效途径。
+Google的BigTable论文，Amazon的Dynamo论文开启了目前火热的云计算时代，各大科技公司对技术领域的引领能力毋庸置疑，同时，很多公司也是开源运动的忠实支持者，像国外的Google，Facebook，Yahoo，国内的淘宝，百度，~~盛大~~，豆瓣等，连曾经的坚决反对者 Microsoft也开始通过赞助Apache基金会扭转自己在开源界的形象。关注各大科技公司的研究院最新的开源软件可以了解目前整个业界的技术趋势，而且他们开源的软件的未来发展前景都比较看好，因此，是一个寻找开源软件的有效途径。
+
+
 
 ### 谷歌编程之夏(Google Summer of Code)
 
 我个人觉得GSoC是一个寻找开源项目的好地方。原因有以下几点：
+
 1. GSoC有一个[历年来的参与者列表](http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012)([http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012](http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012))，这个列表中的有各种各样的开源组织可以让想参与的人挑选（今年的列表上有180个组织）。
+   
 2. 参与者列表上的组织是经过一定的审核才选出来的，选拨出来的组织一般质量比较好，社区活跃度也很高。
+   
 3. 列表上的组织为了吸引参加人员，一般在项目的主页上会有专门的wiki为参加人员导航(比如这个[DragonFlyBSD项目](http://www.dragonflybsd.org/docs/developer/gsoc2012student/)([http://www.dragonflybsd.org/docs/developer/gsoc2012student/](http://www.dragonflybsd.org/docs/developer/gsoc2012student/)))，很适合新手快速了解这个项目。
-我想即使无法参加GSoC本身，通过GSoC的预热也是一个很不错的机会，可以让想要参与开源项目的人有一个很好的入口。
+   
+   我想即使无法参加GSoC本身，通过GSoC的预热也是一个很不错的机会，可以让想要参与开源项目的人有一个很好的入口。
 
 注：本小节来自于Ashi的邮件，在此表示感谢！
 
 ### 搜索引擎
 
-如果您对某类技术特别感兴趣，或者遇到某个技术难题想找业界成熟的解决方案，搜索引擎（Google，Baidu，Bing）都是一个不错的工具，其在我们寻找开源软件的过程中也起同样的作用。通过一些关键词的罗列就能帮助我们找到感兴趣的开源项目。
+如果您对某类技术特别感兴趣，或者遇到某个技术难题想找业界成熟的解决方案，搜索引擎（Google，Bing）都是一个不错的工具，其在我们寻找开源软件的过程中也起同样的作用。通过一些关键词的罗列就能帮助我们找到感兴趣的开源项目。
 
 ### 博客和微博
 
 关注各个领域大牛们的博客和微博，他们会紧跟技术节奏给我们推荐他们领域最新的开源软件，甚至会为我们讲解这些开源软件的底层实现原理，带领我们入门，这是多么高尚的行为啊。
 
 关注各大科技公司的博客和微博，他们也会经常透露自己的开源计划，以及分析业界的一些开源软件在自己公司内部的应用，这对我们深入了解一个开源软件的技术价值有很大的帮助。
+
+### 微信公众号
+
+
 
 ### 技术问答网站
 
@@ -98,9 +108,12 @@ Google的BigTable论文，Amazon的Dynamo论文开启了目前火热的云计算
 ### 优先选择能够独立运行的项目
 
 开源的项目有很多种类，能够独立运行的项目，当然很多。但是也有不少项目，是其他开源项目的插件，类库，扩展包之类的东西，这些在一开始接触开源的时候，最好不要涉猎，因为理解他们，可能会需要理解他们背后的那个庞然大物，往往会遭遇很多难解的细节，一不小心，就进行不下去了。
+
 当然，还有一类项目，他们虽然是独立运行，但是想要让他们独立运行成功，还得安装、配置很多其他的依赖项目，这个往往会让初学者特别绝望，搞了一个礼拜，居然这个项目都还没有运行起来。。。
 
 所以，小的，能够独立运行的，不依赖于太多其他项目的开源项目，可以优先选择。
+
+PS. 在Docker出现以后，运行一个项目，往往只需要一行简单的命令。在Github上，也能找到很多demo项目，或者是docker-compose.yml文件，这些是很好的入手点。
 
 ### 选择活跃的项目
 
@@ -117,20 +130,20 @@ Google的BigTable论文，Amazon的Dynamo论文开启了目前火热的云计算
 ### 选择合适的版本
 
 最后，面对已经发展了多年的开源项目，最好不要选择最新的版本。如果你是在工作中要想使用这个项目，当然应该选择最新的稳定版，甚至测试版、 beta版。但是如果是出于学习的目的，为了减少复杂度，快速的理解这个项目的核心结构与开发思想，选择第一个稳定版，是一个比较妥当的办法。
+
 然后，在初步理解了第一个版本的代码之后，再不断的通过阅读changelogs，追踪最新的版本中的代码变更，体会作者修改代码的目的、手法与技巧。这样应该会有很大的收获。
 
 ## 3.3. 值得推荐给大家的开源项目
 
-|项目名称|语言（平台）|所属领域|推荐理由|
-|-------|-----------|-------|------|
-|[Petshop4.0](http://msdn.microsoft.com/en-us/library/Aa479070)|NET|企业开发|1.微软官方用来展示.Net企业开发实力的项目,架构优雅;2.涉及中小型企业开发常用技术;3.网络资源较多|
-|[Haozesfx](http://haozesfx.codeplex.com/)|NET|Winform,SIP协议|1.基于飞信实现的开源项目，实用性强,方便二次开发;2.结构清晰，设计成熟;3.实现了SIP协议|
-|[ThinkPHP](http://www.thinkphp.cn/)|PHP|Web框架|1.应用较为广泛的Web开发框架，成熟稳定;2.集成多项先进的设计思想;3.活跃的社区支持和完善的中文文档(帮助手册,Demo,代码注释)|
-|[Nginx](http://nginx.org)|C/Linux/Unix/windows/MAC|基础设施|代码优秀简洁，插件系统牛逼，HTTP协议可谓当今码农的必备知识|
-|[bottle](http://bottlepy.org)|Python/Linux/Unix/windows/MAC|web开发|代码优秀简洁，3000多行代码（包括注释）搞定web server|
-
-
-
-其他：[memcached](http://memcached.org/) c语言 Free & open source, high-performance, distributed memory object caching system。by Jun Guo
+| 项目名称                                     | 语言（平台）                        | 所属领域          | 推荐理由                                     |
+| ---------------------------------------- | ----------------------------- | ------------- | ---------------------------------------- |
+| [Petshop4.0](http://msdn.microsoft.com/en-us/library/Aa479070) | NET                           | 企业开发          | 1.微软官方用来展示.Net企业开发实力的项目,架构优雅;2.涉及中小型企业开发常用技术;3.网络资源较多 |
+| [Haozesfx](http://haozesfx.codeplex.com/) | NET                           | Winform,SIP协议 | 1.基于飞信实现的开源项目，实用性强,方便二次开发;2.结构清晰，设计成熟;3.实现了SIP协议 |
+| [ThinkPHP](http://www.thinkphp.cn/)      | PHP                           | Web框架         | 1.应用较为广泛的Web开发框架，成熟稳定;2.集成多项先进的设计思想;3.活跃的社区支持和完善的中文文档(帮助手册,Demo,代码注释) |
+| [Nginx](http://nginx.org)                | C/Linux/Unix/windows/MAC      | 基础设施          | 代码优秀简洁，插件系统牛逼，HTTP协议可谓当今码农的必备知识          |
+| [bottle](http://bottlepy.org)            | Python/Linux/Unix/windows/MAC | web开发         | 代码优秀简洁，3000多行代码（包括注释）搞定web server        |
+| [memcached](http://memcached.org/)       | C                             | 基础设施          | Free & open source, high-performance, distributed memory object caching system。by Jun Guo |
+| [Docker](https://docker.com/)            | Go                            | 容器,基础设施       | 目前最热容器技术的基石，有孙宏亮《Docker源代码解读》可供参考        |
 
 [上一章](Start.md) | [下一章](Hello-world.md)
+
