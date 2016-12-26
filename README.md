@@ -4,17 +4,17 @@
 
 This book uses [GitBook](https://www.gitbook.com) to build.
 
-All contents is licensed under the [ Creative Commons Attribution Non Commercial Share Alike 4.0 license](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+All contents licensed under the [ Creative Commons Attribution Non Commercial Share Alike 4.0 license](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Welcome to join us to finish this book.
+Welcome! Join us to finish this book.
 
 You can visit the online ebook: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
 
 
-##  for developer
+##  for developers
 
 ### Build the book
-Note: your need Linux or MacOS. Windows is not supported yet.
+Note: you will need Linux or MacOS. Windows is not yet supported.
 
 1. install [node.js](https://nodejs.org)
 2. install [ebook-convert from calibre](http://calibre-ebook.com/download)
@@ -44,10 +44,10 @@ Note: your need Linux or MacOS. Windows is not supported yet.
     ./node_modules/.bin/gitbook pdf .
     ```
 
-### Update contributors automatically
+### Update contributions automatically
 
-It will update contributors through git commits after pull or merge executed.
-But maybe you wanna update it manually.
+It will update contributoions through git commits after a pull request or merge is executed.
+If you want to update it manually:
 
 This script will update the "Contributor.md" file and copy it to the "zh" folder.
 
@@ -62,7 +62,7 @@ on the root of the repository.
 
 ### Update TOC automatically
 
-TODO: this is not fined.
+TODO: this is not finished.
 
 The gitbook uses the SUMMARY.md to get the TOC.
 the list in the SUMMARY.md will be the TOC.
