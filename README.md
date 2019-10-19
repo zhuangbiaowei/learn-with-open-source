@@ -1,4 +1,4 @@
-# Learn Coding With Open Souce
+# Learn Coding With Open Source
 
 [![Join the chat at https://gitter.im/zhuangbiaowei/learn-with-open-source](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zhuangbiaowei/learn-with-open-source?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -65,7 +65,7 @@ on the root of the repository.
 TODO: this is not finished.
 
 The gitbook uses the SUMMARY.md to get the TOC.
-the list in the SUMMARY.md will be the TOC.
+The list in the SUMMARY.md will be the TOC.
 
 ```
 1. [Topic](topic.md)
@@ -82,7 +82,7 @@ the list in the SUMMARY.md will be the TOC.
 
 the workflow automation is:
 
-* a text file to determine the markdown files order.
+* a text file to determine the markdown files order,
   or use the file name order in a directory.
 * get toc of each markdown file.
 * merge it into SUMMARY.md
