@@ -11,7 +11,7 @@ Welcome! Join us to finish this book.
 You can visit the online ebook: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
 
 
-##  for developers
+## For developers
 
 ### Build the book
 Note: you will need Linux or MacOS. Windows is not yet supported.
