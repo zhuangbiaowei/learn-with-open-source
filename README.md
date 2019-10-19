@@ -78,7 +78,7 @@ The list in the SUMMARY.md will be the TOC.
 **note:**
 
 * the parent directory is not supported via gitbook.
-* the topic in same file could not be a link.
+* the topic in the same file could not be a link.
 
 the workflow automation is:
 
