@@ -1,17 +1,21 @@
 # Learn Coding With Open Souce
 
 [![Join the chat at https://gitter.im/zhuangbiaowei/learn-with-open-source](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zhuangbiaowei/learn-with-open-source?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Powered by Gitbook](https://img.shields.io/badge/Powered%20by-Gitbook-blue)](https://www.gitbook.com)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This book uses [GitBook](https://www.gitbook.com) to build.
 
-All contents licensed under the [ Creative Commons Attribution Non Commercial Share Alike 4.0 license](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+License: CC BY-NC-SA 4.0
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />All contents licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons Attribution Non Commercial Share Alike 4.0 license</a>.
 
 Welcome! Join us to finish this book.
 
 You can visit the online ebook: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
 
 
-## For developers
+##  for developers
 
 ### Build the book
 Note: you will need Linux or MacOS. Windows is not yet supported.
@@ -101,7 +105,9 @@ the workflow automation is:
 诚邀您的参与！
 
 # 著作权申明
+License: CC BY-NC-SA 4.0
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 -   本作品选择采用：署名-非商业性使用-相同方式共享 的CC协议。
     -   您可以：复制、发行、展览、表演、放映、广播或通过信息网络传播本作品。以及创作演绎作品。
     -   惟须遵守下列条件：
