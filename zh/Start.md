@@ -311,6 +311,8 @@
 * 尝试各种专业的、垂直的搜索引擎：比如StackOverFlow或者Quora这样的专业问答社区，koders 则是一个源代码搜索的引擎。google search里的Blog、Discussions里也有不少好东西。
 * ~~到百度试试手气：毕竟人家也抓了不少网页了，说不定会有Google没抓到的呢？~~
   * 不，任何时候，都不要去百度碰运气，你可以选择的搜索引擎有很多：Bing、Yahoo...
+  *2019Google镜像地址：http://ac.scmor.com/ 包含谷歌学术镜像与网页镜像。
+
 
 ### 英语不能太差
 
