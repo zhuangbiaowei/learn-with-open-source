@@ -85,3 +85,11 @@ jQuery是最著名的JavaScript框架。现在，你可以直接在浏览器中�
 
 
 ![](images/9-useful-mongodb.jpg)
+
+## [学堂在线](https://next.xuetangx.com/)
+
+语言：微信小程序，算法
+
+这是清华大学等机构支撑的在线教育网站。推荐算法，微信小程序制作等课程。
+
+![](images/9-useful-学堂在线.jpg)
