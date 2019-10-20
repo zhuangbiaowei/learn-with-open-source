@@ -4,7 +4,7 @@
  * @Author: Yihui
  * @Date: 2019-10-20 23:51:14
  * @LastEditors: Yihui
- * @LastEditTime: 2019-10-21 00:04:24
+ * @LastEditTime: 2019-10-21 01:00:36
  -->
 # Learn Coding with Open Source
 
@@ -14,13 +14,13 @@
 
 This book uses [GitBook](https://www.gitbook.com) to build.
 
-License: CC BY-NC-SA 4.0
+**License: CC BY-NC-SA 4.0**
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />All contents licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons Attribution Non Commercial Share Alike 4.0 license</a>.
 
 Welcome! Join us to finish this book.
 
-You can visit the online ebook: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
+You can visit the online ebook: *[Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)*
 
 
 ##  for developers
@@ -48,12 +48,12 @@ Note: you will need Linux or MacOS. Windows is not yet supported.
    2. run a local server to read html:
 
     ```bash
-    ./node_modules/.bin/gitbook serve .
+    ./node_modules/.bin/gitbook serve.
     ```
    2. generate the pdf:
 
     ```bash
-    ./node_modules/.bin/gitbook pdf .
+    ./node_modules/.bin/gitbook pdf.
     ```
 
 ### Update contributions automatically
