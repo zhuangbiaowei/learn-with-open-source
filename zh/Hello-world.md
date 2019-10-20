@@ -8,7 +8,7 @@
 
 首先需要介绍一些基础的概念，这里只是简要的介绍，比较详细的介绍，可以参见[Understanding Version-Control Systems](http://www.catb.org/%7Eesr/writings/version-control/version-control.html)，期待有人能够将其翻译为中文。（或者已经有中译本了，欢迎告知我。）
 
-**源代码([Source Code](http://en.wikipedia.org/wiki/Source_code))**：也就是通常一个软件，由程序员编写，并且可以被其他程序员阅读的，可以被直接执行/或编译后执行的文本代码。
+**源代码([Source Code](http://en.wikipedia.org/wiki/Source_code))**：也就是通常一个软件，由程序员编写，并且可以被其他程序员阅读的，可以被直接执行/编译后执行的文本代码。
 
 **源代码管理与版本控制([Version control/Revision control](http://en.wikipedia.org/wiki/Revision_control))** ：由于源代码数量急剧膨胀、变更越来越频繁，可能修改同一个源文件的人也越来越多，需要将这些代码管理起来，于是每次变更被称之为一次修正 (Revision)。版本控制更准确的说法应该是“Revision control”，每当我们修改一个源代码文件并再次保存时，就出现了两个不同的版本，一个是修改前的，一个是修改以后的。而版本控制，就是确保源文件的每一次修改，都被记录下来，并且可以知道是被谁修改的，是因为什么原因而修改的。必要时，可以找回任何一个版本的源代码。
 
