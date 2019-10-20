@@ -1,16 +1,16 @@
 # Before the beginning
 ## The target audience for this document
-### The confused software developers
-* Developers who want to write code that can be easily read but don't know how to do that  
-* Developers who want to understand other people's code  
+### The software developers confused in opensource
+* Developers who would like to write readily intelligible code but don't know how to start  
+* Developers who would like to understand other people's code  
 ### Software development beginner
-This is a document for software development beginners, who can be defined as having learned no more than two languages and being able to complete most of exercises in the course in terms of the language skills they have learned. From the general situation of college education, they could basicly complete the final course assignments arranged by teachers. We may not be able to say that they have done very well. It is also difficult to improve further.  
+This is a document for software development beginners, who have learned no more than two programming languages and being able to complete most of exercises in the course in terms of the language skills they have learned. From the general situation of college education, they could only complete the baseline of final course assignments arranged by teachers. That is to say, they are not so well in course and difficult in finding a way improve their skills.
 
-For students who have graduated from college(plus or minus one or two years), it is difficult for them to get access to truly complex projects, and they will be incharge of the detailed parts even if they are involved in complex projects. They are eager to improve their software development ability quickly, but by accident, what they lack most is the opportunity to improve their ability.
+For students who graduated or will graduate from universities(within two years), it is difficult for them to get access to truly complex projects, and they will be incharge of the trivial details even if they are involved in complex projects. They are eager to improve their ability in software development as soon as possible, but what they lack mostly just is the opportunity to improve themselves.
 
 Therefore, this paper hopes to introduce a more reasonable method to help classmates to improve the ability of software development in a more scientific and reasonable way.
 ### First-time users of open source software
-In the field of software development, it is almost impossible not to touch open source projects at all. How to improve the development efficiency with the help of open source projects in the daily development workand reduce the duplication of effort and how to benefit from open source rather than suffer from it is also an interesting topic. In a nutshell, it is risky to use the open source software without reading the source code(there is no different from using normal closed source software or closed source libraries). But if we can read and understand the source code, we can avoid this risk,and the better we understand it, the better we can use the software. Open source software offers this possibility to us.
+In the field of software development, it is almost impossible to ignore open source projects at all. How to improve the development efficiency with the help of open source projects in the daily development work and reduce the duplication of effort and how to benefit from open source rather than suffer from it is also an interesting topic. In a nutshell, it is risky to use the open source software without reading the source code(there is no different from using normal closed source software or closed source libraries). But if we can read and understand the source code, we can avoid this risk,and the better we understand it, the better we can use the software. Open source software offers this possibility to us.
 
 This article also hopes to help those who are new to open source and want to make good use of it by sharing experience of the experienced person.
 ### Hobbyists wandering outside the open source community
@@ -19,19 +19,19 @@ Do you want to be part of the open source community and give back some help to t
 Since this is an open writing document, I am not particularly sure when I write this paragraph that this document will have only four target users. Maybe it can be of value to more people……
 ## The basic conditions
 ### A computer with Internet access
-It does seem irresponsible to say that these are all the basics. But it's really enough. Assuming you are just working on an open source JavaScript project, install a developer-friendly browser like FireFox/Chrome and you are basiclly ready to start.
+It does seem irresponsible to say that these are all the basics. But it's really enough. Assuming that you are just working in an open source JavaScript project, install a developer-friendly browser like FireFox/Chrome and you will be basiclly ready to start.
 
 Furtherly, of course, there can be more fastidious. For example, Windows or Linux/MacOS? What distribution should you choose for Linux? Once you get into it, there will be endless problems waiting for you.
 ### The preferred Ubuntu
-First, explain why Linux should be choosen because open source software, in many cases, is a more stable and reliable version for Linux, which is easier to solve when it comes to version dependence. Of course, there are many reliable open source projects for Windows, so Linux is more of a preference for using more open source. The jade bed mentioned in JinYong's "The Return Of the Condor Heros" can be used to explain the mystery. When you are in an open source enviroment and when your operations are exposed to open source concepts, you are making progress all the time and it's going to be faster.
+First, the reason why Linux should be choosen is that open source software, in many cases, is a more stable and reliable version for Linux, which is easier to solve when it comes to version dependence. Of course, there are many reliable open source projects for Windows, so Linux is more of a preference for using more open source. The jade bed mentioned in JinYong's "The Return Of the Condor Heros" can be used to explain the mystery. When you are in an open source enviroment and when your operations are exposed to open source concepts, you are making progress all the time and it's going to be faster.
 
-The reason of choosing Ubuntun is actually my own preference, as its ease of use is by far the best. It's more friendly for beginners. There are more Chinese resources on the Internet.
+The reason of choosing Ubuntun is actually my own preference, for it is by far the easiest to use. It's more friendly for beginners. There are more Chinese resources on the Internet.
 
-In addition, there is a very famous article on the Internet named "[Why developers should use Mac OS X and simple history of OS X(《开发人员为何应该使用Mac OS X 兼 OS X 小史》）](https://blog.youxu.info/2010/02/28/why-mac-os-x-for-programmers/)"(https://blog.youxu.info/2010/02/28/why-mac-os-x-for-programmers/), which is also very convincing and recommended to read.
+In addition, there is a very famous article on the Internet named "[Why developers should use Mac OS X and simple history of OS X(《开发人员为何应该使用Mac OS X 兼 OS X 小史》）](https://blog.youxu.info/2010/02/28/why-mac-os-x-for-programmers/)", which is also very convincing and recommended to read.
 ### If you really like Windows
-Admittedly, in the Windows enviroment, you also can learn about open source. There are many open source people working hard on the Windows platform. A lot of environment building tools are being developed bit by bit like RubyInstaller, XAMPP, cygwin and so on.(Specific nouns will not be explained here)
+Admittedly, in the Windows enviroment, you can also learn about open source. There are many open source person working hard on the Windows platform. A lot of environment building tools are being developed inch by inch like RubyInstaller, XAMPP, cygwin and so on.(Specific nouns will not be explained here)
 
-But, a lot of time, you will encounter inexplicable report error and it is not unreasonable that a lot of people will suddenly look up into the sky in a night and curse:"This rotten Windows!"
+But, at a lot of time, you will encounter inexplicable report error and it is not unreasonable that a lot of people will suddenly look up into the sky in a night and curse:"This rotten Windows!"
 ### The network will not be blocked
 Yes, if this article is lucky enough to be translated into English, this paragraph can be completely deleted. Because they could not imagine that we would encounter such difficulties. And overcoming this difficulty is an absolutely necessary skill for learning software development. So……if you do find your target site inaccessible, ask for help. (Sorry, I can't help you in this document. But I left my email.)
 
