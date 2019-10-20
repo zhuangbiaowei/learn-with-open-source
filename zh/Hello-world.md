@@ -56,8 +56,8 @@
 三本值得一看的书
 
 * [Subversion 与版本控制](http://svnbook.red-bean.com/)
-* [progit 中文版](http://opengit.org/open/?f=progit_01-introduction)
-* [hginit.com 中文版](http://codinn.com/projects/hginit/view/)
+* [progit 中文版](https://progit.bootcss.com/)
+* [hginit.com 中文版](https://zh-hginit.readthedocs.io/en/latest/)
 
 另外
 
