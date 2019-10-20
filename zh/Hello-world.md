@@ -361,7 +361,7 @@
 
 LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation. 2. Read the documentation. 3. Remember that you were warned twice about reading the documentation.
 
-是的，认真的，非常认真的阅读相关文档，是最重要的方法。其他的一切方法，都是排在这个后面的。
+是的，认真地，非常认真地阅读相关文档，是最重要的方法。其他的一切方法，都是排在这个后面的。
 
 当然，文档的正确性和完整性，也是可以怀疑的。有很多开源项目，往往存在文档bug、文档版本与代码版本不同步等问题。比如LLVM的安装文档，也并非完全正确，我到现在都还不明白，在1.2.3.条那么正经的提示之后，他的第8条，只有configure、make、make check-all、make update，居然没有make install！
 
