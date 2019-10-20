@@ -1,0 +1,43 @@
+{
+  "name": "learn-with-open-source",
+  "version": "0.0.1",
+  "description": "the source of the book 'learn coding with the open source projects'",
+  "private": true,
+  "scripts": {
+    "refresh-contributors": "./node_modules/.bin/get-contributors > ./Contributor.md",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zhuangbiaowei/learn-with-open-source.git"
+  },
+  "keywords": [
+    "book",
+    "chinese",
+    "learning",
+    "coding"
+  ],
+  "contributors": [
+    {
+      "name": "Riceball LEE",
+      "url": "https://github.com/snowyu"
+    },
+    {
+      "name": "BiaoWei Zhuang",
+      "url": "https://github.com/zhuangbiaowei"
+    }
+  ],
+  "license": "CC",
+  "bugs": {
+    "url": "https://github.com/zhuangbiaowei/learn-with-open-source/issues"
+  },
+  "homepage": "https://github.com/zhuangbiaowei/learn-with-open-source",
+  "dependencies": {
+    "get-contributors": "^0.2.0",
+    "git-hooks": "^1.0.0-rc.1",
+    "gitbook-cli": "^0.3.4",
+    "gitbook-plugin-mathjax": "^1.0.0",
+    "gitbook-plugin-toc": "snowyu/gitbook-plugin-toc",
+    "markdown-toc": "^0.11.5"
+  }
+}
