@@ -98,7 +98,7 @@ the workflow automation is:
 
 本书使用 [GitBook](https://www.gitbook.com) 来 build 电子书。
 
-联机电子书版本在这里: [Learn Coding With Open Source](https://zhuangbiaowei.gitbook.io/learn-with-open-source/)
+在线电子书版本网址: [Learn Coding With Open Source](https://zhuangbiaowei.gitbook.io/learn-with-open-source/)
 
 开放文档：《借助开源项目，学习软件开发》
 
