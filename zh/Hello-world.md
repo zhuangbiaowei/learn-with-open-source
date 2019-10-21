@@ -14,7 +14,7 @@
 
 **软件版本号([Software Version](http://en.wikipedia.org/wiki/Software_versioning))** ：这里的版本，是另外一个概念，源代码中的任何一个文件，都存在一个修订版本号，而作为整个软件，无论对内称呼还是对外发布，都需要一个更加正式的、完整的版本号。前者的英文是Revision，而后者的英文是Version。因此，当我们谈到版本管理的时候，很可能是同时谈到两者：一个是源代码的Revision，一个是整个项目的Version。
 
-**版本控制工具([Revision control software](http://en.wikipedia.org/wiki/List_of_revision_control_software))** ：为了帮助更好的管理源代码，程序员们开发出了林林总总的版本控制工具，有闭源的，也有开源的。而现在市面上流行的，已经几乎全是开源的了。简单的列出几种在下面：
+**版本控制工具([Revision control software](http://en.wikipedia.org/wiki/List_of_revision_control_software))** ：为了更好的管理源代码，程序员们开发出了林林总总的版本控制工具，有闭源的，也有开源的。而现在市面上流行的，已经几乎全是开源的了。简单的列出几种在下面：
 
 * 仅管理本地源文件
   * 免费/开源：SCCS (1972) RCS (1982)
