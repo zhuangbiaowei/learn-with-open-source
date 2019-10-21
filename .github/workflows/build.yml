@@ -18,7 +18,7 @@ jobs:
         node-version: '10.x'
     - name: npm install, build, and test
       run: |
-        apt install -y calibre
+        sudo apt install -y calibre
         npm install -g gitbook-cli
         npm install
         gitbook pdf
