@@ -13,7 +13,7 @@ License: CC BY-NC-SA 4.0
 
 Welcome! Join us to finish this book.
 
-You can visit the online ebook: *[Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)*
+You can visit the online ebook: [Learn Coding With Open Source](https://zhuangbiaowei.gitbook.io/learn-with-open-source/)
 
 
 ##  for developers
@@ -98,7 +98,7 @@ the workflow automation is:
 
 本书使用 [GitBook](https://www.gitbook.com) 来 build 电子书。
 
-联机电子书版本在这里: *[Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)*
+联机电子书版本在这里: [Learn Coding With Open Source](https://zhuangbiaowei.gitbook.io/learn-with-open-source/)
 
 开放文档：《借助开源项目，学习软件开发》
 
