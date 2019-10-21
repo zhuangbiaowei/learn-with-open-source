@@ -43,7 +43,7 @@ Note: you will need Linux or MacOS. Windows is not yet supported.
     ```bash
     ./node_modules/.bin/gitbook serve .
     ```
-   2. generate the pdf:
+   3. generate the pdf:
 
     ```bash
     ./node_modules/.bin/gitbook pdf .
