@@ -41,7 +41,7 @@ RubyMonk是一个互动的学习平台。你可以通过课程、问题解决或
 
 ![](images/9-useful-rubyMonk.jpg)
 
-## [Hackety](http://hackety-hack.com/)
+## [Hackety](https://github.com/hacketyhack/hacketyhack)
 
 语言：Ruby 
 
