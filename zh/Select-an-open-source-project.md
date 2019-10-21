@@ -140,5 +140,27 @@ PS. 在Docker出现以后，运行一个项目，往往只需要一行简单的�
 | [memcached](http://memcached.org/)       | C                             | 基础设施          | Free & open source, high-performance, distributed memory object caching system。by Jun Guo |
 | [Docker](https://docker.com/)            | Go                            | 容器,基础设施       | 目前最热容器技术的基石，有孙宏亮《Docker源代码解读》可供参考        |
 
+## 3.4 各语言的Awesome List
+
+github中有人总结过各个语言在不同的应用方向上值得推荐的开源项目列表, 即Awesome List. Awesome List不仅可以方便大家找到优秀的项目进行学习, 还可以让大家方便地找到各种已有的轮子来进行开发.
+
+| 语言/平台             | Awesome List 地址 |
+| ---------------- | ----------------|
+| Java | [awesome-java](https://github.com/akullpp/awesome-java) |
+| c++ | [awesome-cpp](https://github.com/fffaraz/awesome-cpp) |
+| python | [awesome-python](https://github.com/vinta/awesome-python) |
+| go | [awesome-go](https://github.com/avelino/awesome-go) |
+| javascript(浏览器) | [awesome-javascript](https://github.com/sorrycc/awesome-javascript) |
+| nodejs | [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) |
+| .net | [awesome-dotnet](https://github.com/quozd/awesome-dotnet) |
+| .net core | [awesome-dotnet-core](https://github.com/thangchung/awesome-dotnet-core) |
+| ruby | [awesome-ruby](https://github.com/markets/awesome-ruby) |
+| php | [awesome-php](https://github.com/ziadoz/awesome-php) |
+| rust | [awesome-rust](https://github.com/rust-unofficial/awesome-rust) |
+| dart | [awesome-dart](https://github.com/yissachar/awesome-dart) |
+| ios(Objective-C和swift) | [awesome-ios](https://github.com/vsouza/awesome-ios) |
+| android | [awesome-android](https://github.com/snowdream/awesome-android) |
+
+
 [上一章](Start.md) | [下一章](Hello-world.md)
 
