@@ -8,7 +8,7 @@
 
 大部分开源项目都来自于开源社区，而大部分开源社区背后都有基金会在运作，比较知名的有Apache基金会（以Java技术为主的开源软件），Linux基金会（专注于Linux系统的开源软件），Eclipse基金会（专注于基于Eclipse IDE的开源软件），Jboss基金会（专注于JAVA EE方面的开源项目）等。每个基金会都会有目前该基金会正在进行的项目列表，我们可以从其中寻找自己感兴趣的项目。
 
-* Apache：[http://projects.apache.org/indexes/quick.html](http://projects.apache.org/indexes/quick.html)
+* Apache：[https://projects.apache.org/projects.html?name](https://projects.apache.org/projects.html?name)
 * Linux：[http://www.linuxfoundation.org/programs](http://www.linuxfoundation.org/programs)
 * Eclipse：[http://www.eclipse.org/projects/listofprojects.php](http://www.eclipse.org/projects/listofprojects.php)
 * Jboss：[http://www.jboss.org/projects](http://www.jboss.org/projects)
@@ -47,7 +47,7 @@ Google的BigTable论文，Amazon的Dynamo论文开启了目前火热的云计算
 
 我个人觉得GSoC是一个寻找开源项目的好地方。原因有以下几点：
 
-1. GSoC有一个[历年来的参与者列表](http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012)([http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012](http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012))，这个列表中的有各种各样的开源组织可以让想参与的人挑选（今年的列表上有180个组织）。
+1. GSoC有一个[历年来的参与者列表](https://www.google-melange.com/archive/gsoc)([https://www.google-melange.com/archive/gsoc](https://www.google-melange.com/archive/gsoc))，这个列表中的有各种各样的开源组织可以让想参与的人挑选（今年的列表上有180个组织）。
 2. 参与者列表上的组织是经过一定的审核才选出来的，选拨出来的组织一般质量比较好，社区活跃度也很高。
 3. 列表上的组织为了吸引参加人员，一般在项目的主页上会有专门的wiki为参加人员导航(比如这个[DragonFlyBSD项目](http://www.dragonflybsd.org/docs/developer/gsoc2012student/)([http://www.dragonflybsd.org/docs/developer/gsoc2012student/](http://www.dragonflybsd.org/docs/developer/gsoc2012student/)))，很适合新手快速了解这个项目。
 我想即使无法参加GSoC本身，通过GSoC的预热也是一个很不错的机会，可以让想要参与开源项目的人有一个很好的入口。
