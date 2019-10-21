@@ -115,6 +115,54 @@
 | NET    | [NuGet](http://nuget.codeplex.com/)      | [[1]](http://nuget.codeplex.com/documentation) |
 | NodeJS | [npm](http://npmjs.org/)                 | [[1]](http://npmjs.org/doc/)             |
 
+## Windows下的开发环境准备
+
+Windows，MacOS，Linux是当下主流的三大操作系统。很大一部分计算机用户出于经济适用和方便，都选择 Windows操作系统，但对于计算机学习者来说，却不可避免的会使用Linux，因为你的大多数程序最终是跑在线上的 Linux服务器上，而且 Linux相对与其他系统，具有安全、稳定、高效、资源消耗少、易操作等一系列特点。所以，这里单独介绍除了虚拟机外 Windows环境下使用 Linux系统的一个简单方法（WSL），方便 Windows用户学习使用 Linux。
+
+### 关于WSL
+
+[WSL](https://baike.baidu.com/item/wsl/20359185?fr=aladdin)（Windows Subsystem for Linux）是一个在 Windows 10 上能够运行原生 Linux二进制可执行文件的兼容层。
+Linux 的 Windows 子系统让开发人员可以直接在 Windows 上运行 Linux 环境（包括大多数命令行工具，实用程序和应用程序），而无需建立在虚拟机的开销之上，整个系统只有200多M，但基本包含了你能用到的所有功能，并且和 Windows完美互操作(省去 Linux挂载本地 Windows分区或目录的操作)，目前 Linux的 Windows子系统已经相当完善，可当作完整 Linux 系统使用（极少部分Windows 应用不能正常运行）。
+
+在WSL下，你可以实现如下功能，但不仅限于这些操作：
+
+	1. 在 Microsoft Store 中选择你偏好的 GNU/Linux 分发版（推荐Ubuntu）；
+
+	2. 运行 Bash shell 脚本和 GNU/Linux 命令行应用程序;
+
+	3. 使用分发包管理器安装其他软件;
+
+	4. 使用类似于 Unix 的命令行 shell 调用 Windows 应用程序;
+
+	5. 在 Windows 上调用 GNU/Linux 应用程序。
+
+WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别可自行查询。当然，你也可以选择虚拟机或者安装双系统，但传统的 [VM](https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%9C%BA/104440?fromtitle=VM&fromid=16532539) (虚拟机推荐VMware)启动速度慢，隔离会消耗大量资源，需要时间进行管理，双系统更加消耗内存以及带来管理上的不便，不过这两种情况下的系统更能显示出 Linux的完整结构和操作，大家可以根据自己需求以及电脑配置进行选择。 
+
+
+### WSL的安装 
+
+**下载安装流程**
+
+	1. 打开 Windows “启用或关闭Windows功能”；
+	2. 勾选 “适用于Linux的Windows子系统”；
+	3. 在 Windows应用商店搜索“Linux”，选择您喜欢的Linux版本，推荐Ubuntu；
+	4. 正常下载安装（建议不要修改安装路径）；
+	5. 安装以后即可打开Ubuntu使用Linux命令对windows文件进行操作；
+	
+**升级到WSL2方法**
+
+	1. 按以上流程成功安装Ubuntu，且版本必须是18917之后的版本；
+	2. 在搜索框中输入Powershell点击Run as Administrator；
+	3. 在打开的命令行中输入 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform 启用虚拟机平台可选组件；
+	4. 完成后重启系统，之后依旧以管理员身份打开powershell，输入wsl -l查看已经安装的子系统；
+	5. 输入命令wsl --set-version Ubuntu-18.04 2，这里的Ubuntu-18.04换成你的子系统名称（这里再强调一遍，必须是18917之后的版本）；
+	6. 输入wsl -l -v查看目前WSL版本，查看是否已经成功安装。
+	
+**其他说明**
+
+推荐一款好看的 Windows端的终端模拟器——Fluent Terminal，如需要的话可自行搜索相关教程（[GitHub](https://github.com/felixse/FluentTerminal)），在设置中选择WSL，之后子系统的所有操作都可以在Fluent terminal中操作，美观的不是一点。
+WSL使用与Linux使用一致，尽情享用吧。
+
 ## 让代码运行起来
 
 经过思考，决定将这一小节以实例的方式写出。也欢迎大家补充各种不同语言的how to install。
