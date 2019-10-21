@@ -52,9 +52,9 @@ Hackety将会教你掌握绝对的编程基础知识，即使你没有任何编�
 
 ## [jQuery Air](http://jqueryair.com/)
 
-语言：jQuery 
+语言：JavaScript 
 
-jQuery是最著名的JavaScript框架。现在，你可以直接在浏览器中学习jQuery。开始学习jQuery的过程应该是充满乐趣的，jQuery Air通过大量实践的方式来达到这个目的。 
+jQuery是最著名的JavaScript框架。现在你可以直接在浏览器中学习jQuery。学习jQuery的过程应该是充满乐趣的，jQuery Air通过大量实践的方式来达到这个目的。 
 
 ![](images/9-useful-jqueryAir.jpg)
 
@@ -70,7 +70,7 @@ jQuery是最著名的JavaScript框架。现在，你可以直接在浏览器中�
 
 ## [PHP Know How](http://www.phpknowhow.com/)
 
-语言：PHP、MySQL 
+语言：PHP
 
 这并不是一个互动的学习方式，但它有一个很好的书面教程，包含了大量示例和指南，教你学习PHP和MySQL的基本知识。 
 
@@ -79,17 +79,17 @@ jQuery是最著名的JavaScript框架。现在，你可以直接在浏览器中�
 
 ## [MongoDB](http://www.mongodb.org/)
 
-语言：MongoDB 
+语言：Java、Python、Go、PHP等主流开发语言
 
-这是MongoDB的官方网站。MongoDB是一个可扩展、高性能、开源的NoSQL数据库。该网站中包含一个教程，让你通过一些命令来开始你的MongoDB学习旅程。 
+这是MongoDB的官方网站。MongoDB是由 C++ 语言编写的一个可扩展、高性能、开源的NoSQL数据库。适用于Java、Python、Go、PHP等主流开发语言。该网站中包含一个教程，让你通过一些命令来开始你的MongoDB学习旅程。 
 
 
 ![](images/9-useful-mongodb.jpg)
 
 ## [学堂在线](https://next.xuetangx.com/)
 
-语言：微信小程序，算法
+技术：微信小程序开发，算法
 
-这是清华大学等机构支撑的在线教育网站。推荐算法，微信小程序制作等课程。
+这是清华大学等机构支撑的在线教育网站。其中包含推荐算法，微信小程序制作等课程。
 
 ![](images/9-useful-学堂在线.jpg)

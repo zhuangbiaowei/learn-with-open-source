@@ -50,7 +50,7 @@ Note: you will need Linux or MacOS. Windows is not yet supported.
 
 ### Update contributions automatically
 
-It will update contributoions through git commits after a pull request or merge is executed.
+It will update contributions through git commits after a pull request or merge is executed.
 If you want to update it manually:
 
 This script will update the "Contributor.md" file and copy it to the "zh" folder.
@@ -90,7 +90,6 @@ the workflow automation is:
   or use the file name order in a directory.
 * get toc of each markdown file.
 * merge it into SUMMARY.md
-
 
 ---------
 
