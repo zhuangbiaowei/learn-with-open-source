@@ -1,0 +1,27 @@
+name: Build-PDF
+
+on:
+  push:
+    branches: master
+
+jobs:
+  build:
+    runs-on: ubuntu-16.04
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+
+    - name: Configure dependency
+      run: |
+        sudo apt update
+        sudo apt install -y calibre
+        npm install -g gitbook-cli
+        npm install
+        gitbook install ./
+    - name: Generate PDF
+      run: |
+        gitbook pdf
+        mv book_zh.pdf learn-with-open-source.pdf
