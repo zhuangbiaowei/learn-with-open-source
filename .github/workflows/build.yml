@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +15,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - name: npm install, build, and test
+    - name: npm install, gitbook build, and release
       run: |
         sudo apt update
         sudo apt install -y calibre
@@ -25,4 +24,3 @@ jobs:
         gitbook install ./
         gitbook pdf
         mv book_zh.pdf learn-with-open-source.pdf
-        
