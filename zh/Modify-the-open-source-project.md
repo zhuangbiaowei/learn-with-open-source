@@ -18,7 +18,7 @@
   
 随后，挑选自己喜欢的编辑器，打开2048的目录，开始查找可以下手的地方。
 
-在js目录下的game_manager.js，我们发现了一个函数，叫做：addRandomTile。在这个函数里，有一行是这么写的：`var value = Math.random() < 0.9 ? 2 : 4;` 这种搞法，真的非常粗暴，随机加入一个方块，有90%的概率是2，有10%的概率是4。
+在js目录下的game_manager.js，我们发现了一个函数，叫做：addRandomTile。在这个函数里，有一行是这么写的：`var value = Math.random() < 0.9 ? 2 : 4;`  这种搞法，真的非常粗暴，随机加入一个方块，有90%的概率是2，有10%的概率是4。
 
 所以，我也选择了比较粗暴的搞法，在这个js的第一行，加了一句：`NameArray = ['夏','商','西周','春秋','战国','秦','汉','三国','两晋','南北朝','隋','唐','五代十国','宋','元','明','清','民国','新中国'];` 然后把刚才的那句改成：`var value = Math.random() < 0.9 ? NameArray[0] : NameArray[1];`
 
@@ -43,7 +43,7 @@
     // The mighty 2048 tile
     if (merged.value === 2048) self.won = true;
     
-看来这就是我们要修改的关键所在了。`tile.value`的值现在是一个字符串，所以不能简单的乘以2，我们可以先找到它在NameArray里的位置，然后取他的下一个值。
+看来这就是我们要修改的关键所在了。`tile.value`的值现在是一个字符串，所以不能简单的乘以2，我们可以先找到它在NameArray里的位置，然后取它的下一个值。
 
     var pos =NameArray.indexOf(tile.value);
     var merged = new Tile(positions.next, NameArray[pos+1]);
@@ -63,7 +63,7 @@
 打开Firefox里的Firebug，我们可以查看到问题所在：
 ![](images/2048-3.png)
 
-原版的2048，相当粗暴的直接将方块里的内容，当成css的class的内容。因为现在的方块里都变成了汉字，所以我们得将汉字换算成实际的数字。
+原版的2048，相当粗暴地直接将方块里的内容，当成css的class的内容。因为现在的方块里都变成了汉字，所以我们得将汉字换算成实际的数字。
 
 在html_actuator.js中，我们找到了这样一句： `var classes = ["tile", "tile-" + tile.value, positionClass];`
 
@@ -360,7 +360,7 @@ Git 二分查找允许提供一个测试脚本，Git 会根据这个测试脚本
 
 ### 贡献给上游
 
-Git 项目本身是通过邮件列表参与代码贡献的，基本的操作流程是将代码转换为补丁文件，然后邮件发送。
+Git项目本身是通过邮件列表参与代码贡献的，基本的操作流程是将代码转换为补丁文件，然后通过邮件发送。
 基本上就是两条命令：`git format-patch` 和 `git send-email`。
 
 下面的链接就是 Git 社区关于我这个提交的讨论。Junio已经确认这个提交是 2.8.0 的一个 regression，相信会合入2.8.0的发布版。
