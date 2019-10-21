@@ -1,6 +1,7 @@
 # Learn Coding with Open Source
 
 [![Join the chat at https://gitter.im/zhuangbiaowei/learn-with-open-source](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zhuangbiaowei/learn-with-open-source?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![GitHub stars](https://img.shields.io/github/stars/zhuangbiaowei/learn-with-open-source.svg?label=github%20stars)](https://github.com/zhuangbiaowei/learn-with-open-source)
 [![Powered by Gitbook](https://img.shields.io/badge/Powered%20by-Gitbook-blue)](https://www.gitbook.com)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
@@ -12,7 +13,7 @@ License: CC BY-NC-SA 4.0
 
 Welcome! Join us to finish this book.
 
-You can visit the online ebook: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
+You can visit the online ebook: [Learn Coding With Open Source](https://zhuangbiaowei.gitbook.io/learn-with-open-source/)
 
 
 ##  for developers
@@ -42,7 +43,7 @@ Note: you will need Linux or MacOS. Windows is not yet supported.
     ```bash
     ./node_modules/.bin/gitbook serve .
     ```
-   2. generate the pdf:
+   3. generate the pdf:
 
     ```bash
     ./node_modules/.bin/gitbook pdf .
@@ -50,7 +51,7 @@ Note: you will need Linux or MacOS. Windows is not yet supported.
 
 ### Update contributions automatically
 
-It will update contributoions through git commits after a pull request or merge is executed.
+It will update contributions through git commits after a pull request or merge is executed.
 If you want to update it manually:
 
 This script will update the "Contributor.md" file and copy it to the "zh" folder.
@@ -91,14 +92,13 @@ the workflow automation is:
 * get toc of each markdown file.
 * merge it into SUMMARY.md
 
-
 ---------
 
 # 《借助开源项目，学习软件开发》
 
 本书使用 [GitBook](https://www.gitbook.com) 来 build 电子书。
 
-联机电子书版本在这里: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
+联机电子书版本在这里: [Learn Coding With Open Source](https://zhuangbiaowei.gitbook.io/learn-with-open-source/)
 
 开放文档：《借助开源项目，学习软件开发》
 
