@@ -8,13 +8,13 @@
 
 首先需要介绍一些基础的概念，这里只是简要的介绍，比较详细的介绍，可以参见[Understanding Version-Control Systems](http://www.catb.org/%7Eesr/writings/version-control/version-control.html)，期待有人能够将其翻译为中文。（或者已经有中译本了，欢迎告知我。）
 
-**源代码([Source Code](http://en.wikipedia.org/wiki/Source_code))**：也就是通常一个软件，由程序员编写，并且可以被其他程序员阅读的，可以被直接执行/或编译后执行的文本代码。
+**源代码([Source Code](http://en.wikipedia.org/wiki/Source_code))**：也就是通常一个软件，由程序员编写，并且可以被其他程序员阅读的，可以被直接执行/编译后执行的文本代码。
 
-**源代码管理与版本控制([Version control/Revision control](http://en.wikipedia.org/wiki/Revision_control))** ：由于源代码数量的急剧膨胀、变更的越来越频繁、可能修改同一个源文件的人也越来越多，需要将这些代码管理起来，于是每次变更被称之为一次修正 (Revision)。版本控制更准确的说法应该是“Revision control”，每当我们修改一个源代码文件并再次保存时，就出现了两个不同的版本，一个是修改前的，一个是修改以后的。而版本控制，就是确保源文件的每一次修改，都被记录下来，并且可以知道是被谁修改的，是因为什么原因而修改的。必要时，可以找回任何一个版本的源代码。
+**源代码管理与版本控制([Version control/Revision control](http://en.wikipedia.org/wiki/Revision_control))** ：由于源代码数量急剧膨胀、变更越来越频繁，可能修改同一个源文件的人也越来越多，需要将这些代码管理起来，于是每次变更被称之为一次修正 (Revision)。版本控制更准确的说法应该是“Revision control”，每当我们修改一个源代码文件并再次保存时，就出现了两个不同的版本，一个是修改前的，一个是修改以后的。而版本控制，就是确保源文件的每一次修改，都被记录下来，并且可以知道是被谁修改的，是因为什么原因而修改的。必要时，可以找回任何一个版本的源代码。
 
-**软件版本号([Software Version](http://en.wikipedia.org/wiki/Software_versioning))** ：这里的版本，是另外一个概念，源代码中的任何一个文件，都存在一个修订版本号，而作为整个软件，无论对内称呼还是对外发布，都需要一个更加正式的，完整的版本号。前者的英文是Revision，而后者的英文是：Version。因此，当我们谈到版本管理的时候，很可能是同时谈到两者：一个是源代码的 Revision，一个是整个项目的Version。
+**软件版本号([Software Version](http://en.wikipedia.org/wiki/Software_versioning))** ：这里的版本，是另外一个概念，源代码中的任何一个文件，都存在一个修订版本号，而作为整个软件，无论对内称呼还是对外发布，都需要一个更加正式的、完整的版本号。前者的英文是Revision，而后者的英文是Version。因此，当我们谈到版本管理的时候，很可能是同时谈到两者：一个是源代码的Revision，一个是整个项目的Version。
 
-**版本控制工具([Revision control software](http://en.wikipedia.org/wiki/List_of_revision_control_software))** ：为了帮助更好的管理源代码，程序员们开发出了林林种种的版本控制工具，有闭源的，也有开源的。而现在市面上流行的，已经几乎全是开源的了。简单的列出几种在下面：
+**版本控制工具([Revision control software](http://en.wikipedia.org/wiki/List_of_revision_control_software))** ：为了帮助更好的管理源代码，程序员们开发出了林林总总的版本控制工具，有闭源的，也有开源的。而现在市面上流行的，已经几乎全是开源的了。简单的列出几种在下面：
 
 * 仅管理本地源文件
   * 免费/开源：SCCS (1972) RCS (1982)
@@ -33,12 +33,12 @@
 
 ### 寻找早期开源项目的源代码
 
-取得源代码的方式千千万万，现在有越来越多的开源项目，已经开始逐步采用规范的，统一的方式，提供自己的源代码以供下载，但是在开源项目发展的早期，还有很多是以并非规范的方式提供的。而在寻找一些开源项目的源代码时，google与wikipedia，将会是我们的好帮手。当然，还有更早期的一些开源项目，就是在邮件列表里发一个带附件的邮件，要找到那种项目的源代码，就得有考古的功力了。
+取得源代码的方式千千万万，现在有越来越多的开源项目，已经开始逐步采用规范的，统一的方式，提供自己的源代码以供下载。但是在开源项目发展的早期，还有很多是以并非规范的方式提供的。而在寻找一些开源项目的源代码时，google与wikipedia，将会是我们的好帮手。当然，还有更早期的一些开源项目，就是在邮件列表里发一个带附件的邮件，要找到那种项目的源代码，就得有考古的功力了。
 
 这里举一个例子，来描述一下我寻找某一个开源项目源代码的过程。
 
 有一个项目叫做GForge，在早期还是一个较为著名的开源托管平台的项目，这个托管平台的代码本身也是以GNU许可开源的。假设，我首先是在wikipedia上发现了这个项目： http://en.wikipedia.org/wiki/GForge
-看到这个项目的介绍，大概我觉得不错，于是我就看到下面的External links，列出了四个外部链接：
+看到这个项目的介绍，我觉得大概不错，于是我就看到下面的External links，列出了四个外部链接：
 
 * GForge official website
 * GForge project open source page
@@ -56,8 +56,8 @@
 三本值得一看的书
 
 * [Subversion 与版本控制](http://svnbook.red-bean.com/)
-* [progit 中文版](http://opengit.org/open/?f=progit_01-introduction)
-* [hginit.com 中文版](http://codinn.com/projects/hginit/view/)
+* [progit 中文版](https://progit.bootcss.com/)
+* [hginit.com 中文版](https://zh-hginit.readthedocs.io/en/latest/)
 
 另外
 
@@ -101,7 +101,7 @@
 
 想要更进一步的了解软件包管理系统，可以阅读[英文版](http://en.wikipedia.org/wiki/Package_management_system) [中文版](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F)
 
-与过去的很多开源项目不同，这种脚本语言的包管理工具实在是方便，一行命令，连下载，带安装、就都有了。本章4.2节的让代码运行起来里，会举几个这样的例子。这里就不再赘述了。
+与过去的很多开源项目不同，这种脚本语言的包管理工具实在是方便，一行命令，连下载，带安装，就都有了。本章4.2节的让代码运行起来里，会举几个这样的例子。这里就不再赘述了。
 
 **Application-level package managers**
 
@@ -303,7 +303,7 @@
 
 因为王越的系列文章《Mac OS X背后的故事》，其中第八章《[三好学生Chris Lattner的LLVM编译工具链](http://www.programmer.com.cn/9436/)》对LLVM的介绍，使我决定尝试把LLVM，作为c语言的hello world项目。
 
-说实话，在开源项目中，C语言的各种开源项目的编译安装，都是非常类似的。绝大多数命令都是一下三行：
+说实话，在开源项目中，C语言的各种开源项目的编译安装，都是非常类似的。绝大多数命令都是以下三行：
 
     $ ./configure
     $ make
@@ -361,7 +361,7 @@
 
 LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation. 2. Read the documentation. 3. Remember that you were warned twice about reading the documentation.
 
-是的，认真的，非常认真的阅读相关文档，是最重要的方法。其他的一切方法，都是排在这个后面的。
+是的，认真地，非常认真地阅读相关文档，是最重要的方法。其他的一切方法，都是排在这个后面的。
 
 当然，文档的正确性和完整性，也是可以怀疑的。有很多开源项目，往往存在文档bug、文档版本与代码版本不同步等问题。比如LLVM的安装文档，也并非完全正确，我到现在都还不明白，在1.2.3.条那么正经的提示之后，他的第8条，只有configure、make、make check-all、make update，居然没有make install！
 
