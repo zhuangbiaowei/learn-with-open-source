@@ -301,7 +301,7 @@
 
 ### C/C++版
 
-因为王越的系列文章《Mac OS X背后的故事》，其中第八章《[三好学生Chris Lattner的LLVM编译工具链](http://www.programmer.com.cn/9436/)》对LLVM的介绍，使我决定尝试把LLVM，作为c语言的hello world项目。
+因为王越的系列文章《Mac OS X背后的故事》，其中第八章《[三好学生Chris Lattner的LLVM编译工具链](https://www.cnblogs.com/ender-cd/articles/4048486.html)》对LLVM的介绍，使我决定尝试把LLVM，作为c语言的hello world项目。
 
 说实话，在开源项目中，C语言的各种开源项目的编译安装，都是非常类似的。绝大多数命令都是以下三行：
 
