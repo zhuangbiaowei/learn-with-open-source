@@ -22,4 +22,7 @@ jobs:
         sudo apt install -y calibre
         npm install -g gitbook-cli
         npm install
+        gitbook install ./
         gitbook pdf
+        mv book_zh.pdf learn-with-open-source.pdf
+        
