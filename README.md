@@ -1,4 +1,4 @@
-# Learn Coding with Open Source
+﻿# Learn Coding with Open Source
 
 [![Join the chat at https://gitter.im/zhuangbiaowei/learn-with-open-source](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zhuangbiaowei/learn-with-open-source?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![GitHub stars](https://img.shields.io/github/stars/zhuangbiaowei/learn-with-open-source.svg?label=github%20stars)](https://github.com/zhuangbiaowei/learn-with-open-source)
@@ -96,7 +96,7 @@ the workflow automation is:
 
 # 《借助开源项目，学习软件开发》
 
-本书使用 [GitBook](https://www.gitbook.com) 来 build 电子书。
+本书使用 [GitBook](https://www.gitbook.com) 来建立电子书。
 
 联机电子书版本在这里: [Learn Coding With Open Source](https://zhuangbiaowei.gitbook.io/learn-with-open-source/)
 
