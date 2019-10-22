@@ -8,13 +8,13 @@
 
 首先需要介绍一些基础的概念，这里只是简要的介绍，比较详细的介绍，可以参见[Understanding Version-Control Systems](http://www.catb.org/%7Eesr/writings/version-control/version-control.html)，期待有人能够将其翻译为中文。（或者已经有中译本了，欢迎告知我。）
 
-**源代码([Source Code](http://en.wikipedia.org/wiki/Source_code))**：也就是通常一个软件，由程序员编写，并且可以被其他程序员阅读的，可以被直接执行/或编译后执行的文本代码。
+**源代码([Source Code](http://en.wikipedia.org/wiki/Source_code))**：也就是通常一个软件，由程序员编写，并且可以被其他程序员阅读的，可以被直接执行/编译后执行的文本代码。
 
 **源代码管理与版本控制([Version control/Revision control](http://en.wikipedia.org/wiki/Revision_control))** ：由于源代码数量急剧膨胀、变更越来越频繁，可能修改同一个源文件的人也越来越多，需要将这些代码管理起来，于是每次变更被称之为一次修正 (Revision)。版本控制更准确的说法应该是“Revision control”，每当我们修改一个源代码文件并再次保存时，就出现了两个不同的版本，一个是修改前的，一个是修改以后的。而版本控制，就是确保源文件的每一次修改，都被记录下来，并且可以知道是被谁修改的，是因为什么原因而修改的。必要时，可以找回任何一个版本的源代码。
 
 **软件版本号([Software Version](http://en.wikipedia.org/wiki/Software_versioning))** ：这里的版本，是另外一个概念，源代码中的任何一个文件，都存在一个修订版本号，而作为整个软件，无论对内称呼还是对外发布，都需要一个更加正式的、完整的版本号。前者的英文是Revision，而后者的英文是Version。因此，当我们谈到版本管理的时候，很可能是同时谈到两者：一个是源代码的Revision，一个是整个项目的Version。
 
-**版本控制工具([Revision control software](http://en.wikipedia.org/wiki/List_of_revision_control_software))** ：为了帮助更好的管理源代码，程序员们开发出了林林总总的版本控制工具，有闭源的，也有开源的。而现在市面上流行的，已经几乎全是开源的了。简单的列出几种在下面：
+**版本控制工具([Revision control software](http://en.wikipedia.org/wiki/List_of_revision_control_software))** ：为了更好的管理源代码，程序员们开发出了林林总总的版本控制工具，有闭源的，也有开源的。而现在市面上流行的，已经几乎全是开源的了。简单的列出几种在下面：
 
 * 仅管理本地源文件
   * 免费/开源：SCCS (1972) RCS (1982)
@@ -33,12 +33,12 @@
 
 ### 寻找早期开源项目的源代码
 
-取得源代码的方式千千万万，现在有越来越多的开源项目，已经开始逐步采用规范的，统一的方式，提供自己的源代码以供下载，但是在开源项目发展的早期，还有很多是以并非规范的方式提供的。而在寻找一些开源项目的源代码时，google与wikipedia，将会是我们的好帮手。当然，还有更早期的一些开源项目，就是在邮件列表里发一个带附件的邮件，要找到那种项目的源代码，就得有考古的功力了。
+取得源代码的方式千千万万，现在有越来越多的开源项目，已经开始逐步采用规范的，统一的方式，提供自己的源代码以供下载。但是在开源项目发展的早期，还有很多是以并非规范的方式提供的。而在寻找一些开源项目的源代码时，google与wikipedia，将会是我们的好帮手。当然，还有更早期的一些开源项目，就是在邮件列表里发一个带附件的邮件，要找到那种项目的源代码，就得有考古的功力了。
 
 这里举一个例子，来描述一下我寻找某一个开源项目源代码的过程。
 
 有一个项目叫做GForge，在早期还是一个较为著名的开源托管平台的项目，这个托管平台的代码本身也是以GNU许可开源的。假设，我首先是在wikipedia上发现了这个项目： http://en.wikipedia.org/wiki/GForge
-看到这个项目的介绍，大概我觉得不错，于是我就看到下面的External links，列出了四个外部链接：
+看到这个项目的介绍，我觉得大概不错，于是我就看到下面的External links，列出了四个外部链接：
 
 * GForge official website
 * GForge project open source page
@@ -56,8 +56,8 @@
 三本值得一看的书
 
 * [Subversion 与版本控制](http://svnbook.red-bean.com/)
-* [progit 中文版](http://opengit.org/open/?f=progit_01-introduction)
-* [hginit.com 中文版](http://codinn.com/projects/hginit/view/)
+* [progit 中文版](https://progit.bootcss.com/)
+* [hginit.com 中文版](https://zh-hginit.readthedocs.io/en/latest/)
 
 另外
 
@@ -114,6 +114,54 @@
 | Python | [EasyInstall](http://en.wikipedia.org/wiki/EasyInstall) [PyPI](https://pypi.python.org/pypi) | [[1]](http://peak.telecommunity.com/DevCenter/PythonEggs) [[2]](http://en.wikipedia.org/wiki/Python_Package_Index) |
 | NET    | [NuGet](http://nuget.codeplex.com/)      | [[1]](http://nuget.codeplex.com/documentation) |
 | NodeJS | [npm](http://npmjs.org/)                 | [[1]](http://npmjs.org/doc/)             |
+
+## Windows下的开发环境准备
+
+Windows，MacOS，Linux是当下主流的三大操作系统。很大一部分计算机用户出于经济适用和方便，都选择 Windows操作系统，但对于计算机学习者来说，却不可避免的会使用Linux，因为你的大多数程序最终是跑在线上的 Linux服务器上，而且 Linux相对与其他系统，具有安全、稳定、高效、资源消耗少、易操作等一系列特点。所以，这里单独介绍除了虚拟机外 Windows环境下使用 Linux系统的一个简单方法（WSL），方便 Windows用户学习使用 Linux。
+
+### 关于WSL
+
+[WSL](https://baike.baidu.com/item/wsl/20359185?fr=aladdin)（Windows Subsystem for Linux）是一个在 Windows 10 上能够运行原生 Linux二进制可执行文件的兼容层。
+Linux 的 Windows 子系统让开发人员可以直接在 Windows 上运行 Linux 环境（包括大多数命令行工具，实用程序和应用程序），而无需建立在虚拟机的开销之上，整个系统只有200多M，但基本包含了你能用到的所有功能，并且和 Windows完美互操作(省去 Linux挂载本地 Windows分区或目录的操作)，目前 Linux的 Windows子系统已经相当完善，可当作完整 Linux 系统使用（极少部分Windows 应用不能正常运行）。
+
+在WSL下，你可以实现如下功能，但不仅限于这些操作：
+
+	1. 在 Microsoft Store 中选择你偏好的 GNU/Linux 分发版（推荐Ubuntu）；
+
+	2. 运行 Bash shell 脚本和 GNU/Linux 命令行应用程序;
+
+	3. 使用分发包管理器安装其他软件;
+
+	4. 使用类似于 Unix 的命令行 shell 调用 Windows 应用程序;
+
+	5. 在 Windows 上调用 GNU/Linux 应用程序。
+
+WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别可自行查询。当然，你也可以选择虚拟机或者安装双系统，但传统的 [VM](https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%9C%BA/104440?fromtitle=VM&fromid=16532539) (虚拟机推荐VMware)启动速度慢，隔离会消耗大量资源，需要时间进行管理，双系统更加消耗内存以及带来管理上的不便，不过这两种情况下的系统更能显示出 Linux的完整结构和操作，大家可以根据自己需求以及电脑配置进行选择。 
+
+
+### WSL的安装 
+
+**下载安装流程**
+
+	1. 打开 Windows “启用或关闭Windows功能”；
+	2. 勾选 “适用于Linux的Windows子系统”；
+	3. 在 Windows应用商店搜索“Linux”，选择您喜欢的Linux版本，推荐Ubuntu；
+	4. 正常下载安装（建议不要修改安装路径）；
+	5. 安装以后即可打开Ubuntu使用Linux命令对windows文件进行操作；
+	
+**升级到WSL2方法**
+
+	1. 按以上流程成功安装Ubuntu，且版本必须是18917之后的版本；
+	2. 在搜索框中输入Powershell点击Run as Administrator；
+	3. 在打开的命令行中输入 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform 启用虚拟机平台可选组件；
+	4. 完成后重启系统，之后依旧以管理员身份打开powershell，输入wsl -l查看已经安装的子系统；
+	5. 输入命令wsl --set-version Ubuntu-18.04 2，这里的Ubuntu-18.04换成你的子系统名称（这里再强调一遍，必须是18917之后的版本）；
+	6. 输入wsl -l -v查看目前WSL版本，查看是否已经成功安装。
+	
+**其他说明**
+
+推荐一款好看的 Windows端的终端模拟器——Fluent Terminal，如需要的话可自行搜索相关教程（[GitHub](https://github.com/felixse/FluentTerminal)），在设置中选择WSL，之后子系统的所有操作都可以在Fluent terminal中操作，美观的不是一点。
+WSL使用与Linux使用一致，尽情享用吧。
 
 ## 让代码运行起来
 
@@ -301,9 +349,9 @@
 
 ### C/C++版
 
-因为王越的系列文章《Mac OS X背后的故事》，其中第八章《[三好学生Chris Lattner的LLVM编译工具链](http://www.programmer.com.cn/9436/)》对LLVM的介绍，使我决定尝试把LLVM，作为c语言的hello world项目。
+因为王越的系列文章《Mac OS X背后的故事》，其中第八章《[三好学生Chris Lattner的LLVM编译工具链](https://www.cnblogs.com/ender-cd/articles/4048486.html)》对LLVM的介绍，使我决定尝试把LLVM，作为c语言的hello world项目。
 
-说实话，在开源项目中，C语言的各种开源项目的编译安装，都是非常类似的。绝大多数命令都是一下三行：
+说实话，在开源项目中，C语言的各种开源项目的编译安装，都是非常类似的。绝大多数命令都是以下三行：
 
     $ ./configure
     $ make
@@ -361,7 +409,7 @@
 
 LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation. 2. Read the documentation. 3. Remember that you were warned twice about reading the documentation.
 
-是的，认真的，非常认真的阅读相关文档，是最重要的方法。其他的一切方法，都是排在这个后面的。
+是的，认真地，非常认真地阅读相关文档，是最重要的方法。其他的一切方法，都是排在这个后面的。
 
 当然，文档的正确性和完整性，也是可以怀疑的。有很多开源项目，往往存在文档bug、文档版本与代码版本不同步等问题。比如LLVM的安装文档，也并非完全正确，我到现在都还不明白，在1.2.3.条那么正经的提示之后，他的第8条，只有configure、make、make check-all、make update，居然没有make install！
 
@@ -385,9 +433,9 @@ LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation
 
 **5. 在网上找一找攻略**
 
-有很多前人，愿意将自己的安装步骤仔仔细细的记录下来，从而节约我们大量的时间。找到优质的攻略，是事半功倍之道。但是， 要特别注意攻略提及的软件版本，相关环境。在网上搜索攻略时，也类似。比如：不要简单的搜索“ubuntu apache source install”，而是搜索“ubuntu 10.04 64 apache source install”。这样能够避免照着不同版本的攻略，一个劲的死拼。另外，再一次提醒，**不要在百度搜索**。在国内的技术圈，有无数的“开发者”，喜欢反复的转载别人的blog和文章。不但不注明原文来源，甚至连格式、排版都丢失了，内容也难免错漏。简直就是一堆垃圾。而在百度搜索，这种垃圾又特别多，躲都躲不开。
+有很多前人，愿意将自己的安装步骤仔仔细细地记录下来，从而节约我们大量的时间。找到优质的攻略，是事半功倍之道。但是， 要特别注意攻略提及的软件版本，相关环境。在网上搜索攻略时，也类似。比如：不要简单的搜索“ubuntu apache source install”，而是搜索“ubuntu 10.04 64 apache source install”。这样能够避免照着不同版本的攻略，一个劲的死拼。另外，再一次提醒，**不要在百度搜索**。在国内的技术圈，有无数的“开发者”，喜欢反复的转载别人的blog和文章。不但不注明原文来源，甚至连格式、排版都丢失了，内容也难免错漏。简直就是一堆垃圾。而在百度搜索，这种垃圾又特别多，躲都躲不开。
 
-所以，最好是在Google搜索！
+所以，最好是在Google搜索,如果没办法访问外网，bing也是一个不错的选择！
 
 **6. 如果很难搞定，不要一条道走到黑，换个方向**
 

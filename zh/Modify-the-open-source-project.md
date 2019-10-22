@@ -16,7 +16,7 @@
     然后，在自己的机器上，执行：
     git clone git@github.com:zhuangbiaowei/2048.git
   
-随后，挑选自己的喜欢的编辑器，打开2048的目录，开始查找可以下手的地方。
+随后，挑选自己喜欢的编辑器，打开2048的目录，开始查找可以下手的地方。
 
 在js目录下的game_manager.js，我们发现了一个函数，叫做：addRandomTile。在这个函数里，有一行是这么写的：`var value = Math.random() < 0.9 ? 2 : 4;` 这种搞法，真的非常粗暴，随机加入一个方块，有90%的概率是2，有10%的概率是4。
 
@@ -43,7 +43,7 @@
     // The mighty 2048 tile
     if (merged.value === 2048) self.won = true;
     
-看来这就是我们要修改的关键所在了。`tile.value`的值现在是一个字符串，所以不能简单的乘以2，我们可以先找到它在NameArray里的位置，然后取他的下一个值。
+看来这就是我们要修改的关键所在了。`tile.value`的值现在是一个字符串，所以不能简单的乘以2，我们可以先找到它在NameArray里的位置，然后取它的下一个值。
 
     var pos =NameArray.indexOf(tile.value);
     var merged = new Tile(positions.next, NameArray[pos+1]);
@@ -63,7 +63,7 @@
 打开Firefox里的Firebug，我们可以查看到问题所在：
 ![](images/2048-3.png)
 
-原版的2048，相当粗暴的直接将方块里的内容，当成css的class的内容。因为现在的方块里都变成了汉字，所以我们得将汉字换算成实际的数字。
+原版的2048，相当粗暴地直接将方块里的内容，当成css的class的内容。因为现在的方块里都变成了汉字，所以我们得将汉字转换成实际的数字。
 
 在html_actuator.js中，我们找到了这样一句： `var classes = ["tile", "tile-" + tile.value, positionClass];`
 
@@ -266,7 +266,7 @@ Git 二分查找允许提供一个测试脚本，Git 会根据这个测试脚本
      3 files changed, 85 insertions(+), 3 deletions(-)
 
 
-相比很多人一个提交动辄改动几百、几千行的代码，这个提交的改动算得上简短了。小提交的好处就是易于阅读、易于问题定位、易于回退。
+相比很多人动辄提交改动了几百、几千行的代码，这个提交的改动算得上简短了。小提交的好处就是易于阅读、易于问题定位、易于回退。
 
 最终参照上面定位到的问题提交，我的 Bugfix  如下（为了下面的一节叙述方便，给代码补丁增加了行号）：
 
