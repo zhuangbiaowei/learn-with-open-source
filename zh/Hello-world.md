@@ -439,6 +439,5 @@ LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation
 
 **6. 如果很难搞定，不要一条道走到黑，换个方向**
 
-RP问题，是存在的。喘口气，歇一歇，换个方向。试试别的开源项目吧。
-
-[上一章](Select-an-open-source-project.md) | [下一章](Understanding-the-source-code.md)
+RP问题，是存在的。休息一下。试试别的开源项目吧。
+上一章](Select-an-open-source-project.md) | [下一章](Understanding-the-source-code.md)
