@@ -23,7 +23,7 @@ It does seem irresponsible to say that these are all the basics. But it's really
 
 Furtherly, of course, there can be more fastidious. For example, Windows or Linux/MacOS? What distribution should you choose for Linux? Once you get into it, there will be endless problems waiting for you.
 ### The preferred Ubuntu
-First, the reason why Linux should be choosen is that open source software, in many cases, is a more stable and reliable version for Linux, which is easier to solve when it comes to version dependence. Of course, there are many reliable open source projects for Windows, so Linux is more of a preference for using more open source. The jade bed mentioned in JinYong's "The Return Of the Condor Heros" can be used to explain the mystery. When you are in an open source enviroment and when your operations are exposed to open source concepts, you are making progress all the time and it's going to be faster.
+First, the reason why Linux should be chosen is that open source software, in many cases, is a more stable and reliable version for Linux, which is easier to solve when it comes to version dependence. Of course, there are many reliable open source projects for Windows, so Linux is more of a preference for using more open source. The jade bed mentioned in JinYong's "The Return Of the Condor Heros" can be used to explain the mystery. When you are in an open source enviroment and when your operations are exposed to open source concepts, you are making progress all the time and it's going to be faster.
 
 The reason of choosing Ubuntun is actually my own preference, for it is by far the easiest to use. It's more friendly for beginners. There are more Chinese resources on the Internet.
 
