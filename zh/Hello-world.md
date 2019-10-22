@@ -311,7 +311,7 @@ WSL使用与Linux使用一致，尽情享用吧。
     $ python hello.py
       http://0.0.0.0:8080/
 
-这时，用浏览器访问 [http://localhost:8080/](http://localhost:8080/) 你将看到 Hello, world.
+这时，用浏览器访问 [http://localhost:8080/](http://localhost:8080/) 你将看到 "Hello, world!"
 
 ### JavaScript(nodejs)版
 
