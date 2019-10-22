@@ -55,7 +55,7 @@
   
 * 问答社区（StackOverFlow/Quora/知乎）：
   
-  新兴的交流社区，在面临特定问题时，可以尝试搜索或提问。平时泡泡，努力回答别人的问题，也有助于自己的提高。
+  新兴的交流社区，在面临特定问题时，可以尝试搜索或提问。平时多泡泡社区，努力回答别人的问题，也有助于自己的提高。
   
 * 工作中的项目：当然，老板给你发工资，肯定希望你尽快完成，在压力之下，通常进步都会很快。只是这种进步也许是你无法选择的。
   
@@ -329,7 +329,7 @@
   
   * 这个是非常棒的计算机开发入门课程(授课老师Prof. Eric Grimson是MIT的副校长)
     
-    不过是用python语言作为示范讲解的.
+  * 用python语言作为示范讲解
     
   * [中文字幕](http://open.163.com/special/opencourse/bianchengdaolun.html)(建议和英文字幕对照看)
 
@@ -338,7 +338,7 @@
 1. [Intro to Java Programming Building Programs with Classes & Objects](https://www.udacity.com/course/intro-to-java-programming--cs046)
 2. [Java编程导论 - 第1部分：开始使用Java编程](https://www.edx.org/course/introduction-programming-java-part-1-uc3mx-it-1-1x#.VQZrMo6Ueo0)
 3. [Introduction to Java Programming – Part 1](https://www.edx.org/course/introduction-java-programming-part-1-hkustx-comp102-1x)
-   * (香港大学 港式英语很High)
+   * 香港大学 港式英语很High
 
 ### C
 

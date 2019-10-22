@@ -2,7 +2,7 @@
     "gitbook": ">1.x.x",
     "plugins": [
       "toc",
-      "mathjax"
+      "katex"
     ],
     "pluginsConfig": {
       "toc": {
