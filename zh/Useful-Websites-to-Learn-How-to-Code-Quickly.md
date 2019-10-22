@@ -92,4 +92,4 @@ jQuery是最著名的JavaScript框架。现在你可以直接在浏览器中学�
 
 这是清华大学等机构支撑的在线教育网站。其中包含推荐算法，微信小程序制作等课程。
 
-![](images/9-useful-学堂在线.jpg)
+![](images/9-useful-学堂在线.png)

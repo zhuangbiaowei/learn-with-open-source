@@ -33,7 +33,6 @@ Admittedly, in the Windows enviroment, you can also learn about open source. The
 
 But, at a lot of time, you will encounter inexplicable report error and it is not unreasonable that a lot of people will suddenly look up into the sky in a night and curse:"This rotten Windows!"
 ### The network will not be blocked
-Yes, if this article is lucky enough to be translated into English, this paragraph can be completely deleted. Because they could not imagine that we would encounter such difficulties. And overcoming this difficulty is an absolutely necessary skill for learning software development. So……if you do find your target site inaccessible, ask for help. (Sorry, I can't help you in this document. But I left my email.)
 
 Google is a better search engine for software development in the most of time, so even if you have to go to a lot of trouble, make sure that use Google to search for the projects, documents and materials you are looking for.
 
