@@ -36,7 +36,7 @@
     "get-contributors": "^0.2.0",
     "git-hooks": "^1.0.0-rc.1",
     "gitbook-cli": "^0.3.4",
-    "gitbook-plugin-mathjax": "^1.0.0",
+    "gitbook-plugin-katex": "^1.0.0",
     "gitbook-plugin-toc": "snowyu/gitbook-plugin-toc",
     "markdown-toc": "^0.11.5"
   }
