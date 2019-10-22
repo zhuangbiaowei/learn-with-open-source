@@ -85,6 +85,8 @@
 
 然后，获取代码也极其简单：
 
+这里要注意的是，gitHub给出的项目地址GitRepoURL不止一个，这是因为git是支持多种协议的，例如默认的ssh，https等。
+
     git clone GitRepoURL
 
 **Mercurial如何获取代码**
