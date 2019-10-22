@@ -323,7 +323,7 @@
 
 注意: **绝大部分是英文课程**
 
-### Python ###
+### Python 
 
 * [计算机科学及Python编程导论](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-0#.U_HC-_mSxSU)
   
