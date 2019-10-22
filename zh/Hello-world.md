@@ -6,7 +6,7 @@
 
 ### 关于源代码管理与版本控制
 
-首先需要介绍一些基础的概念，这里只是简要的介绍，比较详细的介绍，可以参见[Understanding Version-Control Systems](http://www.catb.org/%7Eesr/writings/version-control/version-control.html)，期待有人能够将其翻译为中文。（或者已经有中译本了，欢迎告知我。）
+首先需要介绍一些基础的概念1，这里只是简要的介绍，比较详细的介绍，可以参见[Understanding Version-Control Systems](http://www.catb.org/%7Eesr/writings/version-control/version-control.html)，期待有人能够将其翻译为中文。（或者已经有中译本了，欢迎告知我。）
 
 **源代码([Source Code](http://en.wikipedia.org/wiki/Source_code))**：也就是通常一个软件，由程序员编写，并且可以被其他程序员阅读的，可以被直接执行/编译后执行的文本代码。
 
@@ -127,13 +127,13 @@ Linux 的 Windows 子系统让开发人员可以直接在 Windows 上运行 Linu
 在WSL下，你可以实现如下功能，但不仅限于这些操作：
 
 	1. 在 Microsoft Store 中选择你偏好的 GNU/Linux 分发版（推荐Ubuntu）；
-
+	
 	2. 运行 Bash shell 脚本和 GNU/Linux 命令行应用程序;
-
+	
 	3. 使用分发包管理器安装其他软件;
-
+	
 	4. 使用类似于 Unix 的命令行 shell 调用 Windows 应用程序;
-
+	
 	5. 在 Windows 上调用 GNU/Linux 应用程序。
 
 WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别可自行查询。当然，你也可以选择虚拟机或者安装双系统，但传统的 [VM](https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%9C%BA/104440?fromtitle=VM&fromid=16532539) (虚拟机推荐VMware)启动速度慢，隔离会消耗大量资源，需要时间进行管理，双系统更加消耗内存以及带来管理上的不便，不过这两种情况下的系统更能显示出 Linux的完整结构和操作，大家可以根据自己需求以及电脑配置进行选择。 
@@ -148,7 +148,7 @@ WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别�
 	3. 在 Windows应用商店搜索“Linux”，选择您喜欢的Linux版本，推荐Ubuntu；
 	4. 正常下载安装（建议不要修改安装路径）；
 	5. 安装以后即可打开Ubuntu使用Linux命令对windows文件进行操作；
-	
+
 **升级到WSL2方法**
 
 	1. 按以上流程成功安装Ubuntu，且版本必须是18917之后的版本；
@@ -157,7 +157,7 @@ WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别�
 	4. 完成后重启系统，之后依旧以管理员身份打开powershell，输入wsl -l查看已经安装的子系统；
 	5. 输入命令wsl --set-version Ubuntu-18.04 2，这里的Ubuntu-18.04换成你的子系统名称（这里再强调一遍，必须是18917之后的版本）；
 	6. 输入wsl -l -v查看目前WSL版本，查看是否已经成功安装。
-	
+
 **其他说明**
 
 推荐一款好看的 Windows端的终端模拟器——Fluent Terminal，如需要的话可自行搜索相关教程（[GitHub](https://github.com/felixse/FluentTerminal)），在设置中选择WSL，之后子系统的所有操作都可以在Fluent terminal中操作，美观的不是一点。
@@ -300,11 +300,11 @@ WSL使用与Linux使用一致，尽情享用吧。
     urls = (
         	'/', 'index'
     	    )
-
+    
     class index:
     		def GET(self):
         		return "Hello, world!"
-
+    
     if __name__ == "__main__":
     		app = web.application(urls, globals())
     		app.run()
@@ -379,7 +379,7 @@ WSL使用与Linux使用一致，尽情享用吧。
 创建一个文件hello.c
 
     #include <stdio.h>
-
+    
     int main() {
       printf("hello world\n");
       return 0;
