@@ -63,7 +63,7 @@
 打开Firefox里的Firebug，我们可以查看到问题所在：
 ![](images/2048-3.png)
 
-原版的2048，相当粗暴地直接将方块里的内容，当成css的class的内容。因为现在的方块里都变成了汉字，所以我们得将汉字换算成实际的数字。
+原版的2048，相当粗暴地直接将方块里的内容，当成css的class的内容。因为现在的方块里都变成了汉字，所以我们得将汉字转换成实际的数字。
 
 在html_actuator.js中，我们找到了这样一句： `var classes = ["tile", "tile-" + tile.value, positionClass];`
 
