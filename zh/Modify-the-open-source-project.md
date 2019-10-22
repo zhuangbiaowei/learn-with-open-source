@@ -43,7 +43,7 @@
     // The mighty 2048 tile
     if (merged.value === 2048) self.won = true;
     
-看来这就是我们要修改的关键所在了。`tile.value`的值现在是一个字符串，所以不能简单的乘以2，我们可以先找到它在NameArray里的位置，然后取他的下一个值。
+看来这就是我们要修改的关键所在了。`tile.value`的值现在是一个字符串，所以不能简单的乘以2，我们可以先找到它在NameArray里的位置，然后取它的下一个值。
 
     var pos =NameArray.indexOf(tile.value);
     var merged = new Tile(positions.next, NameArray[pos+1]);
@@ -63,7 +63,7 @@
 打开Firefox里的Firebug，我们可以查看到问题所在：
 ![](images/2048-3.png)
 
-原版的2048，相当粗暴的直接将方块里的内容，当成css的class的内容。因为现在的方块里都变成了汉字，所以我们得将汉字转换成实际的数字。
+原版的2048，相当粗暴地直接将方块里的内容，当成css的class的内容。因为现在的方块里都变成了汉字，所以我们得将汉字转换成实际的数字。
 
 在html_actuator.js中，我们找到了这样一句： `var classes = ["tile", "tile-" + tile.value, positionClass];`
 
