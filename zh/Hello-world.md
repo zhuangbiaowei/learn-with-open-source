@@ -252,11 +252,11 @@
     urls = (
         	'/', 'index'
     	    )
-
+    
     class index:
     		def GET(self):
         		return "Hello, world!"
-
+    
     if __name__ == "__main__":
     		app = web.application(urls, globals())
     		app.run()
@@ -375,7 +375,7 @@ LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation
 
 **3. 仔细看出错提示信息，并且在网上搜索答案**
 
-在编译LLVM的时候，我遇到了一个古怪的bug，“collect2: ld terminated with signal 9 [Killed]”完全不理解是怎么会事。只能在Google上找答案，幸好，类似的悲剧也在别人身上发生过。我找到了一个简明扼要的回答：“You probably ran out of memory.”。于是，我重新调整了Ubuntu虚拟机的内存大小，就编译通过了。
+在编译LLVM的时候，我遇到了一个古怪的bug：“collect2: ld terminated with signal 9 [Killed]”。当时完全不理解是怎么回事，所以只能尝试在Google上找答案，幸好，类似的悲剧也在别人身上发生过。我找到了一个简明扼要的回答：“You probably ran out of memory.”。于是，我重新调整了Ubuntu虚拟机的内存大小，就编译通过了。
 
 事实上，将出错信息的关键一行原文，加上开源项目的名称作为关键词，在google上搜索。通常能够找到相关的答案。
 
