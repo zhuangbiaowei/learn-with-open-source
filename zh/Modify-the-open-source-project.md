@@ -15,7 +15,7 @@
       
     然后，在自己的机器上，执行：
     git clone git@github.com:zhuangbiaowei/2048.git
-  
+
 随后，挑选自己喜欢的编辑器，打开2048的目录，开始查找可以下手的地方。
 
 在js目录下的game_manager.js，我们发现了一个函数，叫做：addRandomTile。在这个函数里，有一行是这么写的：`var value = Math.random() < 0.9 ? 2 : 4;` 这种搞法，真的非常粗暴，随机加入一个方块，有90%的概率是2，有10%的概率是4。
@@ -28,32 +28,38 @@
 
 还是在game_manager.js，我们发现了如下一段代码：
 
-    var merged = new Tile(positions.next, tile.value * 2);
-    merged.mergedFrom = [tile, next];
-    
-    self.grid.insertTile(merged);
-    self.grid.removeTile(tile);
-    
-    // Converge the two tiles' positions
-    tile.updatePosition(positions.next);
-    
-    // Update the score
-    self.score += merged.value;
-    
-    // The mighty 2048 tile
-    if (merged.value === 2048) self.won = true;
-    
+```javascript
+var merged = new Tile(positions.next, tile.value * 2);
+merged.mergedFrom = [tile, next];
+
+self.grid.insertTile(merged);
+self.grid.removeTile(tile);
+
+// Converge the two tiles' positions
+tile.updatePosition(positions.next);
+
+// Update the score
+self.score += merged.value;
+
+// The mighty 2048 tile
+if (merged.value === 2048) self.won = true;
+```
+
 看来这就是我们要修改的关键所在了。`tile.value`的值现在是一个字符串，所以不能简单的乘以2，我们可以先找到它在NameArray里的位置，然后取它的下一个值。
 
-    var pos =NameArray.indexOf(tile.value);
-    var merged = new Tile(positions.next, NameArray[pos+1]);
+```javascript
+var pos =NameArray.indexOf(tile.value);
+var merged = new Tile(positions.next, NameArray[pos+1]);
+```
 
 另外，`merged.value`也不能直接加到`self.score`里去了，要改成:
 
-    now_value=Math.pow(2,pos+2);
-    self.score += now_value;
-    if (now_value === 2048) self.won = true;
-    
+```javascript
+now_value=Math.pow(2,pos+2);
+self.score += now_value;
+if (now_value === 2048) self.won = true;
+```
+
 再运行一下看看，发现了一些丑陋的bug。
 ![](images/2048-2.png)
 
@@ -69,20 +75,24 @@
 
 我们可以在这一行的前面，补上两句：
 
-    var pos =NameArray.indexOf(tile.value);
-    var tile_value=Math.pow(2,pos+1);
-    //再修改一下刚才的那句：
-    var classes = ["tile", "tile-" + tile_value, positionClass];
-    
+```javascript
+var pos =NameArray.indexOf(tile.value);
+var tile_value=Math.pow(2,pos+1);
+//再修改一下刚才的那句：
+var classes = ["tile", "tile-" + tile_value, positionClass];
+```
+
 于是，正常的颜色就会出现了。至于字体大小的问题，我们得回到main.css中去找答案。
 
-    .tile .tile-inner {
-      border-radius: 3px;
-      background: #eee4da;
-      text-align: center;
-      font-weight: bold;
-      z-index: 10;
-      font-size: 55px; }
+```css
+.tile .tile-inner {
+  border-radius: 3px;
+  background: #eee4da;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 55px; }
+```
 
 我们可以简单粗暴将`font-size: 55px;`，改成`font-size: 35px;`。我们看一下现在的效果：
 ![](images/2048-4.png)
@@ -195,12 +205,12 @@ Git 二分查找允许提供一个测试脚本，Git 会根据这个测试脚本
 于是创建一个测试脚本 `git-proxy-bug-test.sh`，内容如下：
 
     #!/bin/sh
-
+    
     make -j8 && make install && \
     git --version && \
     http_proxy=bad_proxy no_proxy=* \
     git ls-remote http://internal-git-server/git/repo.git
-
+    
     case $? in
     0)
         exit 0
@@ -223,31 +233,31 @@ Git 二分查找允许提供一个测试脚本，Git 会根据这个测试脚本
     commit 372370f1675c2b935fb703665358dd5567641107
     Author: Knut Franke <k.franke@science-computing.de>
     Date:   Tue Jan 26 13:02:48 2016 +0000
-
+    
         http: use credential API to handle proxy authentication
-
+    
         Currently, the only way to pass proxy credentials to curl is by including them
         in the proxy URL. Usually, this means they will end up on disk unencrypted, one
         way or another (by inclusion in ~/.gitconfig, shell profile or history). Since
         proxy authentication often uses a domain user, credentials can be security
         sensitive; therefore, a safer way of passing credentials is desirable.
-
+    
         If the configured proxy contains a username but not a password, query the
         credential API for one. Also, make sure we approve/reject proxy credentials
         properly.
-
+    
         For consistency reasons, add parsing of http_proxy/https_proxy/all_proxy
         environment variables, which would otherwise be evaluated as a fallback by curl.
         Without this, we would have different semantics for git configuration and
         environment variables.
-
+    
         Helped-by: Junio C Hamano <gitster@pobox.com>
         Helped-by: Eric Sunshine <sunshine@sunshineco.com>
         Helped-by: Elia Pinto <gitter.spiros@gmail.com>
         Signed-off-by: Knut Franke <k.franke@science-computing.de>
         Signed-off-by: Elia Pinto <gitter.spiros@gmail.com>
         Signed-off-by: Junio C Hamano <gitster@pobox.com>
-
+    
     :040000 040000 de69688dd93e4466c11726157bd2f93e47e67330 d19d021e8d1c2a296b521414112be0966bd9f09a M      Documentation
     :100644 100644 f46bfc43f9e5e8073563be853744262a1bb4c5d6 dfc53c1e2554e76126459d6cb1f098facac28593 M      http.c
     :100644 100644 4f97b60b5c8abdf5ab0610382a6d6fa289df2605 f83cfa686823728587b2a803c3e84a8cd4669220 M      http.h
@@ -327,35 +337,35 @@ Git 二分查找允许提供一个测试脚本，Git 会根据这个测试脚本
 下面就是最终的提交说明：
 
     http: honor no_http env variable to bypass proxy
-
+    
     Curl and its families honor several proxy related environment variables:
-
+    
     * http_proxy and https_proxy define proxy for http/https connections.
     * no_proxy (a comma separated hosts) defines hosts bypass the proxy.
-
+    
     This command will bypass the bad-proxy and connect to the host directly:
-
+    
         no_proxy=* https_proxy=http://bad-proxy/ \
         curl -sk https://google.com/
-
+    
     Before commit 372370f (http: use credential API to handle proxy auth...),
     Environment variable "no_proxy" will take effect if the config variable
     "http.proxy" is not set.  So the following comamnd won't fail if not
     behind a firewall.
-
+    
         no_proxy=* https_proxy=http://bad-proxy/ \
         git ls-remote https://github.com/git/git
-
+    
     But commit 372370f not only read git config variable "http.proxy", but
     also read "http_proxy" and "https_proxy" environment variables, and set
     the curl option using:
-
+    
         curl_easy_setopt(result, CURLOPT_PROXY, proxy_auth.host);
-
+    
     This caused "no_proxy" environment variable not working any more.
-
+    
     Set extra curl option "CURLOPT_NOPROXY" will fix this.
-
+    
     Signed-off-by: Jiang Xin <xin.jiang@huawei.com>
 
 ### 贡献给上游
