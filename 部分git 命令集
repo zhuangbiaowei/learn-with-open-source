@@ -1,0 +1,32 @@
+建议可以从 git bash 部分指令开始学习，较为简单
+如下：
+
+创建文件夹： $ git mkdir learngit
+
+显示当前路径:$ git pwd
+
+把当前目录变成Git可以管理的仓库:$ git init
+
+查看当前文件夹里所有文件包括隐藏文件:$ git  ls -ah
+
+把文件添加到暂存区:$git add readme.txt
+
+把文件提交到仓库 : $ git commit -m "附言信息"、
+
+查看当前Git状态:$ git status
+
+查看文件修改情况:$ git diff readme.txt
+
+查看版本历史记录 :$ git log   
+
+版本回退到上一个版本 :$git reset --hard HEAD^
+
+回退版本到指定的版本 :$ git reset --hard 版本ID
+
+查看每一次的历史命令: $git reflog
+
+查看工作区指定文件和版本库里文件之间的区别:$ git diff HEAD 
+
+撤销工作区文件的修改:$git checkout -- readme.txt
+
+撤销暂存区的修改（回退版本）:$git reset HEAD readme.txt 再进行工作区的撤销
