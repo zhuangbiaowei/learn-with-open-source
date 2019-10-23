@@ -6,7 +6,7 @@
 
 ### 关于源代码管理与版本控制
 
-首先需要介绍一些基础的概念1，这里只是简要的介绍，比较详细的介绍，可以参见[Understanding Version-Control Systems](http://www.catb.org/%7Eesr/writings/version-control/version-control.html)，期待有人能够将其翻译为中文。（或者已经有中译本了，欢迎告知我。）
+首先需要介绍一些基础的概念，这里只是简要的介绍，比较详细的介绍，可以参见[Understanding Version-Control Systems](http://www.catb.org/%7Eesr/writings/version-control/version-control.html)，期待有人能够将其翻译为中文。（或者已经有中译本了，欢迎告知我。）
 
 **源代码([Source Code](http://en.wikipedia.org/wiki/Source_code))**：也就是通常一个软件，由程序员编写，并且可以被其他程序员阅读的，可以被直接执行/编译后执行的文本代码。
 
@@ -117,7 +117,7 @@
 
 ## Windows下的开发环境准备
 
-Windows，MacOS，Linux是当下主流的三大操作系统。很大一部分计算机用户出于经济适用和方便，都选择 Windows操作系统，但对于计算机学习者来说，却不可避免的会使用Linux，因为你的大多数程序最终是跑在线上的 Linux服务器上，而且 Linux相对与其他系统，具有安全、稳定、高效、资源消耗少、易操作等一系列特点。所以，这里单独介绍除了虚拟机外 Windows环境下使用 Linux系统的一个简单方法（WSL），方便 Windows用户学习使用 Linux。
+Windows，MacOS，Linux是当下主流的三大操作系统。很大一部分计算机用户出于经济适用和方便的原因，都选择 Windows操作系统，但对于计算机学习者来说，却不可避免的会使用Linux，因为你的大多数程序最终是跑在线上的 Linux服务器上，而且 Linux相对与其他系统，具有安全、稳定、高效、资源消耗少、易操作等一系列特点。所以，这里单独介绍除了虚拟机外 Windows环境下使用 Linux系统的一个简单方法（WSL），方便 Windows用户学习使用 Linux。
 
 ### 关于WSL
 
