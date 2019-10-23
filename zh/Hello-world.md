@@ -85,6 +85,8 @@
 
 然后，获取代码也极其简单：
 
+这里要注意的是，gitHub给出的项目地址GitRepoURL不止一个，这是因为git是支持多种协议的，例如默认的ssh，https等。
+
     git clone GitRepoURL
 
 **Mercurial如何获取代码**
@@ -311,7 +313,7 @@ WSL使用与Linux使用一致，尽情享用吧。
     $ python hello.py
       http://0.0.0.0:8080/
 
-这时，用浏览器访问 [http://localhost:8080/](http://localhost:8080/) 你将看到 Hello, world.
+这时，用浏览器访问 [http://localhost:8080/](http://localhost:8080/) 你将看到 "Hello, world!"
 
 ### JavaScript(nodejs)版
 
