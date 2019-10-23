@@ -195,6 +195,7 @@
 * 《笨办法学语言》系列，详见下节的介绍
 * [CodeCombat](http://codecombat.com/) 通过游戏闯关，一步一步学习语言，而且这还是一个开源项目
 * [指导开发者快速学习编程的网站推荐](Useful-Websites-to-Learn-How-to-Code-Quickly.md)
+* [W3school](https://www.w3school.com.cn/p.asp)包括了所有一些常用语言的入门级教程，适合新手学习
 * 当然，各个语言的官方网站，是必须常去的
 
 ### 一些忠告
