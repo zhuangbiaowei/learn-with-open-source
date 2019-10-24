@@ -1,15 +1,22 @@
-# Learn Coding With Open Souce
+# Learn Coding with Open Source
 
 [![Join the chat at https://gitter.im/zhuangbiaowei/learn-with-open-source](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zhuangbiaowei/learn-with-open-source?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![GitHub stars](https://img.shields.io/github/stars/zhuangbiaowei/learn-with-open-source.svg?label=github%20stars)](https://github.com/zhuangbiaowei/learn-with-open-source)
+[![Powered by Gitbook](https://img.shields.io/badge/Powered%20by-Gitbook-blue)](https://www.gitbook.com)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Actions Status](https://github.com/zhuangbiaowei/learn-with-open-source/workflows/Build%20learn-with-open-source%20PDF/badge.svg)](https://github.com/zhuangbiaowei/learn-with-open-source/actions)
 
 This book uses [GitBook](https://www.gitbook.com) to build.
 
-All contents licensed under the [ Creative Commons Attribution Non Commercial Share Alike 4.0 license](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+License: CC BY-NC-SA 4.0
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />All contents licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons Attribution Non Commercial Share Alike 4.0 license</a>.
 
 Welcome! Join us to finish this book.
 
-You can visit the online ebook: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
+You can visit the online ebook: [Learn Coding With Open Source](https://zhuangbiaowei.gitbook.io/learn-with-open-source/)
 
+You can also get the PDF on the release page.
 
 ##  for developers
 
@@ -38,7 +45,7 @@ Note: you will need Linux or MacOS. Windows is not yet supported.
     ```bash
     ./node_modules/.bin/gitbook serve .
     ```
-   2. generate the pdf:
+   3. generate the pdf:
 
     ```bash
     ./node_modules/.bin/gitbook pdf .
@@ -46,7 +53,7 @@ Note: you will need Linux or MacOS. Windows is not yet supported.
 
 ### Update contributions automatically
 
-It will update contributoions through git commits after a pull request or merge is executed.
+It will update contributions through git commits after a pull request or merge is executed.
 If you want to update it manually:
 
 This script will update the "Contributor.md" file and copy it to the "zh" folder.
@@ -65,7 +72,7 @@ on the root of the repository.
 TODO: this is not finished.
 
 The gitbook uses the SUMMARY.md to get the TOC.
-the list in the SUMMARY.md will be the TOC.
+The list in the SUMMARY.md will be the TOC.
 
 ```
 1. [Topic](topic.md)
@@ -78,15 +85,14 @@ the list in the SUMMARY.md will be the TOC.
 **note:**
 
 * the parent directory is not supported via gitbook.
-* the topic in same file could not be a link.
+* the topic in the same file could not be a link.
 
 the workflow automation is:
 
-* a text file to determine the markdown files order.
+* a text file to determine the markdown files order,
   or use the file name order in a directory.
 * get toc of each markdown file.
 * merge it into SUMMARY.md
-
 
 ---------
 
@@ -94,14 +100,16 @@ the workflow automation is:
 
 本书使用 [GitBook](https://www.gitbook.com) 来 build 电子书。
 
-联机电子书版本在这里: [Learn Coding With Open Source](http://teamhost.gitbooks.io/learn-coding-with-open-source/)
+联机电子书版本在这里: [Learn Coding With Open Source](https://zhuangbiaowei.gitbook.io/learn-with-open-source/)
 
 开放文档：《借助开源项目，学习软件开发》
 
 诚邀您的参与！
 
 # 著作权申明
+License: CC BY-NC-SA 4.0
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 -   本作品选择采用：署名-非商业性使用-相同方式共享 的CC协议。
     -   您可以：复制、发行、展览、表演、放映、广播或通过信息网络传播本作品。以及创作演绎作品。
     -   惟须遵守下列条件：
