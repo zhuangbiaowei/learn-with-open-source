@@ -124,7 +124,7 @@ Windows，MacOS，Linux是当下主流的三大操作系统。很大一部分计
 ### 关于WSL
 
 [WSL](https://baike.baidu.com/item/wsl/20359185?fr=aladdin)（Windows Subsystem for Linux）是一个在 Windows 10 上能够运行原生 Linux二进制可执行文件的兼容层。
-Linux 的 Windows 子系统让开发人员可以直接在 Windows 上运行 Linux 环境（包括大多数命令行工具，实用程序和应用程序），而无需建立在虚拟机的开销之上，整个系统只有200多M，但基本包含了你能用到的所有功能，并且和 Windows完美互操作(省去 Linux挂载本地 Windows分区或目录的操作)，目前 Linux的 Windows子系统已经相当完善，可当作完整 Linux 系统使用（极少部分Windows 应用不能正常运行）。
+Linux 的 Windows 子系统让开发人员可以直接在 Windows 上运行 Linux 环境（包括大多数命令行工具，实用程序和应用程序），而无需建立在虚拟机的开销之上，整个系统只有200多兆，但基本包含了你能用到的所有功能，并且和 Windows完美互操作(省去 Linux挂载本地 Windows分区或目录的操作)，目前 Linux的 Windows子系统已经相当完善，可当作完整 Linux 系统使用（极少部分Windows 应用不能正常运行）。
 
 在WSL下，你可以实现如下功能，但不仅限于这些操作：
 
