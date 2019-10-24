@@ -1,4 +1,4 @@
-# 修改开源项目
+﻿# 修改开源项目
 
 <!-- toc -->
 
@@ -116,7 +116,7 @@ Git 2.8.0 版本即将发布，今天把工作站的 Git 版本升级到 `2.8.0-
     $ git checkout v2.7.0
     $ make -j8 && make install # 我的工作站是四核CPU，故此使用 -j8 两倍并发执行编译
 
-测试发现 Git 2.7.0 能够通过 `no_proxy` 变量绕过错误的 `http_proxy` 环境变量：
+测试发现 Git 2.7.0 能够通过 `no_proxy` 变量,绕过错误的 `http_proxy` 环境变量：
 
     $ http_proxy=bad_proxy no_proxy=* git ls-remote http://internal-git-server/git/repo.git
     206b4906c197e76fcc63d7a453f9e3aa00dfb3da        HEAD
