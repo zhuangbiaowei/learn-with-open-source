@@ -119,7 +119,7 @@
 
 ## Windows下的开发环境准备
 
-Windows，MacOS，Linux是当下主流的三大操作系统。很大一部分计算机用户出于经济适用和方便，都选择 Windows操作系统，但对于计算机学习者来说，却不可避免的会使用Linux，因为你的大多数程序最终是跑在线上的 Linux服务器上，而且 Linux相对与其他系统，具有安全、稳定、高效、资源消耗少、易操作等一系列特点。所以，这里单独介绍除了虚拟机外 Windows环境下使用 Linux系统的一个简单方法（WSL），方便 Windows用户学习使用 Linux。
+Windows，MacOS，Linux是当下主流的三大操作系统。很大一部分计算机用户出于经济适用和方便的原因，都选择 Windows操作系统，但对于计算机学习者来说，却不可避免的会使用Linux，因为你的大多数程序最终是跑在线上的 Linux服务器上，而且 Linux相对与其他系统，具有安全、稳定、高效、资源消耗少、易操作等一系列特点。所以，这里单独介绍除了虚拟机外 Windows环境下使用 Linux系统的一个简单方法（WSL），方便 Windows用户学习使用 Linux。
 
 ### 关于WSL
 
@@ -129,13 +129,13 @@ Linux 的 Windows 子系统让开发人员可以直接在 Windows 上运行 Linu
 在WSL下，你可以实现如下功能，但不仅限于这些操作：
 
 	1. 在 Microsoft Store 中选择你偏好的 GNU/Linux 分发版（推荐Ubuntu）；
-
+	
 	2. 运行 Bash shell 脚本和 GNU/Linux 命令行应用程序;
-
+	
 	3. 使用分发包管理器安装其他软件;
-
+	
 	4. 使用类似于 Unix 的命令行 shell 调用 Windows 应用程序;
-
+	
 	5. 在 Windows 上调用 GNU/Linux 应用程序。
 
 WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别可自行查询。当然，你也可以选择虚拟机或者安装双系统，但传统的 [VM](https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%9C%BA/104440?fromtitle=VM&fromid=16532539) (虚拟机推荐VMware)启动速度慢，隔离会消耗大量资源，需要时间进行管理，双系统更加消耗内存以及带来管理上的不便，不过这两种情况下的系统更能显示出 Linux的完整结构和操作，大家可以根据自己需求以及电脑配置进行选择。 
@@ -381,7 +381,7 @@ WSL使用与Linux使用一致，尽情享用吧。
 创建一个文件hello.c
 
     #include <stdio.h>
-
+    
     int main() {
       printf("hello world\n");
       return 0;
