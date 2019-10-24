@@ -150,7 +150,7 @@ WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别�
 	3. 在 Windows应用商店搜索“Linux”，选择您喜欢的Linux版本，推荐Ubuntu；
 	4. 正常下载安装（建议不要修改安装路径）；
 	5. 安装以后即可打开Ubuntu使用Linux命令对windows文件进行操作；
-	
+
 **升级到WSL2方法**
 
 	1. 按以上流程成功安装Ubuntu，且版本必须是18917之后的版本；
@@ -159,7 +159,7 @@ WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别�
 	4. 完成后重启系统，之后依旧以管理员身份打开powershell，输入wsl -l查看已经安装的子系统；
 	5. 输入命令wsl --set-version Ubuntu-18.04 2，这里的Ubuntu-18.04换成你的子系统名称（这里再强调一遍，必须是18917之后的版本）；
 	6. 输入wsl -l -v查看目前WSL版本，查看是否已经成功安装。
-	
+
 **其他说明**
 
 推荐一款好看的 Windows端的终端模拟器——Fluent Terminal，如需要的话可自行搜索相关教程（[GitHub](https://github.com/felixse/FluentTerminal)），在设置中选择WSL，之后子系统的所有操作都可以在Fluent terminal中操作，美观的不是一点。
@@ -302,11 +302,11 @@ WSL使用与Linux使用一致，尽情享用吧。
     urls = (
         	'/', 'index'
     	    )
-
+    
     class index:
     		def GET(self):
         		return "Hello, world!"
-
+    
     if __name__ == "__main__":
     		app = web.application(urls, globals())
     		app.run()
@@ -425,7 +425,7 @@ LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation
 
 **3. 仔细看出错提示信息，并且在网上搜索答案**
 
-在编译LLVM的时候，我遇到了一个古怪的bug，“collect2: ld terminated with signal 9 [Killed]”完全不理解是怎么会事。只能在Google上找答案，幸好，类似的悲剧也在别人身上发生过。我找到了一个简明扼要的回答：“You probably ran out of memory.”。于是，我重新调整了Ubuntu虚拟机的内存大小，就编译通过了。
+在编译LLVM的时候，我遇到了一个古怪的bug：“collect2: ld terminated with signal 9 [Killed]”，当时完全不理解是怎么回事，只能在Google上找答案，幸好，类似的悲剧也在别人身上发生过。我找到了一个简明扼要的回答：“You probably ran out of memory.”。于是，我重新调整了Ubuntu虚拟机的内存大小，就编译通过了。
 
 事实上，将出错信息的关键一行原文，加上开源项目的名称作为关键词，在google上搜索。通常能够找到相关的答案。
 
