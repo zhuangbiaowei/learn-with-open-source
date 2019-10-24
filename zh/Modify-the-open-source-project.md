@@ -1,4 +1,4 @@
-# 修改开源项目
+﻿# 修改开源项目
 
 <!-- toc -->
 
@@ -116,7 +116,7 @@ Git 2.8.0 版本即将发布，今天把工作站的 Git 版本升级到 `2.8.0-
     $ git checkout v2.7.0
     $ make -j8 && make install # 我的工作站是四核CPU，故此使用 -j8 两倍并发执行编译
 
-测试发现 Git 2.7.0 能够通过 `no_proxy` 变量绕过错误的 `http_proxy` 环境变量：
+测试发现 Git 2.7.0 能够通过 `no_proxy` 变量,绕过错误的 `http_proxy` 环境变量：
 
     $ http_proxy=bad_proxy no_proxy=* git ls-remote http://internal-git-server/git/repo.git
     206b4906c197e76fcc63d7a453f9e3aa00dfb3da        HEAD
@@ -266,7 +266,7 @@ Git 二分查找允许提供一个测试脚本，Git 会根据这个测试脚本
      3 files changed, 85 insertions(+), 3 deletions(-)
 
 
-相比很多人一个提交动辄改动几百、几千行的代码，这个提交的改动算得上简短了。小提交的好处就是易于阅读、易于问题定位、易于回退。
+相比很多人动辄提交改动了几百、几千行的代码，这个提交的改动算得上简短了。小提交的好处就是易于阅读、易于问题定位、易于回退。
 
 最终参照上面定位到的问题提交，我的 Bugfix  如下（为了下面的一节叙述方便，给代码补丁增加了行号）：
 
