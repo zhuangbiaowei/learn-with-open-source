@@ -14,7 +14,7 @@
 
 **软件版本号([Software Version](http://en.wikipedia.org/wiki/Software_versioning))** ：这里的版本，是另外一个概念，源代码中的任何一个文件，都存在一个修订版本号，而作为整个软件，无论对内称呼还是对外发布，都需要一个更加正式的、完整的版本号。前者的英文是Revision，而后者的英文是Version。因此，当我们谈到版本管理的时候，很可能是同时谈到两者：一个是源代码的Revision，一个是整个项目的Version。
 
-**版本控制工具([Revision control software](http://en.wikipedia.org/wiki/List_of_revision_control_software))** ：为了更好的管理源代码，程序员们开发出了林林总总的版本控制工具，有闭源的，也有开源的。而现在市面上流行的，已经几乎全是开源的了。简单的列出几种在下面：
+**版本控制工具([Revision control software](http://en.wikipedia.org/wiki/List_of_revision_control_software))** ：为了更好地管理源代码，程序员们开发出了林林种种的版本控制工具，有闭源的，也有开源的。而现在市面上流行的，已经几乎全是开源的了。简单的列出几种在下面：
 
 * 仅管理本地源文件
   * 免费/开源：SCCS (1972) RCS (1982)
@@ -85,6 +85,8 @@
 
 然后，获取代码也极其简单：
 
+这里要注意的是，gitHub给出的项目地址GitRepoURL不止一个，这是因为git是支持多种协议的，例如默认的ssh，https等。
+
     git clone GitRepoURL
 
 **Mercurial如何获取代码**
@@ -122,7 +124,7 @@ Windows，MacOS，Linux是当下主流的三大操作系统。很大一部分计
 ### 关于WSL
 
 [WSL](https://baike.baidu.com/item/wsl/20359185?fr=aladdin)（Windows Subsystem for Linux）是一个在 Windows 10 上能够运行原生 Linux二进制可执行文件的兼容层。
-Linux 的 Windows 子系统让开发人员可以直接在 Windows 上运行 Linux 环境（包括大多数命令行工具，实用程序和应用程序），而无需建立在虚拟机的开销之上，整个系统只有200多M，但基本包含了你能用到的所有功能，并且和 Windows完美互操作(省去 Linux挂载本地 Windows分区或目录的操作)，目前 Linux的 Windows子系统已经相当完善，可当作完整 Linux 系统使用（极少部分Windows 应用不能正常运行）。
+Linux 的 Windows 子系统让开发人员可以直接在 Windows 上运行 Linux 环境（包括大多数命令行工具，实用程序和应用程序），而无需建立在虚拟机的开销之上，整个系统只有200多兆，但基本包含了你能用到的所有功能，并且和 Windows完美互操作(省去 Linux挂载本地 Windows分区或目录的操作)，目前 Linux的 Windows子系统已经相当完善，可当作完整 Linux 系统使用（极少部分Windows 应用不能正常运行）。
 
 在WSL下，你可以实现如下功能，但不仅限于这些操作：
 
@@ -148,7 +150,7 @@ WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别�
 	3. 在 Windows应用商店搜索“Linux”，选择您喜欢的Linux版本，推荐Ubuntu；
 	4. 正常下载安装（建议不要修改安装路径）；
 	5. 安装以后即可打开Ubuntu使用Linux命令对windows文件进行操作；
-	
+
 **升级到WSL2方法**
 
 	1. 按以上流程成功安装Ubuntu，且版本必须是18917之后的版本；
@@ -157,7 +159,7 @@ WSL 体系结构的新版本 WSL2 也已经可以使用，WSL与 WSL2 的区别�
 	4. 完成后重启系统，之后依旧以管理员身份打开powershell，输入wsl -l查看已经安装的子系统；
 	5. 输入命令wsl --set-version Ubuntu-18.04 2，这里的Ubuntu-18.04换成你的子系统名称（这里再强调一遍，必须是18917之后的版本）；
 	6. 输入wsl -l -v查看目前WSL版本，查看是否已经成功安装。
-	
+
 **其他说明**
 
 推荐一款好看的 Windows端的终端模拟器——Fluent Terminal，如需要的话可自行搜索相关教程（[GitHub](https://github.com/felixse/FluentTerminal)），在设置中选择WSL，之后子系统的所有操作都可以在Fluent terminal中操作，美观的不是一点。
@@ -300,18 +302,18 @@ WSL使用与Linux使用一致，尽情享用吧。
     urls = (
         	'/', 'index'
     	    )
-
+    
     class index:
     		def GET(self):
         		return "Hello, world!"
-
+    
     if __name__ == "__main__":
     		app = web.application(urls, globals())
     		app.run()
     $ python hello.py
       http://0.0.0.0:8080/
 
-这时，用浏览器访问 [http://localhost:8080/](http://localhost:8080/) 你将看到 Hello, world.
+这时，用浏览器访问 [http://localhost:8080/](http://localhost:8080/) 你将看到 "Hello, world!"
 
 ### JavaScript(nodejs)版
 
@@ -423,7 +425,7 @@ LLVM的文档很有意思，在他开篇头三条是：1. Read the documentation
 
 **3. 仔细看出错提示信息，并且在网上搜索答案**
 
-在编译LLVM的时候，我遇到了一个古怪的bug，“collect2: ld terminated with signal 9 [Killed]”完全不理解是怎么会事。只能在Google上找答案，幸好，类似的悲剧也在别人身上发生过。我找到了一个简明扼要的回答：“You probably ran out of memory.”。于是，我重新调整了Ubuntu虚拟机的内存大小，就编译通过了。
+在编译LLVM的时候，我遇到了一个古怪的bug：“collect2: ld terminated with signal 9 [Killed]”，当时完全不理解是怎么回事，只能在Google上找答案，幸好，类似的悲剧也在别人身上发生过。我找到了一个简明扼要的回答：“You probably ran out of memory.”。于是，我重新调整了Ubuntu虚拟机的内存大小，就编译通过了。
 
 事实上，将出错信息的关键一行原文，加上开源项目的名称作为关键词，在google上搜索。通常能够找到相关的答案。
 

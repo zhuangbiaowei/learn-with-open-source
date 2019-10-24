@@ -1,12 +1,13 @@
-name: Build-PDF
+name: Build learn-with-open-source PDF
 
 on:
   push:
-    branches: master
+    tags: 
+      - 'v*'
 
 jobs:
   build:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-18.04
 
     steps:
     - uses: actions/checkout@v1
@@ -24,4 +25,26 @@ jobs:
     - name: Generate PDF
       run: |
         gitbook pdf
-        mv book_zh.pdf learn-with-open-source.pdf
+        cp book_zh.pdf learn-with-open-source.pdf
+        ls -l
+        
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: true
+        prerelease: true
+
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./learn-with-open-source.pdf
+        asset_name: learn-with-open-source.pdf
+        asset_content_type: application/pdf
