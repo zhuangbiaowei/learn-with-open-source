@@ -41,7 +41,7 @@
 * 视频教程/ScreenCast：每次讲解一个主题，学习一下总会有收获，只是效率不高。
   
   * MOOC课程的出现，正在改变这样的现状，不过国内的MOOC课程大多是渣（简单的把视频教程搬上来就称为MOOC）
-  * 我后面会推荐一些较好的MOOC课程，基本都是英文。
+  * 比较好的英文MOOC平台有Coursera(https://www.coursera.org),edX(https://www.edx.org)
   
 * PPT/Slide/PDF：这种属于某次技术会议上的演讲稿，如果能够配合视频看，效果还好些，否则通常会不知所云。
   
