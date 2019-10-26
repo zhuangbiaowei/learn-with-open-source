@@ -5,7 +5,7 @@
 * Developers who would like to understand other people's code  
 
 ### Software development beginner
-This is a document for software development beginners, who have learned no more than two programming languages and being able to complete most of exercises in the course in terms of the language skills they have learned. From the general situation of college education, they could only complete the baseline of final course assignments arranged by teachers. That is to say, they are not so well in course and have difficulty in finding a way to improve their skills.
+This is a document for software development beginners, who have learned no more than two programming languages and been able to complete most of exercises in the course in terms of the language skills they have learned. From the general situation of college education, they could only complete the baseline of final course assignments arranged by teachers. That is to say, they are not so well in course and have difficulty in finding a way to improve their skills.
 
 For students who graduated or will graduate from universities(within one or two year(s)), it is difficult for them to get access to truly complex projects, and they will be incharge of the trivial details even if they are involved in complex projects. They are eager to improve their ability in software development as soon as possible, but what they lack mostly is the opportunity to improve their ability.
 
