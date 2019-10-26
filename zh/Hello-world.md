@@ -190,7 +190,7 @@ WSL使用与Linux使用一致，尽情享用吧。
 
 搞定收工。。。
 
-如果没有安装过rubygems这个包，则会困难一些。首先在[RubyGems](> )这个页面挑一个文件格式下载，并解压缩。然后：
+如果之前没有安装过rubygems这个包，则会困难一些。首先要在[RubyGems](> )这个页面挑一个文件格式下载，并解压缩。然后执行以下命令：
 
     $ cd directory
     $ ruby setup.rb
@@ -240,7 +240,7 @@ WSL使用与Linux使用一致，尽情享用吧。
 
 在浏览器中访问 [http://localhost/wordpress/wp-admin/install.php](http://localhost/wordpress/wp-admin/install.php) 按提示完成各个步骤，就搞定了，整个时间不超过5分钟。
 
-最后一句的提示，很有趣味：“WordPress 安装完成。您是否还沉浸在愉悦的安装过程中？很遗憾，一切皆已完成！ :)”
+最后一句的提示，很有趣味：“WordPress 安装完成。您是否还沉浸在愉悦的安装过程中？很遗憾，一切皆已完成！”
 
 [参考文档 1](http://codex.wordpress.org/zh-cn:%E5%AE%89%E8%A3%85WordPress)  [参考文档 2](http://supriyadisw.net/2006/12/wordpress-installation-on-ubuntu-with-lamp)
 
@@ -351,7 +351,7 @@ WSL使用与Linux使用一致，尽情享用吧。
 
 ### C/C++版
 
-因为王越的系列文章《Mac OS X背后的故事》，其中第八章《[三好学生Chris Lattner的LLVM编译工具链](https://www.cnblogs.com/ender-cd/articles/4048486.html)》对LLVM的介绍，使我决定尝试把LLVM，作为c语言的hello world项目。
+因为在王越的系列文章《Mac OS X背后的故事》里，其中第八章《[三好学生Chris Lattner的LLVM编译工具链](https://www.cnblogs.com/ender-cd/articles/4048486.html)》有对LLVM的介绍，这使我决定尝试把LLVM，作为c语言的hello world项目。
 
 说实话，在开源项目中，C语言的各种开源项目的编译安装，都是非常类似的。绝大多数命令都是以下三行：
 
