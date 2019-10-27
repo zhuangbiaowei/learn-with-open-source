@@ -5,7 +5,7 @@
 
 The Internet is a rapidly evolving field, where technologies constantly being updated, like from HTML to HTML5, from CSS to CSS3, from JavaScript to JavaScript frameworks, etc. If you can't keep up with the speed, you will be out of game. Therefore, a quick grasp of a language or a technology can be very beneficial. 
 
-This article provides you 9 practical online tutorials, some in interactive format, and some in comprehensive guides and visualizations to help you quickly master a language. They share a common purpose, that is, make your learning more fun, and make it easier for you to master it.
+This article provides you 9 practical online tutorials, some of them are in interactive formats, and others are in comprehensive guides and visualizations.They will help you quickly master a language. They share a common purpose, that makes your learning more fun, and makes it easier for you to master it.
 
 ##  [LifeHacker Learn to code](http://www.lifehacker.com.au/2011/02/learn-to-code-the-full-beginners-guide/)
 
@@ -88,7 +88,7 @@ The site contains a tutorial that lets you start your MongoDB learning journey w
 
 ## [学堂在线](https://next.xuetangx.com/)
 
-Technology: WeChat small program development, algorithm This is an online education website supported by Tsinghua University and other institutions.
+Technology: WeChat small program development, algorithm. This is an online education website supported by Tsinghua University and other institutions.
 
 It includes courses such as recommended algorithms, WeChat mini-program production, etc. 
 
