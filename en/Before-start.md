@@ -7,7 +7,7 @@
 ### Software development beginner
 This is a document for software development beginners, who have learned no more than two programming languages and been able to complete most of exercises in the course in terms of the language skills they have learned. From the general situation of college education, they could only complete the baseline of final course assignments arranged by teachers. That is to say, they are not so well in course and have difficulty in finding a way to improve their skills.
 
-For students who graduated or will graduate from universities(within one or two year(s)), it is difficult for them to get access to truly complex projects, and they will be incharge of the trivial details even if they are involved in complex projects. They are eager to improve their ability in software development as soon as possible, but what they lack mostly is the opportunity to improve their ability.
+For students who graduated or will graduate from universities(within one or two year(s)), it is difficult for them to get access to truly complex projects, and they will be in charge of the trivial details even if they are involved in complex projects. They are eager to improve their ability in software development as soon as possible, but what they lack mostly is the opportunity to improve their ability.
 
 Therefore, this paper aims to introduce a more reasonable method to help all the "classmates" to improve the ability of software development in a more scientific and reasonable way.
 
@@ -18,7 +18,7 @@ In the field of software development, it is almost impossible to ignore open sou
 This article also hopes to help those who are new to open source and want to make good use of it by sharing experience of the experienced person.
 
 ### Hobbyists Wandering Outside the Open Source Community
-Do you want to be part of the open source community and give back some help to the open source community after enjoying the benefits it offerd? What is going on in the open source community? There are a lot of people who have a natural affinity for open source and hope to join in, integrate into the open source community faster, make more contributions to open source project, or even start their own open source project and pull up a team to do something amazing. There should be many friends that have such idea. We hope the introduction of this article can have certain help.
+Do you want to be part of the open source community and give back some help to the open source community after enjoying the benefits it offerd? What is going on in the open source community? There are a lot of people who have a natural affinity for open source and hope to join in it, integrate into the open source community faster, make more contributions to open source project, or even start their own open source project and pull up a team to do something amazing. There should be many friends that have such idea. We hope the introduction of this article can have certain help.
 
 Since this is an open writing document, I am not particularly sure when I write this paragraph that this document will have only four target users. Maybe it can be of value to more people……
 ## The Basic Conditions
@@ -60,7 +60,7 @@ Software development, though, is not the high-IQ and nerd industry in the legend
 * Laziness: There is a famous saying that "laziness is the virtue of programmers", because real programmers must hate to do the same thing repeatedly, at least they will write a function to complete for themselves. If they find the same paragraph is repeated in the code, they can't help themselves to eliminate it.  
 * Organization: If this is a complex thing, I can handle it in three stages. If I think carefully about it, the first stage could be divided into five parts. Before starting the first part, there are four preparations that must be considered first.  
 * Patience: A lot of time, the trouble in the program will come to you, and how to solve it? Solving "bug" requires insight, care and, most of all, patience. Sometimes, I really enjoy the process of "solving cases".  
-* Curiosity: There are so many things worth to be curious about. We have a lot of curiosity in new technologies that will never be finished learning, recent developments and best practices, and even other industries and fields because no matter what industry, they will come to us and help them write code.  
+* Curiosity: There are so many things worth to be curious about. We have a lot of curiosities in new technologies that will never be finished learning, recent developments and best practices, and even other industries and fields because no matter what industry, they will come to us and help them write code.  
 * Serious: It is said that a lot of things almost ok is really ok. But computer is so strict that even if one hundredth of a millisecond faster than before is faster. A one in ten thousand chance of a bug is still a bug. If you are not a serious enough people, you will ignore a lot of problems which could lead to disaster.
 ### OK, cut the cackle and let's start!
 
