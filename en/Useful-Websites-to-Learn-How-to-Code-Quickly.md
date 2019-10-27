@@ -1,6 +1,6 @@
 #  Website recommendation to guide developers to learn programming quickly
 
-* Original English text£: [9 Useful Websites to Learn How to Code Quickly](http://www.queness.com/post/10709/8-useful-websites-to-learn-how-to-code-quickly)
+* Original English text: [9 Useful Websites to Learn How to Code Quickly](http://www.queness.com/post/10709/8-useful-websites-to-learn-how-to-code-quickly)
 * translate:  [wangguo](http://wangguo.iteye.com/)
 
 The Internet is a rapidly developing field, from HTML to HTML5, from CSS to CSS3, from JavaScript to JavaScript framework, and the technology is constantly updated. If you can't keep up with this situation, you will be eliminated. Therefore, mastering a language or technology quickly will be beneficial to your Web development work. 
@@ -8,7 +8,7 @@ This article brings you nine practical online tutorials, some in interactive for
 
 ##  [LifeHacker Learn to code](http://www.lifehacker.com.au/2011/02/learn-to-code-the-full-beginners-guide/)
 
-language£: JavaScript 
+language: JavaScript 
 
 Four lessons + best practices/resources to teach you how to program using Javascript. Each lesson has a video and detailed essay to make sure you understand the content. 
 
@@ -16,7 +16,7 @@ Four lessons + best practices/resources to teach you how to program using Javasc
 
 ##  [CodeCademy](http://www.codecademy.com/)
 
-language£: JavaScript 
+language: JavaScript 
 
 This is an interactive teaching form that allows you to master JavaScript. bit by bit. For each course you complete, you can get some achievement points and badges to stimulate your interest in learning.
 ![](images/9-useful-CodeCademy.jpg)
@@ -49,7 +49,7 @@ Hackety will teach you absolute programming basics, even if you don't have any p
 
 ## [jQuery Air](http://jqueryair.com/)
 
-language£: JavaScript 
+language: JavaScript 
 
 JQuery is the most famous JavaScript framework. Now you can learn jQuery. directly in your browser The process of learning jQuery should be full of fun, jQuery Air to achieve this through a large number of practical ways.
 
